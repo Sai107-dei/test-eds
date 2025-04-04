@@ -180,6 +180,74 @@
     ]
   },
   {
+    "id": "accordion-card",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "description": "Enter title of each accordion item",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "description",
+        "label": "Description",
+        "description": "Enter detailed description of each accordion item",
+        "required":true
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "valueType": "string",
+        "description": "Upload Image for the section content"
+      },
+      {
+        "component": "text",
+        "name": "imageAltTxt",
+        "label": "Image Alt text",
+        "valueType": "string",
+        "description": "Add alternative text for the image"
+      }
+    ]
+  },
+  {
+    "id": "accordion",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Component Title",
+        "description": "Enter title for the entire Accordion Block"
+      },
+      {
+        "component": "select",
+        "name": "accordionExpansion",
+        "label": "Accordion Expansion",
+        "description": "Select the relevant Accordion Expansion option",
+        "value": "none",
+        "required": true,
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "First",
+            "value": "first"
+          },
+          {
+            "name": "All",
+            "value": "all"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
