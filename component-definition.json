@@ -135,8 +135,8 @@
               "page": {
                 "resourceType": "core/franklin/components/columns/v1/columns",
                 "template": {
-                  "columns1": "1",
-                  "rows2": "1"
+                  "columnsone": "1",
+                  "rowsone": "1"
                 }
               }
             }

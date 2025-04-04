@@ -215,7 +215,7 @@
     ]
   },
   {
-    "id": "accordion",
+    "id": "columnsone",
     "fields": [
       {
         "component": "text",
