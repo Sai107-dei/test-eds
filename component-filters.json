@@ -14,8 +14,8 @@
       "title",
       "hero",
       "cards",
-      "columns",
       "accordioncolumns",
+      "columns",
       "fragment"
     ]
   },
