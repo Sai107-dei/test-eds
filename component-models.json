@@ -178,40 +178,20 @@
         "component": "text",
         "valueType": "number",
         "name": "columns",
+        "value": "",
         "label": "Columns"
       },
       {
         "component": "text",
         "valueType": "number",
         "name": "rows",
+        "value": "",
         "label": "Rows"
-      },
-      {
-        "component": "select",
-        "name": "accordionExpansion",
-        "label": "Accordion Expansion",
-        "description": "Select the relevant Accordion Expansion option",
-        "value": "none",
-        "required": true,
-        "options": [
-          {
-            "name": "None",
-            "value": "none"
-          },
-          {
-            "name": "First",
-            "value": "first"
-          },
-          {
-            "name": "All",
-            "value": "all"
-          }
-        ]
       }
     ]
   },
-  {
-    "id": "accordion-columns",
+   {
+    "id": "columns",
     "fields": [
       {
         "component": "text",

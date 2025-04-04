@@ -189,9 +189,9 @@
             }
           }
         },
-        {
-          "title": "Accordion-columns",
-          "id": "accordion-columns",
+          {
+          "title": "Columns",
+          "id": "columns",
           "plugins": {
             "xwalk": {
               "page": {

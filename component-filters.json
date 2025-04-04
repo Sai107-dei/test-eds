@@ -47,12 +47,6 @@
     ]
   },
   {
-    "id": "accordionColumns",
-    "components": [
-      "column"
-    ]
-  },
-  {
     "id": "column",
     "components": [
       "text",
