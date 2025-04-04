@@ -25,6 +25,12 @@
     ]
   },
   {
+    "id": "Accordioncolumns",
+    "components": [
+      "text"
+    ]
+  },
+  {
     "id": "columns",
     "components": [
       "column"
