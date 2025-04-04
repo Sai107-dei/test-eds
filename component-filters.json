@@ -47,13 +47,20 @@
     ]
   },
   {
+    "id": "accordionColumns",
+    "components": [
+      "column"
+    ]
+  },
+  {
     "id": "column",
     "components": [
       "text",
       "image",
       "button",
       "title",
-      "columns"
+      "columns",
+      ""
     ]
   },
   {
