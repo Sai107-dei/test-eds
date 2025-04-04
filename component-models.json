@@ -176,23 +176,6 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
-      }
-    ]
-  },
-  {
-    "id": "accordioncolumns",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "columns",
-        "label": "Columns"
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "rows",
-        "label": "Rows"
       },
       {
         "component": "select",
