@@ -341,47 +341,30 @@
     "fields": [
       {
         "component": "text",
-        "name": "name",
-        "label": "Section Name",
-        "description": "The label shown for this section in the Content Tree"
+        "name": "accordiontitle",
+        "label": "Accordion Title",
+        "description": "Enter title for the entire Accordion Block"
       },
       {
         "component": "select",
         "name": "style",
-        "label": "Style",
+        "label": "Accordion Expansion",
+        "description": "Select the relevant Accordion Expansion option",
+        "value": "none",
+        "required": true,
         "options": [
           {
-            "name": "Highlight",
-            "value": "highlight"
+            "name": "None",
+            "value": "none"
           },
           {
-            "name": "Content-section",
-            "value": "content-section"
+            "name": "First",
+            "value": "first"
           },
           {
-            "name": "Hero-overlay",
-            "value": "hero-overlay"
-          }
-        ]
-      },
-    
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "Highlight",
-            "value": "highlight"
-          },
-          {
-            "name": "Content-section",
-            "value": "content-section"
-          },
-          {
-            "name": "Hero-overlay",
-            "value": "hero-overlay"
-          }
+            "name": "All",
+            "value": "all"
+          }   
         ]
       }
     ]
