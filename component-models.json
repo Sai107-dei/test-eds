@@ -346,7 +346,7 @@
         "description": "Enter title for the entire Accordion Block"
       },
       {
-        "component": "select",
+        "component": "multiselect",
         "name": "style",
         "label": "Style",
         "options": [
