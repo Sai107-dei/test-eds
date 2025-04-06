@@ -346,7 +346,7 @@
         "description": "The label shown for this section in the Content Tree"
       },
       {
-        "component": "multiselect",
+        "component": "select",
         "name": "style",
         "label": "Style",
         "options": [
