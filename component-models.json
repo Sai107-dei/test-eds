@@ -5395,7 +5395,8 @@
         "name": "rte",
         "label": "Description",
         "valueType": "string",
-        "required": true
+        "required": true,
+        "description": "Enter1 description for additional context which can have styling such as Bold, italics and  ability to add text links."
       }
     ]
   },
