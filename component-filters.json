@@ -14,9 +14,17 @@
       "title",
       "hero",
       "cards",
-      "accordioncolumns",
+      "cards-accordion",
       "columns",
-      "fragment"
+      "fragment",
+      "sus10",
+      "infobanner",
+      "accordion",
+      "carousel",
+      "primary-header",
+      "kalthuravideo",
+      "text-component",
+      "teaser"
     ]
   },
   {
@@ -26,9 +34,9 @@
     ]
   },
   {
-    "id": "accordioncolumns",
+    "id": "cards-accordion",
     "components": [
-      "text"
+      "card-accordion"
     ]
   },
   {
@@ -43,7 +51,35 @@
       "text",
       "image",
       "button",
+      "title",
+      "columns"
+    ]
+  },
+  {
+    "id": "infobanner",
+    "components": [
+      "infoitem"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "text",
+      "image",
+      "button",
       "title"
+    ]
+  },
+  {
+    "id": "kalthuravideo",
+    "components": [
+      "text"
+    ]
+  },
+  {
+    "id": "text-component",
+    "components": [
+      "text"
     ]
   }
 ]
