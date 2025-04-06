@@ -348,23 +348,20 @@
       {
         "component": "select",
         "name": "style",
-        "label": "Accordion Expansion",
-        "description": "Select the relevant Accordion Expansion option",
-        "value": "none",
-        "required": true,
+        "label": "Style",
         "options": [
           {
-            "name": "None",
-            "value": "none"
+            "name": "Highlight",
+            "value": "highlight"
           },
           {
-            "name": "First",
-            "value": "first"
+            "name": "Content-section",
+            "value": "content-section"
           },
           {
-            "name": "All",
-            "value": "all"
-          }   
+            "name": "Hero-overlay",
+            "value": "hero-overlay"
+          }
         ]
       }
     ]
@@ -5396,7 +5393,7 @@
         "label": "Description",
         "valueType": "string",
         "required": true,
-        "description": "Enter1 description for additional context which can have styling such as Bold, italics and  ability to add text links."
+        "description": "Enter description for additional context which can have styling such as Bold, italics and  ability to add text links."
       }
     ]
   },
