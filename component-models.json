@@ -381,8 +381,8 @@
       },
       {
         "component": "richtext",
-        "name": "text",
-        "label": "Description",
+        "name": "rte",
+        "label": "Rich Text",
         "valueType": "string",
         "required": true
       },
