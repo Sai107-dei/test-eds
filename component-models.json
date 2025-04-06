@@ -5395,7 +5395,7 @@
         "name": "rte",
         "label": "Description",
         "required": true,
-        "description": "Enter description for additional context which can have styling such as Bold, italics and  ability to add text links."
+        "description": "Enter1 description for additional context which can have styling such as Bold, italics and  ability to add text links."
       }
     ]
   },
