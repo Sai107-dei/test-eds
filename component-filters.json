@@ -40,6 +40,12 @@
     ]
   },
   {
+    "id": "cards-accordion",
+    "components": [
+      "title"
+    ]
+  },
+  {
     "id": "columns",
     "components": [
       "column"
