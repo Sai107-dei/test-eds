@@ -5435,10 +5435,34 @@
     "id": "icongrid-component",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
+        "component": "reference",
         "valueType": "string",
+        "name": "image",
+        "label": "Icon/Logo",
+        "required": true,
+        "description": "Upload icon for the Icon Grid"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "description": "Add Image Alternate Text"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Icon Title",
+        "valueType": "string",
+        "description": "Enter title for the Icon Grid",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Icon Description",
+        "valueType": "string",
+        "description": "Enter Description for the Icon Grid",
         "required": true
       }
     ]
