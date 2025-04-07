@@ -40,7 +40,7 @@
     ]
   },
   {
-    "id": "cards-accordion",
+    "id": "card-accordion",
     "components": [
       "title"
     ]
