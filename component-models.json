@@ -388,7 +388,7 @@
       },
       {
         "component": "text",
-        "name": "title",
+        "name": "imageTitle",
         "label": "imageTitle",
         "valueType": "string"
       },
