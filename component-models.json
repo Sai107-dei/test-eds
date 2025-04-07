@@ -5374,7 +5374,7 @@
         "component": "number",
         "valueType": "number",
         "name": "field1",
-        "label": "Cards",
+        "label": "Cards Count",
         "description": "Number of cards to be displayed.",
         "required": true,
         "placeholder": null,
