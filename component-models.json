@@ -5374,14 +5374,14 @@
         "component": "number",
         "valueType": "number",
         "name": "field1",
-        "label": "Number Field",
-        "description": "This is a number field.",
+        "label": "Cards",
+        "description": "Number of cards to be displayed.",
         "required": true,
         "placeholder": null,
         "validation": {
           "numberMin": 0,
-          "numberMax": 3,
-          "customErrorMsg": "You also need 1.21 gigawatts."
+          "numberMax": 4,
+          "customErrorMsg": "Max value is 4"
         }
       },
       {
