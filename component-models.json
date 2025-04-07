@@ -387,6 +387,12 @@
         "required": true
       },
       {
+        "component": "text",
+        "name": "title",
+        "label": "imageTitle",
+        "valueType": "string"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
