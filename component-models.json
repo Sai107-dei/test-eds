@@ -5400,14 +5400,6 @@
         "description": "Enable Overlay video for the Primary Hero"
       },
       {
-        "component": "reference",
-        "valueType": "string",
-        "name": "BackgroundImage",
-        "label": "Background Image",
-        "description": "Upload Image for the Primary Hero",
-        "required": true
-      },
-      {
         "component": "text",
         "valueType": "string",
         "name": "Image Alt",
