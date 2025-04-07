@@ -27,7 +27,8 @@
   {
     "id": "columns",
     "components": [
-      "column"
+      "column",
+      "text"
     ]
   },
   {
