@@ -23,30 +23,21 @@
         "name": "picker",
         "label": "Content Fragment Picker",
         "valueType": "string",
-        "variationName": "contentFragmentVariation",
-        "validation": {
-            "rootPath": "/content/"
-        }
+        "variationName": "contentFragmentVariation"
       },
       {
         "component": "aem-content",
         "name": "reference",
         "value": "",
         "label": "AEM Content Picker",
-        "valueType": "string",
-        "validation": {
-              "rootPath": "/content/"
-          }
+        "valueType": "string"
       },
       {
         "component": "aem-experience-fragment",
         "valueType": "string",
         "name": "experience-fragment",
         "label": "experience-fragment",
-        "variationName": "experienceFragmentVariation",
-        "validation": {
-            "rootPath": "/content/"
-        }
+        "variationName": "experienceFragmentVariation"
       }
     ]     
   },
