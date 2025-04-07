@@ -381,8 +381,8 @@
       },
       {
         "component": "richtext",
-        "name": "rte",
-        "label": "Rich Text",
+        "name": "text",
+        "label": "Description",
         "valueType": "string",
         "required": true
       },
@@ -5392,9 +5392,8 @@
     "fields": [
       {
         "component": "richtext",
-        "name": "rte",
+        "name": "description",
         "label": "Description",
-        "valueType": "string",
         "required": true,
         "description": "Enter description for additional context which can have styling such as Bold, italics and  ability to add text links."
       }
