@@ -376,35 +376,35 @@
     "id": "icongrid-item",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
+        "component": "reference",
         "valueType": "string",
-        "required": true
+        "name": "image",
+        "label": "Icon/Logo",
+        "required": true,
+        "description": "Upload icon for the Icon Grid"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "description": "Add Image Alternate Text"
       },
       {
         "component": "richtext",
         "name": "text",
-        "label": "Description",
+        "label": "Icon Title",
         "valueType": "string",
+        "description": "Enter title for the Icon Grid",
         "required": true
       },
       {
-        "component": "text",
-        "name": "imageTitle",
-        "label": "imageTitle",
-        "valueType": "string"
-      },
-      {
-        "component": "reference",
+        "component": "richtext",
+        "name": "description",
+        "label": "Icon Description",
         "valueType": "string",
-        "name": "image",
-        "label": "Image"
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Alt Text"
+        "description": "Enter Description for the Icon Grid",
+        "required": true
       }
     ]
   },
