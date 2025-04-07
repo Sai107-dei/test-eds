@@ -43,8 +43,7 @@
     "id": "icon-grid",
     "components": [
       "title",
-      "icongrid-component",
-      "card-accordion"
+      "icongrid-component"
     ]
   },
   {
