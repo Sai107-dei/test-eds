@@ -181,25 +181,6 @@
     ]
   },
   {
-    "id": "columns1",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "columns",
-        "value": "",
-        "label": "Columns"
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "rows",
-        "value": "",
-        "label": "Rows"
-      }
-    ]
-  },
-  {
     "id": "fragment",
     "fields": [
       {
@@ -235,7 +216,15 @@
         "label": "Background Video",
         "name": "BackgroundVideo",
         "description": "Upload video for the Primary Hero",
-        "required": true
+        "required": true,
+        "condition": {
+          "===": [
+            {
+              "var": "PrimarybackgroundType"
+            },
+            "videoSlide"
+          ]
+        }
       },
       {
         "component": "boolean",
@@ -351,7 +340,7 @@
     ]
   },
   {
-    "id": "cards-accordion",
+    "id": "accordion",
     "fields": [
       {
         "component": "text",
@@ -384,7 +373,7 @@
     ]
   },
   {
-    "id": "card-accordion",
+    "id": "accordion-item",
     "fields": [
       {
         "component": "text",
@@ -5383,91 +5372,6 @@
         "valueType": "string",
         "required": true,
         "description": "Enter description for additional context which can have styling such as Bold, italics and  ability to add text links."
-      }
-    ]
-  },
-  {
-    "id": "icon-grid",
-    "fields": [
-      {
-        "component": "number",
-        "valueType": "number",
-        "name": "field1",
-        "label": "Cards Count",
-        "description": "Number of cards to be displayed.",
-        "required": true,
-        "placeholder": null,
-        "validation": {
-          "numberMin": 0,
-          "numberMax": 4,
-          "customErrorMsg": "Max value is 4"
-        }
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "label": "Background Video",
-        "name": "BackgroundVideo",
-        "description": "Upload video for the Primary Hero",
-        "required": true
-      },
-      {
-        "component": "boolean",
-        "label": "Enable Overlay?",
-        "name": "EnableOverlay",
-        "valueType": "boolean",
-        "description": "Enable Overlay video for the Primary Hero"
-      },
-      {
-        "component": "text",
-        "name": "text",
-        "label": "Title",
-        "required": true,
-        "valueType": "string",
-        "description": "Enter main heading for the Primary Hero"
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string",
-        "description": "Enter description for additional context"
-      }
-    ]
-  },
-  {
-    "id": "icongrid-component",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Icon/Logo",
-        "required": true,
-        "description": "Upload icon for the Icon Grid"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt Text",
-        "description": "Add Image Alternate Text"
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "label": "Icon Title",
-        "valueType": "string",
-        "description": "Enter title for the Icon Grid",
-        "required": true
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Icon Description",
-        "valueType": "string",
-        "description": "Enter Description for the Icon Grid",
-        "required": true
       }
     ]
   },

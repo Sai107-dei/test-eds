@@ -14,10 +14,8 @@
       "title",
       "hero",
       "cards",
-      "cards-accordion",
-      "icon-grid",
+      "accordion",
       "columns",
-      "columns1",
       "fragment",
       "sus10",
       "infobanner",
@@ -35,23 +33,15 @@
     ]
   },
   {
-    "id": "cards-accordion",
+    "id": "accordion",
     "components": [
-      "card-accordion"
-    ]
-  },
-  {
-    "id": "icon-grid",
-    "components": [
-      "title",
-      "icongrid-component"
+      "accordion-item"
     ]
   },
   {
     "id": "columns",
     "components": [
-      "column",
-      "columns1"
+      "column"
     ]
   },
   {
@@ -61,8 +51,7 @@
       "image",
       "button",
       "title",
-      "columns",
-      "columns1"
+      "columns"
     ]
   },
   {

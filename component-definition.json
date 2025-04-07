@@ -113,62 +113,31 @@
           }
         },
         {
-          "title": "CardsAccordion",
-          "id": "cards-accordion",
+          "title": "Accordion",
+          "id": "accordion",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "Cards-accordion",
-                  "model": "cards-accordion",
-                  "filter": "cards-accordion"
+                  "name": "Accordion",
+                  "model": "accordion",
+                  "filter": "accordion"
                 }
               }
             }
           }
         },
         {
-          "title": "IconGrid",
-          "id": "icon-grid",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Icon-grid",
-                  "model": "icon-grid",
-                  "filter": "icon-grid"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "IcongridComponent",
-          "id": "icongrid-component",
+          "title": "Accordion-Item",
+          "id": "accordion-item",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
-                  "name": "Icongrid-Component",
-                  "model": "icongrid-component"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "CardAccordion",
-          "id": "card-accordion",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Card-Accordion",
-                  "model": "card-accordion"
+                  "name": "Accordion-Item",
+                  "model": "accordion-item"
                 }
               }
             }
@@ -265,21 +234,6 @@
           }
         },
         {
-          "title": "Accordion",
-          "id": "accordion",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Accordion",
-                  "model": "accordion"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Carousel",
           "id": "carousel",
           "plugins": {
@@ -334,21 +288,6 @@
                 "template": {
                   "name": "text-component",
                   "model": "text-component"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Columns1",
-          "id": "columns1",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/columns/v1/columns",
-                "template": {
-                  "columns1": "2",
-                  "rows": "1"
                 }
               }
             }
