@@ -16,6 +16,41 @@
     ]
   },
   {
+    "id": "testcf",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string",
+        "variationName": "contentFragmentVariation",
+        "validation": {
+            "rootPath": "/content/"
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "value": "",
+        "label": "AEM Content Picker",
+        "valueType": "string",
+        "validation": {
+              "rootPath": "/content/refresh"
+          }
+      },
+      {
+        "component": "aem-experience-fragment",
+        "valueType": "string",
+        "name": "experience-fragment",
+        "label": "experience-fragment",
+        "variationName": "experienceFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
+      }
+    ]     
+  },
+  {
     "id": "title",
     "fields": [
       {
@@ -385,7 +420,7 @@
         "condition": {
           "===": [
             {
-              "var": "icongrid/EnableOverlay"
+              "var": "icongrid/EnableOverlay]"
             },
             "true"
           ]
