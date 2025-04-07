@@ -23,7 +23,8 @@
       "primary-header",
       "kalthuravideo",
       "text-component",
-      "teaser"
+      "teaser",
+      "icon-grid"
     ]
   },
   {
@@ -36,6 +37,12 @@
     "id": "accordion",
     "components": [
       "accordion-item"
+    ]
+  },
+  {
+    "id": "icon-grid",
+    "components": [
+      "icongrid-component"
     ]
   },
   {
