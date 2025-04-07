@@ -14,28 +14,14 @@
       "title",
       "hero",
       "cards",
-      "accordion",
       "columns",
-      "fragment",
-      "sus10",
-      "infobanner",
-      "carousel",
-      "primary-header",
-      "kalthuravideo",
-      "text-component",
-      "teaser"
+      "fragment"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
-    ]
-  },
-  {
-    "id": "accordion",
-    "components": [
-      "accordion-item"
     ]
   },
   {
@@ -50,35 +36,7 @@
       "text",
       "image",
       "button",
-      "title",
-      "columns"
-    ]
-  },
-  {
-    "id": "infobanner",
-    "components": [
-      "infoitem"
-    ]
-  },
-  {
-    "id": "carousel",
-    "components": [
-      "text",
-      "image",
-      "button",
       "title"
-    ]
-  },
-  {
-    "id": "kalthuravideo",
-    "components": [
-      "text"
-    ]
-  },
-  {
-    "id": "text-component",
-    "components": [
-      "text"
     ]
   }
 ]
