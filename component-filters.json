@@ -15,6 +15,7 @@
       "hero",
       "cards",
       "cards-accordion",
+      "icon-grid",
       "columns",
       "fragment",
       "sus10",
@@ -34,6 +35,12 @@
   },
   {
     "id": "cards-accordion",
+    "components": [
+      "card-accordion"
+    ]
+  },
+  {
+    "id": "icon-grid",
     "components": [
       "card-accordion"
     ]
