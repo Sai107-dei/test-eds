@@ -1,5 +1,240 @@
-footer .footer > div {
-    margin: auto;
-    max-width: 1200px;
-    padding: 40px 24px 24px;
+ul {
+  list-style: none;
+  padding: 0 175px; /* Adds 175px padding on left and right */
+  margin: 0;
+}
+
+.title {
+  width: 380px;
+  flex-shrink: 0;
+  pointer-events: none; /* Disables cursor interaction */
+  cursor: default; /* Ensures the cursor does not change */
+}
+.description ul {
+  list-style: disc;
+  padding-left: 0; /* Optional: Adds indentation for the list */
+  padding-right: 0;
+}
+.itemContainer {
+  border-top: 2px solid #c5c5c5; /* Adds a 1px thick top border */
+}
+
+.itemContainer.active {
+  border-top: 2px solid #191919; /* Changes border-top color when active */
+  transition: border-top-color 0.5s ease, background-color 0.5s ease; /* Adds smooth transition for border-top and background color */
+}
+
+.itemContainer:not(.active) {
+  border-top: 2px solid #c5c5c5; /* Reverts border-top color when not active */
+  transition: border-top-color 0.5s ease; /* Adds smooth transition for border-top color */
+}
+
+.p {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  margin-inline-start: 0 !important;
+  margin-inline-end: 0 !important;
+}
+.items {
+  padding: 32px 0;
+  gap: 32px;
+  display: flex;
+  align-items: start; /* Ensures spans inside start from the same horizontal line */
+}
+p {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+}
+
+.title p {
+  color: var(--Color-Neutral-100, #191919);
+  /* Desktop/Ringside/Body/L */
+  font-family: Ringside;
+  font-family: var(--Typography-Font-Family-Ringside-Extra-Wide, "Ringside");
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 28.8px */
+}
+
+/* Hover Functionality with Smooth Transition */
+.itemContainer:hover .icon path:first-child,
+.itemContainer:hover .title ~ .icon path:first-child,
+.icon:hover path:first-child,
+.title:hover ~ .icon path:first-child {
+stroke: black;
+fill: black;
+transition: stroke 0.5s ease, fill 0.3s ease; /* Adds smooth transition */
+}
+.itemContainer:hover .icon path:last-child,
+.itemContainer:hover .title ~ .icon path:last-child,
+.icon:hover path:last-child,
+.title:hover ~ .icon path:last-child {
+stroke: white;
+transition: stroke 0.5s ease; /* Adds smooth transition */
+}
+
+/* Change Icon Arrow up on Active state */
+.itemContainer.active .icon path:first-child {
+  stroke: black; /* Change the stroke color of the SVG */
+  fill: black; /* Change the fill color of the SVG */
+  pointer-events: none; /* Disable hover functionality */
+  transition: stroke 0.5s ease, fill 0.5s ease; /* Changes transition to ease-in for opposite direction */
+}
+.itemContainer.active .icon path:last-child {
+  stroke: white;
+  transform: rotate(180deg);
+  transform-origin: center;
+  transition: transform 0.5s ease, stroke 0.5s ease; /* Adds smooth transition */
+}
+.itemContainer:not(.active) .icon path:last-child {
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition: transform 0.5s ease, stroke 0.5s ease; /* Adds smooth transition when exiting active state */
+}
+/* Disable hover on Active state */
+.itemContainer.active:hover .icon path,
+.itemContainer.active:hover .title ~ .icon path {
+  pointer-events: none; /* Disable hover functionality on active state */
+}
+
+.description {
+  max-width: 580px;
+  flex-grow: 1;
+  width: 100%;
+  padding-right: 36px;
+}
+.description ul {
+  display: flex;
+  flex-direction: column; /* Aligns items in a column */
+}
+.description ul li {
+  width: 100% !important;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-left: auto; /* Pushes the icon to the end of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon svg {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.5s ease; /* Adds smooth transition for rotation */
+}
+
+.description p {
+  color: var(--Color-Neutral-100, #191919);
+  /* Desktop/Ringside/Body/S (Book) */
+  font-family: Ringside;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+
+.description ul li {
+  color: var(--Color-Neutral-100, #191919);
+  /* Desktop/Ringside/Body/S (Book) */
+  font-family: Ringside;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  padding-bottom: 32px;
+  pointer-events: none; /* Disables cursor interaction */
+  cursor: default; /* Ensures the cursor does not change */
+}
+
+.image picture img {
+  border-radius: 43.308px;
+  background: url(<path-to-image>) lightgray 5.073px -71.391px / 98.943% 109.213%
+      no-repeat;
+}
+
+
+
+@media (max-width: 768px) {
+  ul {
+      padding: 0; /* Reduce padding for smaller screens */
   }
+
+  .cards .title {
+      width: 280px; /* Allow title to take full width */
+  }
+
+  .description {
+    width: 100%;
+    order:1;
+  }
+  .description ul {
+    padding-left: 16px;
+      padding-right: 16px;
+  }
+
+  .items {
+padding: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:8px;
+}
+.icon span{
+height: 24px;
+width: 24px;
+}
+
+
+  .icon {
+      width: 24px;
+      height: 24px; /* Reduce icon size */
+  }
+
+  .icon svg {
+      width: 24px;
+      height: 24px; /* Match reduced icon size */
+  }
+
+  .image {
+      max-width: 100%; /* Ensure image fits within screen */
+      padding-bottom: 16px; /* Adjust padding */
+  }
+
+  .description {
+    padding-top: 12px;
+    flex-direction: column; /* Ensure list items stack vertically */
+    padding-right: 0; /* Set padding-right to 0 */
+}
+  .description ul {
+      flex-direction: column; /* Ensure list items stack vertically */
+  }
+
+  .description ul li {
+      font-size: 14px; /* Reduce font size for list items */
+      line-height: 130%; /* Adjust line height */
+  }
+
+  .description p {
+      font-size: 14px; /* Reduce font size for paragraphs */
+      line-height: 130%; /* Adjust line height */
+  }
+  main > .section > div {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 16px;
+  }
+
+}
