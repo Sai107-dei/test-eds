@@ -194,18 +194,21 @@
     "id": "hero",
     "fields": [
       {
-        "component": "number",
-        "valueType": "number",
-        "name": "field1",
-        "label": "Number Field",
-        "description": "This is a number field.",
+        "component": "select",
+        "name": "PrimarybackgroundType",
+        "label": "Primary Background Type",
+        "description": "Selct Background Type Primary Hero",
         "required": true,
-        "placeholder": null,
-        "validation": {
-          "numberMin": 0,
-          "numberMax": 3,
-          "customErrorMsg": "Limit exceeded."
-        }
+        "options": [
+          {
+            "name": "Image",
+            "value": "imageSlide"
+          },
+          {
+            "name": "Video",
+            "value": "videoSlide"
+          }
+        ]
       },
       {
         "component": "text",
@@ -220,7 +223,15 @@
         "label": "Enable Overlay?",
         "name": "EnableOverlay",
         "valueType": "boolean",
-        "description": "Enable Overlay video for the Primary Hero"
+        "description": "Enable Overlay video for the Primary Hero",
+        "condition": {
+          "===": [
+            {
+              "var": "PrimarybackgroundType"
+            },
+            "videoSlide"
+          ]
+        }
       },
       {
         "component": "reference",
@@ -228,7 +239,15 @@
         "name": "BackgroundImage",
         "label": "Background Image",
         "description": "Upload Image for the Primary Hero",
-        "required": true
+        "required": true,
+        "condition": {
+          "===": [
+            {
+              "var": "PrimarybackgroundType"
+            },
+            "imageSlide"
+          ]
+        }
       },
       {
         "component": "text",
@@ -5352,21 +5371,18 @@
     "id": "icon-grid",
     "fields": [
       {
-        "component": "select",
-        "name": "PrimarybackgroundType",
-        "label": "Primary Background Type",
-        "description": "Selct Background Type Primary Hero",
+        "component": "number",
+        "valueType": "number",
+        "name": "field1",
+        "label": "Number Field",
+        "description": "This is a number field.",
         "required": true,
-        "options": [
-          {
-            "name": "Image",
-            "value": "imageSlide"
-          },
-          {
-            "name": "Video",
-            "value": "videoSlide"
-          }
-        ]
+        "placeholder": null,
+        "validation": {
+          "numberMin": 0,
+          "numberMax": 3,
+          "customErrorMsg": "You also need 1.21 gigawatts."
+        }
       },
       {
         "component": "text",
@@ -5374,30 +5390,14 @@
         "label": "Background Video",
         "name": "BackgroundVideo",
         "description": "Upload video for the Primary Hero",
-        "required": true,
-        "condition": {
-          "===": [
-            {
-              "var": "PrimarybackgroundType"
-            },
-            "videoSlide"
-          ]
-        }
+        "required": true
       },
       {
         "component": "boolean",
         "label": "Enable Overlay?",
         "name": "EnableOverlay",
         "valueType": "boolean",
-        "description": "Enable Overlay video for the Primary Hero",
-        "condition": {
-          "===": [
-            {
-              "var": "PrimarybackgroundType"
-            },
-            "videoSlide"
-          ]
-        }
+        "description": "Enable Overlay video for the Primary Hero"
       },
       {
         "component": "reference",
@@ -5405,30 +5405,14 @@
         "name": "BackgroundImage",
         "label": "Background Image",
         "description": "Upload Image for the Primary Hero",
-        "required": true,
-        "condition": {
-          "===": [
-            {
-              "var": "PrimarybackgroundType"
-            },
-            "imageSlide"
-          ]
-        }
+        "required": true
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "Image Alt",
         "label": "Image Alt Text",
-        "description": "Add Alt Text for Image Primary Hero",
-        "condition": {
-          "===": [
-            {
-              "var": "PrimarybackgroundType"
-            },
-            "imageSlide"
-          ]
-        }
+        "description": "Add Alt Text for Image Primary Hero"
       },
       {
         "component": "text",
