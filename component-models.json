@@ -381,7 +381,15 @@
         "name": "image",
         "label": "Icon/Logo",
         "required": true,
-        "description": "Upload icon for the Icon Grid"
+        "description": "Upload icon for the Icon Grid",
+        "condition": {
+          "===": [
+            {
+              "var": "EnableOverlay"
+            },
+            "true"
+          ]
+        }
       },
       {
         "component": "text",
@@ -448,6 +456,7 @@
     "id": "icongrid",
     "fields": [
       {
+        
         "component": "select",
         "name": "PrimarybackgroundType",
         "label": "Primary Background Type",
