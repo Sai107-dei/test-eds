@@ -5432,6 +5432,18 @@
     ]
   },
   {
+    "id": "icongrid-component",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string",
+        "required": true
+      }
+    ]
+  },
+  {
     "id": "teaser",
     "fields": [
       {

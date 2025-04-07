@@ -145,6 +145,21 @@
           }
         },
         {
+          "title": "IcongridComponent",
+          "id": "icongrid-component",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Icongrid-Component",
+                  "model": "icongrid-component"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "CardAccordion",
           "id": "card-accordion",
           "plugins": {
