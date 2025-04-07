@@ -385,7 +385,7 @@
         "condition": {
           "===": [
             {
-              "var": "icongrid[EnableOverlay]"
+              "var": "icongrid/EnableOverlay"
             },
             "true"
           ]
