@@ -137,8 +137,7 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Card-Accordion",
-                  "model": "card-accordion",
-                  "filter": "card-accordion"
+                  "model": "card-accordion"
                 }
               }
             }
