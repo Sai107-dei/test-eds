@@ -180,6 +180,25 @@
     ]
   },
   {
+    "id": "column",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "value": "",
+        "label": "Columns1"
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "rows",
+        "value": "",
+        "label": "Rows1"
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
