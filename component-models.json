@@ -35,7 +35,7 @@
         "label": "AEM Content Picker",
         "valueType": "string",
         "validation": {
-              "rootPath": "/content/refresh"
+              "rootPath": "/content/"
           }
       },
       {
@@ -45,7 +45,7 @@
         "label": "experience-fragment",
         "variationName": "experienceFragmentVariation",
         "validation": {
-            "rootPath": "/content/refresh"
+            "rootPath": "/content/"
         }
       }
     ]     
