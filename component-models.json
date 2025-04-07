@@ -5476,7 +5476,7 @@
   },
 
   {
-    "id": "icon-grid",
+    "id": "icongrid-component",
     "fields": [
       {
         "component": "text",
