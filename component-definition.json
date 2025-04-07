@@ -138,7 +138,7 @@
                 "template": {
                   "name": "Card-Accordion",
                   "model": "card-accordion",
-                  "filter": "cards-accordion"
+                  "filter": "card-accordion"
                 }
               }
             }
