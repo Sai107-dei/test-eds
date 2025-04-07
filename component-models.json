@@ -343,28 +343,10 @@
     "id": "accordion",
     "fields": [
       {
-        "component": "container",
-        "label": "Cta 2",
-        "name": "slide1Cta2",
-        "valueType": "string",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "text",
-            "name": "slide1Link2",
-            "label": "Button Link"
-          },
-          {
-            "component": "text",
-            "name": "slide1LinkText2",
-            "label": "Button Text"
-          },
-          {
-            "component": "text",
-            "name": "slide1LinkTitle2",
-            "label": "Button Title"
-          }
-        ]
+        "component": "text",
+        "name": "accordiontitle",
+        "label": "Accordion Title",
+        "description": "Enter title for the entire Accordion Block"
       }
     ]
   },
