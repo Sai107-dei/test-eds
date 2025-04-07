@@ -381,11 +381,11 @@
         "name": "image",
         "label": "Icon/Logo",
         "required": true,
-        "description": "Upload icon for the Icon Grid",
+        "description": "Upload icon for the Icon Grid1",
         "condition": {
           "===": [
             {
-              "var": "EnableOverlay"
+              "var": "icongrid[EnableOverlay]"
             },
             "true"
           ]
