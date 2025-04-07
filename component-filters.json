@@ -42,6 +42,7 @@
   {
     "id": "icon-grid",
     "components": [
+      "title",
       "card-accordion"
     ]
   },
