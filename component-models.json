@@ -5401,13 +5401,6 @@
       },
       {
         "component": "text",
-        "valueType": "string",
-        "name": "Image Alt",
-        "label": "Image Alt Text",
-        "description": "Add Alt Text for Image Primary Hero"
-      },
-      {
-        "component": "text",
         "name": "text",
         "label": "Title",
         "required": true,
