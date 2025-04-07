@@ -17,6 +17,7 @@
       "cards-accordion",
       "icon-grid",
       "columns",
+      "columns1",
       "fragment",
       "sus10",
       "infobanner",
@@ -49,7 +50,8 @@
   {
     "id": "columns",
     "components": [
-      "column"
+      "column",
+      "columns1"
     ]
   },
   {
