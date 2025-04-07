@@ -373,6 +373,17 @@
     ]
   },
   {
+    "id": "icon-grid",
+    "fields": [
+      {
+        "component": "text",
+        "name": "accordiontitle",
+        "label": "Accordion Title",
+        "description": "Enter title for the entire Accordion Block"
+      }
+    ]
+  },
+  {
     "id": "card-accordion",
     "fields": [
       {
