@@ -16,25 +16,14 @@
             }
           }
         },
-          {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/text/v1/text",
-                "template": {}
-              }
-            }
-          }
-        },
+        
         {
           "title": "Title",
           "id": "title",
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "cq/gui/components/authoring/dialog/richtext",
+                "resourceType": "core/franklin/components/title/v1/title",
                 "template": {
                   "model": "title"
                 }
