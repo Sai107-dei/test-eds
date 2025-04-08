@@ -407,15 +407,7 @@
         "name": "image",
         "label": "Icon/Logo",
         "required": true,
-        "description": "Upload icon for the Icon Grid1",
-        "condition": {
-          "===": [
-            {
-              "var": "icongrid/EnableOverlay]"
-            },
-            "true"
-          ]
-        }
+        "description": "Upload icon for the Icon Grid1"
       },
       {
         "component": "text",
