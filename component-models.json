@@ -18,28 +18,21 @@
   {
     "id": "testcf",
     "fields": [
-      {
-        "component": "aem-content-fragment",
-        "name": "picker",
-        "label": "Content Fragment Picker",
-        "valueType": "string",
-        "variationName": "contentFragmentVariation"
-      },
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "value": "",
-        "label": "AEM Content Picker",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-experience-fragment",
-        "valueType": "string",
-        "name": "experience-fragment",
-        "label": "experience-fragment",
-        "variationName": "experienceFragmentVariation"
+   {
+      "component": "number",
+      "valueType": "number",
+      "name": "field1",
+      "label": "Number Field",
+      "description": "This is a number field.",
+      "required": true,
+      "placeholder": null,
+      "validation": {
+        "numberMin": 0,
+        "numberMax": 88,
+        "customErrorMsg": "You also need 1.21 gigawatts."
       }
-    ]     
+    }
+  ]    
   },
   {
     "id": "title",
