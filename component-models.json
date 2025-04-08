@@ -260,7 +260,7 @@
         }
       },
       {
-        "component": "text-input",
+      "component": "text-input",
       "valueType": "string",
       "name": "text",
       "label": "Overlay Text",
