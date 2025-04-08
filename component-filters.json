@@ -42,6 +42,13 @@
   },
 
   {
+    "id": "hero",
+    "components": [
+      "icongrid-item"
+    ]
+  },
+
+  {
     "id": "icongrid",
     "components": [
       "icongrid-item"
