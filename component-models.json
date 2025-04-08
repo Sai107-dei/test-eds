@@ -264,6 +264,7 @@
       "valueType": "string",
       "name": "text-input",
       "label": "Overlay Text",
+      "required": true,
       "condition": {
           "===": [
             {
