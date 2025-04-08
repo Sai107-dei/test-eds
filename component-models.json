@@ -26,8 +26,8 @@
         "required" : true,
         "validation": {
           "minSize": 0,
-          "maxSize": 2,
-          "customErrorMsg": "That's about as funny as a screen door on a battleship."
+          "maxSize": 1,
+          "customErrorMsg": "charcter size limit exceeded."
         }
       }
     
