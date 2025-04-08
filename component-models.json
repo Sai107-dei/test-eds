@@ -277,7 +277,7 @@
   {
     "component": "richtext",
     "name": "rte",
-    "label": "Rich Text",
+    "label": "Rich Text123",
     "valueType": "string",
     "validation": {
       "maxSize": 1000,
