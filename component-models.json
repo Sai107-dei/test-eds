@@ -273,29 +273,20 @@
   },
   {
     "id": "hero",
-  "fields": [
+ "fields": [
     {
-      "component": "container",
-      "label": "Container",
-      "name": "container",
+      "component": "text",
+      "name": "text",
+      "label": "Simple Text",
       "valueType": "string",
-      "collapsible": true,
-      "minItem" : 1,
-      "maxItem" : 1,
-      "fields": [
-        {
-          "component": "text-input",
-          "label": "Simple Text 1",
-          "name": "text",
-          "valueType": "string"
-        },
-        {
-          "component": "text-input",
-          "label": "Simple Text 2",
-          "name": "text2",
-          "valueType": "string"
-        }
-      ]
+      "description": "This is a text input with validation.",
+      "required": true,
+      "validation": {
+        "minLength": 0,
+        "maxLength": 2,
+        "regExp": "^foo:.*",
+        "customErrorMsg": "Why don't you make like a tree and get outta here?"
+      }
     }
   ]
   },
