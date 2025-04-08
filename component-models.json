@@ -260,6 +260,20 @@
         }
       },
       {
+        "component": "text-input",
+      "valueType": "string",
+      "name": "text",
+      "label": "Overlay Text",
+      "condition": {
+          "===": [
+            {
+              "var": "EnableOverlay"
+            },
+            "true"
+          ]
+        }
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "BackgroundImage",
