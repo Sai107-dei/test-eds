@@ -19,37 +19,18 @@
     "id": "testcf",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Title"
-      },
-      {
-        "component": "text-input",
+        "component": "richtext",
+        "name": "rte",
+        "label": "Rich Text",
         "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
-      },
-      {
-        "component": "text-area",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }{
-        "component": "text-input",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
-      },
-      {
-        "component": "text-area",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "required" : true,
+        "validation": {
+          "minSize": 0,
+          "maxSize": 1,
+          "customErrorMsg": "charcter size limit exceeded."
+        }
       }
+    
   ]    
   },
   {
