@@ -2,8 +2,10 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
+  block.innerHTML = `<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>`;
   /* change to ul, li */
   const ul = document.createElement('ul');
+
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
     moveInstrumentation(row, li);
