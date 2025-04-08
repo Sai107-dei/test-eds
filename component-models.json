@@ -263,7 +263,7 @@
       "component": "text-input",
       "valueType": "string",
       "name": "text-input",
-      "label": "Overlay Text",
+      "label": "Overlay Title",
       "required": true,
       "condition": {
           "===": [
