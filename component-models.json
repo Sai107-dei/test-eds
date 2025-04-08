@@ -24,7 +24,7 @@
         "label": "Rich Text",
         "valueType": "string",
         "validation": {
-          "maxSize": 1000,
+          "maxSize": 5,
           "customErrorMsg": "That's about as funny as a screen door on a battleship."
         }
       },
