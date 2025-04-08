@@ -269,7 +269,7 @@
             {
               "var": "EnableOverlay"
             },
-            "true"
+            true
           ]
         }
       },
