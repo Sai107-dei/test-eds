@@ -23,16 +23,14 @@
         "name": "rte",
         "label": "Rich Text",
         "valueType": "string",
+        "required" : true,
         "validation": {
-          "maxSize": 5,
+          "minSize": 0,
+          "maxSize": 2,
           "customErrorMsg": "That's about as funny as a screen door on a battleship."
         }
-      },
-    {
-      "component": "text",
-      "name": "title",
-      "label": "Title"
-    }
+      }
+    
   ]    
   },
   {
