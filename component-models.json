@@ -281,7 +281,8 @@
       "valueType": "string",
       "collapsible": true,
       "meta": {
-        "maxItems" : 1
+        "allowedComponents":[{"max" : 1,"component": "icongrid-tile","label"  : "Icon Grid Tile"}]
+        
       },
       "fields": [
         {
