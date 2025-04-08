@@ -16,6 +16,20 @@
             }
           }
         },
+        {
+          "title": "Richtext",
+          "id": "richtext",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "cq/gui/components/authoring/dialog/richtext",
+                "template": {
+                  "model": "richtext"
+                }
+              }
+            }
+          }
+        },
         
         {
           "title": "Title",

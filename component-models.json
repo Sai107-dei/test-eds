@@ -95,6 +95,17 @@
       }
     ]
   },
+
+  {
+    "id": "richtext",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "title",
+        "label": "Title"
+      }
+    ]
+  },
   {
     "id": "button",
     "fields": [
