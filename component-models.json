@@ -31,6 +31,11 @@
         "numberMax": 88,
         "customErrorMsg": "You also need 1.21 gigawatts."
       }
+    },
+    {
+      "component": "text",
+      "name": "title",
+      "label": "Title"
     }
   ]    
   },
