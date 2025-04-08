@@ -274,20 +274,16 @@
   {
     "id": "hero",
  "fields": [
-    {
-      "component": "richtext",
-      "name": "rte",
-      "label": "Simple Text",
-      "valueType": "string",
-      "description": "This is a text input with validation.",
-      "required": true,
-      "validation": {
-        "minLength": 0,
-        "maxLength": 2,
-        "regExp": "^foo:.*",
-        "customErrorMsg": "Why don't you make like a tree and get outta here?"
-      }
+  {
+    "component": "richtext",
+    "name": "rte",
+    "label": "Rich Text",
+    "valueType": "string",
+    "validation": {
+      "maxSize": 1000,
+      "customErrorMsg": "That's about as funny as a screen door on a battleship."
     }
+  }
   ]
   },
   {
