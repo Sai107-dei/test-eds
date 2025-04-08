@@ -280,8 +280,8 @@
       "name": "container",
       "valueType": "string",
       "collapsible": true,
-      "minItems" : 1,
-      "maxItems" : 1,
+      "minItem" : 1,
+      "maxItem" : 1,
       "fields": [
         {
           "component": "text-input",
