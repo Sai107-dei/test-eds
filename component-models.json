@@ -280,7 +280,8 @@
     "label": "Rich Text",
     "valueType": "string",
     "validation": {
-      "maxSize": 1,
+    "minLength": 0,
+        "maxLength": 2,
       "customErrorMsg": "That's about as funny as a screen door on a battleship."
     }
   }
