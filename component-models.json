@@ -277,10 +277,10 @@
   {
     "component": "richtext",
     "name": "rte",
-    "label": "Rich Text1",
+    "label": "Rich Text",
     "valueType": "string",
     "validation": {
-      "maxSize": 2,
+      "maxSize": 1,
       "customErrorMsg": "That's about as funny as a screen door on a battleship."
     }
   }
