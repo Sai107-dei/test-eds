@@ -278,7 +278,7 @@
         "component": "select",
         "name": "PrimarybackgroundType",
         "label": "Primary Background Type",
-        "description": "Selct Background Type Primary Hero",
+        "description": "Selct Background Type Primary Hero1",
         "required": true,
         "options": [
           {
