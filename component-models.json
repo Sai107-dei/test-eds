@@ -278,7 +278,7 @@
         "component": "select",
         "name": "PrimarybackgroundType",
         "label": "Primary Background Type",
-        "description": "Selct Background Type Primary Hero1",
+        "description": "Selct Background Type Primary Hero",
         "required": true,
         "options": [
           {
@@ -309,10 +309,10 @@
       },
       {
         "component": "boolean",
-        "label": "Enable Overlay?",
+        "label": "Enable Hero Overlay",
         "name": "EnableOverlay",
         "valueType": "boolean",
-        "description": "Enable Overlay video for the Primary Hero",
+        "description": "Select this checkbox to enable overlay",
         "condition": {
           "===": [
             {
