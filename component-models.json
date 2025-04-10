@@ -401,22 +401,18 @@
         "valueType": "string",
         "name": "imageAlt",
         "label": "Alt Text",
-        "description": "Add Image Alternate Text",
-        "validation": {
-        "minLength": 0,
-        "maxLength": 2,
-        "regExp": "^foo:.*",
-        "customErrorMsg": "Why don't you make like a tree and get outta here?"
-      }
+        "description": "Add Image Alternate Text"
       },
       {
         "component": "richtext",
-        "name": "text",
-        "label": "Icon Title",
+        "name": "rte",
+        "label": "Rich Text",
         "valueType": "string",
-        "description": "Enter title for the Icon Grid",
-        "required": true
-      },
+        "validation": {
+          "maxSize": 2,
+          "customErrorMsg": "That's about as funny as a screen door on a battleship."
+        }
+      }
       {
         "component": "richtext",
         "name": "description",
