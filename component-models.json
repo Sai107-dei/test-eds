@@ -401,7 +401,13 @@
         "valueType": "string",
         "name": "imageAlt",
         "label": "Alt Text",
-        "description": "Add Image Alternate Text"
+        "description": "Add Image Alternate Text",
+        "validation": {
+        "minLength": 0,
+        "maxLength": 2,
+        "regExp": "^foo:.*",
+        "customErrorMsg": "Why don't you make like a tree and get outta here?"
+      }
       },
       {
         "component": "richtext",
