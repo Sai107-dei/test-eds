@@ -412,7 +412,7 @@
           "maxSize": 2,
           "customErrorMsg": "That's about as funny as a screen door on a battleship."
         }
-      }
+      },
       {
         "component": "richtext",
         "name": "description",
