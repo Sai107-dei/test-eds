@@ -517,20 +517,14 @@
         ]
       },
       {
-        "component": "checkbox-group",
+        "component": "checkbox",
         "name": "exitInterstitial",
         "valueType": "string",
         "options": [
           { "name": "Exit Interstitial", "value": "exitInterstitial" }
         ]
-      },
-      {
-        "component": "boolean",
-        "label": "Exit Interstitial",
-        "name": "exitInterstitial",
-        "valueType": "boolean",
-        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site"
       }
+      
     ]
   },
   {
