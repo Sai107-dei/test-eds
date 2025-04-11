@@ -518,11 +518,11 @@
       },
       {
         "component": "checkbox-group",
-        "label": "Checkbox Group",
-        "name": "checkbox",
+        "label": "Exit Interstitial",
+        "name": "exitInterstitial",
         "valueType": "string",
         "options": [
-          { "name": "Option 1", "value": "option1" }
+          { "name": "Exit Interstitial", "value": "exitInterstitial" }
         ]
       },
       {
