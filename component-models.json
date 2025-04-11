@@ -518,7 +518,6 @@
       },
       {
         "component": "checkbox-group",
-        "label": "Exit Interstitial",
         "name": "exitInterstitial",
         "valueType": "string",
         "options": [
