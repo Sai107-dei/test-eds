@@ -428,6 +428,48 @@
     "id": "text-component",
     "fields": [
       {
+        "component": "select",
+        "name": "alignment",
+        "label": "Alignment",
+        "description": "Select the alignment expected for entire block",
+        "value": "left",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "description": "Upload the icon image"
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Icon Alt text",
+        "valueType": "string",
+        "description": "Pick alt text from AEM DAM with ability to override it"
+      },
+      {
+        "component": "text",
+        "name": "eyebrowText",
+        "label": "Eyebrow Text",
+        "valueType": "string",
+        "description": "Enter the Eyebrow text"
+      },
+      {
         "component": "richtext",
         "name": "rte",
         "label": "Description",
