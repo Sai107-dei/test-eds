@@ -485,10 +485,43 @@
       },
       {
         "component": "text",
-        "name": "ctaLabe",
-        "label": "CTA Labe",
+        "name": "ctaLabel",
+        "label": "CTA Label",
         "valueType": "string",
         "description": "Enter label to display on the CTA"
+      },
+      {
+        "component": "aem-content",
+        "name": "CTA Link",
+        "label": "CTA Link",
+        "description": "EEnter the URL to navigate when CTA is clicked",
+        "validation": {
+          "rootPath": "/content/lilly-com-eds"
+        }
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ]
+      },
+      {
+        "component": "boolean",
+        "label": "Exit Interstitial",
+        "name": "exitInterstitial",
+        "valueType": "boolean",
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site"
       }
     ]
   },
