@@ -470,12 +470,25 @@
         "description": "Enter the Eyebrow text"
       },
       {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string",
+        "description": "Enter the Title"
+      },
+      {
         "component": "richtext",
         "name": "rte",
         "label": "Description",
         "valueType": "string",
-        "required": true,
         "description": "Enter description for additional context which can have styling such as Bold, italics and  ability to add text links."
+      },
+      {
+        "component": "text",
+        "name": "ctaLabe",
+        "label": "CTA Labe",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA"
       }
     ]
   },
