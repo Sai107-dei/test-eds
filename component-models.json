@@ -535,9 +535,16 @@
       {
         "component": "text",
         "name": "text",
-        "label": "Link Headline",
-        "description": "Enter display text for the quick link",
-        "required": true
+        "label": "Simple Text",
+        "valueType": "string",
+        "description": "This is a text input with validation.",
+        "required": true,
+        "validation": {
+          "minLength": 1955,
+          "maxLength": 1985,
+          "regExp": "^foo:.*",
+          "customErrorMsg": "Why don't you make like a tree and get outta here?"
+        }
       },
       {
         "component": "aem-content",
