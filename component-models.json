@@ -575,7 +575,7 @@
         "valueType": "string",
         "required": true,
         "options": [
-          { "name": "Option 123", "value": "option1" }
+          { "name": "Exit Interstitial", "value": "true" }
         ]
       }
     ]
