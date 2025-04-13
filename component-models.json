@@ -537,7 +537,7 @@
         "name": "text",
         "label": "Link Headline",
         "valueType": "string",
-        "description": "This is a text input with validatio",
+        "description": "Enter display text for the quick link",
         "required": true
       },
       {
