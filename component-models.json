@@ -572,10 +572,10 @@
         "component": "checkbox-group",
         "label": "Checkbox Group",
         "name": "checkbox",
-        "valueType": "string[]",
+        "valueType": "string",
         "required": true,
         "options": [
-          { "name": "Option 1", "value": "option1" }
+          { "name": "Option 123", "value": "option1" }
         ]
       }
     ]
