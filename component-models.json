@@ -530,7 +530,7 @@
     ]
   },
   {
-    "id": "enhanced-related-links",
+    "id": "EnhancedRelatedLinks",
     "fields": [
       {
         "component": "text",
