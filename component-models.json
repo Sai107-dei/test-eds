@@ -573,6 +573,7 @@
         "name": "exitInterstitial",
         "valueType": "boolean",
         "label": "Exit Interstitial",
+        "required": true,
         "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
         "options": [
           { "name": "Exit Interstitial", "value": true }
