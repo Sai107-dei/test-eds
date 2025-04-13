@@ -535,7 +535,7 @@
       {
         "component": "text",
         "name": "text",
-        "label": "Simple Text",
+        "label": "Link Headline",
         "valueType": "string",
         "description": "This is a text input with validation.1",
         "required": true
