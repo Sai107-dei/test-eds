@@ -541,6 +541,7 @@
       },
       {
         "component": "aem-content",
+        "valueType": "string",
         "name": "linkURL",
         "label": "Link URL",
         "description": "Enter the URL to navigate when Quick Link is clicked",
