@@ -537,7 +537,7 @@
         "name": "text",
         "label": "Link Headline",
         "valueType": "string",
-        "description": "This is a text input with validation.1",
+        "description": "This is a text input with validatio",
         "required": true
       },
       {
