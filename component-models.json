@@ -530,12 +530,12 @@
     ]
   },
   {
-    "id": "EnhancedRelatedLinks",
+    "id": "enhancedRelatedLinks",
     "fields": [
       {
         "component": "text",
         "name": "linkText",
-        "label": "Text1"
+        "label": "Text12"
       }
     ]
   },
