@@ -368,6 +368,17 @@
             "value": "newTab"
           }
         ]
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Checkbox Group for Sub-text",
+        "name": "checkboxSubText",
+        "valueType": "string",
+        "required": true,
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+        "options": [
+          { "name": "Exit Interstitial", "value": "true" }
+        ]
       }
     ]
   },
