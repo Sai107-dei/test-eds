@@ -6,12 +6,14 @@
         "component": "reference",
         "name": "image",
         "label": "Image",
-        "multi": false
+        "description": "Upload Image from DAM",
+        "required": true
       },
       {
         "component": "text",
         "name": "imageAlt",
-        "label": "ImageAlt Text"
+        "label": "ImageAlt Text",
+        "description": "Pick alt text from AEM DAM with ability to override it"
       }
     ]
   },
