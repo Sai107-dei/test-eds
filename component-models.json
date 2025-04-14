@@ -281,10 +281,58 @@
     "id": "Related Link",
     "fields": [
       {
+        "component": "text",
+        "valueType": "string",
+        "label": "Link Headline",
+        "name": "linkHeadline",
+        "description": "Enter display text for the quick link",
+        "required": true
+      },
+      {
         "component": "aem-content",
-        "name": "reference",
-        "label": "Reference123"
-      }
+        "name": "linkURL",
+        "label": "Link URL",
+        "description": "Enter the URL to navigate when Quick Link is clicked",
+        "required": true,
+        "validation": {
+          "rootPath": "/content/lilly-com-eds"
+        }
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ]
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Checkbox Group",
+        "name": "checkbox",
+        "valueType": "string",
+        "required": true,
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+        "options": [
+          { "name": "Exit Interstitial", "value": "true" }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter description"
+      },
     ]
   },
   {
