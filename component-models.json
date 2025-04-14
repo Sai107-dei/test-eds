@@ -354,9 +354,8 @@
       },
       {
         "component": "select",
-        "name": "targetPath",
         "label": "Target Path",
-        "description": "Select the target path for the authored CTA URL",
+        "description": "Select the target path for the authored CTA sub-text URL",
         "value": "sameTab",
         "options": [
           {
