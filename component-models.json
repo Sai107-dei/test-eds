@@ -296,7 +296,7 @@
         "valueType": "string",
         "required": true,
         "validation": {
-              "rootPath": "/content/refresh"
+              "rootPath": "/content/lilly-com-eds"
           }
       },
       {
@@ -350,7 +350,7 @@
         "name": "sub-text",
         "required": true,
         "validation": {
-              "rootPath": "/content/refresh"
+              "rootPath": "/content/lilly-com-eds"
           }
       },
       {
