@@ -278,6 +278,16 @@
     ]
   },
   {
+    "id": "Two Column with Image",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      }
+    ]
+  },
+  {
     "id": "Related Link",
     "fields": [
       {
