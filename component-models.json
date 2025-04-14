@@ -8,13 +8,13 @@
         "name": "image",
         "label": "Image",
         "multi": false,
-        "required": true
+        "required": true,
+        "description": "Upload Image from DAM"
       },
       {
         "component": "text",
         "name": "imageAlt",
-        "label": "Alt Text",
-        "required": true
+        "label": "Alt Text"
       }
     ]
   },
