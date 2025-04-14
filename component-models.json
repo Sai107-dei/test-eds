@@ -299,7 +299,6 @@
               "rootPath": "/content/refresh"
           }
       },
-      
       {
         "component": "select",
         "name": "targetPath",
@@ -334,6 +333,14 @@
         "label": "Description",
         "valueType": "string",
         "description": "Enter description"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "label": "Sub-text Headline",
+        "name": "subTextHeadline",
+        "description": "Enter display text for the  quick link sub-text",
+        "required": true
       }
     ]
   },
