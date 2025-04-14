@@ -7,14 +7,14 @@
         "valueType": "string",
         "name": "image",
         "label": "Image",
-        "multi": false,
         "required": true,
         "description": "Upload Image from DAM"
       },
       {
         "component": "text",
         "name": "imageAlt",
-        "label": "Alt Text"
+        "label": "Image Alt text",
+        "description": "Pick alt text from AEM DAM with ability to override it"
       }
     ]
   },
