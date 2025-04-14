@@ -2,12 +2,11 @@
   {
     "id": "image",
     "fields": [
-      
-      {
+       {
         "component": "reference",
         "valueType": "string",
         "name": "image",
-        "label": "Image123",
+        "label": "Image",
         "multi": false,
         "required": true
       },
