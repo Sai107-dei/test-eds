@@ -3,17 +3,15 @@
     "id": "image",
     "fields": [
       {
-      "component": "reference",
-      "label": "Reference1",
-      "name": "reference",
-      "valueType": "string",
-      "requied": true
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "multi": false
       },
       {
         "component": "text",
         "name": "imageAlt",
-        "label": "ImageAlt Text",
-        "description": "Pick alt text from AEM DAM with ability to override it"
+        "label": "Alt Text"
       }
     ]
   },
