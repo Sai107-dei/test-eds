@@ -291,7 +291,7 @@
       {
         "component": "aem-content",
         "name": "reference",
-        "description": "Enter the URL to navigate when Quick Link is clicked",
+        "description": "Enter the URL to navigate when Quick Link is clicked1",
         "label": "Link URL",
         "valueType": "string",
         "required": true,
