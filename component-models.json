@@ -2,13 +2,7 @@
   {
     "id": "image",
     "fields": [
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Image",
-        "multi": false,
-        "required": true
-      },
+      
       {
         "component": "reference",
         "valueType": "string",
