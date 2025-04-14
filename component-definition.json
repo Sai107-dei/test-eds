@@ -46,7 +46,7 @@
           }
         },
         {
-          "title": "Image",
+          "title": "Image123",
           "id": "image",
           "plugins": {
             "xwalk": {
