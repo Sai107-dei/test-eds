@@ -4,7 +4,7 @@
     "fields": [
       {
       "component": "reference",
-      "label": "Reference",
+      "label": "Reference1",
       "name": "reference",
       "valueType": "string",
       "requied": true
