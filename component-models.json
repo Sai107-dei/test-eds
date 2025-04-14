@@ -12,10 +12,12 @@
       },
       {
         "component": "text",
-        "name": "imageAlt",
-        "label": "Image Alt text",
-        "description": "Pick alt text from AEM DAM with ability to override it",
+        "valueType": "string",
+        "name": "Image Alt",
+        "label": "Image Alt Text",
+        "description": "Add Alt Text for Image Primary Hero",
         "required": true
+        
       }
     ]
   },
