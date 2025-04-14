@@ -3,11 +3,10 @@
     "id": "image",
     "fields": [
       {
-        "component": "reference",
-        "name": "image",
-        "label": "Image",
-        "description": "Upload Image from DAM",
-        "required": true
+      "component": "reference",
+      "label": "Reference",
+      "name": "reference",
+      "valueType": "string"
       },
       {
         "component": "text",
