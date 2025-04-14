@@ -371,7 +371,7 @@
       },
       {
         "component": "checkbox-group",
-        "label": "Checkbox Group for Sub-text",
+        "label": "Checkbox Group",
         "name": "checkboxSubText",
         "valueType": "string",
         "required": true,
