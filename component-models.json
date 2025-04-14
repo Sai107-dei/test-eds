@@ -354,7 +354,7 @@
       },
       {
         "component": "select",
-        "label": "Target Path",
+        "label": "Target Path1",
         "description": "Select the target path for the authored CTA sub-text URL",
         "value": "sameTab",
         "options": [
