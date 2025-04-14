@@ -332,8 +332,9 @@
       "component": "text-input",
       "valueType": "string",
       "name": "text-input",
-      "label": "Overlay Title",
+      "label": "Title",
       "required": true,
+      "description": "Enter the title for the Blur Overlay",
       "condition": {
           "===": [
             {
