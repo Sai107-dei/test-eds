@@ -10,6 +10,14 @@
         "required": true
       },
       {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false,
+        "required": true
+      },
+      {
         "component": "text",
         "name": "imageAlt",
         "label": "Alt Text",
