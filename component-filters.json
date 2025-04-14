@@ -26,13 +26,20 @@
       "teaser",
       "icongrid",
       "testcf",
-      "Enhanced Related Links"
+      "Enhanced Related Links",
+      "Related Links"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "Related Links",
+    "components": [
+      "Related Link"
     ]
   },
   {
