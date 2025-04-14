@@ -291,8 +291,8 @@
       {
         "component": "aem-content",
         "name": "reference",
-        "value": "",
-        "label": "AEM Content Picker",
+        "description": "Enter the URL to navigate when Quick Link is clicked",
+        "label": "Link URL",
         "valueType": "string",
         "required": true,
         "validation": {
