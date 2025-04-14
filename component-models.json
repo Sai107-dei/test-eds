@@ -347,6 +347,7 @@
         "description": "Enter the URL to navigate when Quick Link sub-text is clicked",
         "label": "Sub-text Link URL",
         "valueType": "string",
+        "name": "sub-text",
         "required": true,
         "validation": {
               "rootPath": "/content/refresh"
