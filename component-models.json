@@ -294,6 +294,7 @@
         "value": "",
         "label": "AEM Content Picker",
         "valueType": "string",
+        "required": true,
         "validation": {
               "rootPath": "/content/refresh"
           }
