@@ -290,14 +290,15 @@
       },
       {
         "component": "aem-content",
-        "name": "linkURL",
-        "label": "Link URL",
-        "description": "Enter the URL to navigate when Quick Link is clicked",
-        "required": true,
+        "name": "reference",
+        "value": "",
+        "label": "AEM Content Picker",
+        "valueType": "string",
         "validation": {
-          "rootPath": "/content/lilly-com-eds"
-        }
+              "rootPath": "/content/refresh"
+          }
       },
+      
       {
         "component": "select",
         "name": "targetPath",
