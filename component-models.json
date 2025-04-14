@@ -6,7 +6,8 @@
       "component": "reference",
       "label": "Reference",
       "name": "reference",
-      "valueType": "string"
+      "valueType": "string",
+      "requied": true
       },
       {
         "component": "text",
