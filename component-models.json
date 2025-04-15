@@ -357,6 +357,34 @@
       "validation": {
         "rootPath": "/content/lilly-com-eds"
       }
+    },
+    {
+      "component": "select",
+      "name": "targetPath",
+      "label": "Target Path",
+      "description": "Select the target path for the authored CTA URL",
+      "value": "sameTab",
+      "options": [
+        {
+          "name": "Same Tab",
+          "value": "sameTab"
+        },
+        {
+          "name": "New Tab",
+          "value": "newTab"
+        }
+      ]
+    },
+    {
+      "component": "checkbox-group",
+      "label": "Checkbox Group",
+      "name": "checkbox",
+      "valueType": "string",
+      "required": true,
+      "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+      "options": [
+        { "name": "Exit Interstitial", "value": "true" }
+      ]
     }
     ]
   },
