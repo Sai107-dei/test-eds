@@ -690,8 +690,7 @@
         "description": "Enter the Eyebrow text"
       },
       {
-        "component": "text",
-        "name": "title",
+        "component": "richtext",
         "label": "Title",
         "valueType": "string",
         "description": "Enter the Title"
