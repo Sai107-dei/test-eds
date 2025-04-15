@@ -388,7 +388,7 @@
   ]
   },
   {
-    "id": "related-Link",
+    "id": "relatedLink",
     "fields": [
       {
         "component": "text",
@@ -484,7 +484,6 @@
         "label": "Checkbox Group",
         "name": "checkboxSubText",
         "valueType": "string",
-        "required": true,
         "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
         "options": [
           { "name": "Exit Interstitial", "value": "true" }

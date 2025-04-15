@@ -28,7 +28,7 @@
       "testcf",
       "Enhanced Related Links",
       "Two Column with Image",
-      "related-Links"
+      "relatedLinks"
     ]
   },
   {
@@ -38,9 +38,9 @@
     ]
   },
   {
-    "id": "related-Links",
+    "id": "relatedLinks",
     "components": [
-      "related-Link"
+      "relatedLink"
     ]
   },
   {
