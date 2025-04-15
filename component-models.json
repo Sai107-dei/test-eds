@@ -323,7 +323,7 @@
     {
       "component": "text",
       "valueType": "string",
-      "name": "imageAlt",
+      "name": "iconAlt",
       "label": "Alt Text",
       "description": "Pick alt text from AEM DAM with ability to override it"
     },
