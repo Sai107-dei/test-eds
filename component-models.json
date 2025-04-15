@@ -388,7 +388,7 @@
   ]
   },
   {
-    "id": "relatedLink",
+    "id": "relatedlink",
     "fields": [
       {
         "component": "text",
