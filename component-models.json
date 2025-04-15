@@ -341,7 +341,7 @@
       "label": "Description",
       "valueType": "string",
       "description": "Enter description"
-    },
+    }
     ]
   },
   {
