@@ -316,7 +316,7 @@
     {
       "component": "reference",
       "valueType": "string",
-      "name": "image",
+      "name": "icon",
       "label": "Icon",
       "description": "Upload icon for the teaser"
     },
