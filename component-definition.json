@@ -160,21 +160,23 @@
             }
           }
         },
+
         {
-          "title": "Relatedlink",
-          "id": "relatedlink",
+          "title": "Relatedlinks-Item",
+          "id": "relatedlinks-item",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
-                  "name": "Relatedlink",
-                  "model": "relatedlink"
+                  "name": "Relatedlinks-Item",
+                  "model": "relatedlinks-item"
                 }
               }
             }
           }
         },
+       
       
         {
           "title": "Accordion",
