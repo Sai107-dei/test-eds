@@ -26,6 +26,12 @@
     ]
   },
   {
+    "id": "lards",
+    "components": [
+      "lard"
+    ]
+  },
+  {
     "id": "columns",
     "components": [
       "column"
