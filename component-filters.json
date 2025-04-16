@@ -14,21 +14,8 @@
       "title",
       "hero",
       "cards",
-      "accordion",
       "columns",
-      "fragment",
-      "sus10",
-      "infobanner",
-      "carousel",
-      "primary-header",
-      "kalthuravideo",
-      "text-component",
-      "teaser",
-      "icongrid",
-      "testcf",
-      "Enhanced Related Links",
-      "Two Column with Image",
-      "relatedlinks"
+      "fragment"
     ]
   },
   {
@@ -38,31 +25,6 @@
     ]
   },
   {
-    "id": "relatedlinks",
-    "components": [
-      "card"
-    ]
-  },
-  {
-    "id": "accordion",
-    "components": [
-      "accordion-item"
-    ]
-  },
-
-  {
-    "id": "hero",
-    "components": [
-      "icongrid-tile"
-    ]
-  },
-
-  {
-    "id": "icongrid",
-    "components": [
-      "icongrid-item"
-    ]
-  },  {
     "id": "columns",
     "components": [
       "column"
@@ -74,35 +36,7 @@
       "text",
       "image",
       "button",
-      "title",
-      "columns"
-    ]
-  },
-  {
-    "id": "infobanner",
-    "components": [
-      "infoitem"
-    ]
-  },
-  {
-    "id": "carousel",
-    "components": [
-      "text",
-      "image",
-      "button",
       "title"
-    ]
-  },
-  {
-    "id": "kalthuravideo",
-    "components": [
-      "text"
-    ]
-  },
-  {
-    "id": "text-component",
-    "components": [
-      "text"
     ]
   }
 ]
