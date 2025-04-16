@@ -40,7 +40,7 @@
   {
     "id": "relatedlinks",
     "components": [
-      "relatedlink-item"
+      "card"
     ]
   },
   {
