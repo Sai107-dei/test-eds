@@ -1,5 +1,3 @@
 export default async function decorate(block) {
-    iconDiv.innerHTML = `
-    
-    <h1>hellolillytested</h1>`;
+    block.innerHTML = `<h1>hellolillytested</h1>`;
 }
