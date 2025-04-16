@@ -16,7 +16,8 @@
       "cards",
       "lards",
       "columns",
-      "fragment"
+      "fragment",
+      "relatedlinks"
     ]
   },
   {
@@ -31,6 +32,14 @@
       "lard"
     ]
   },
+
+  {
+    "id": "relatedlinks",
+    "components": [
+      "relatedlink"
+    ]
+  },
+
   {
     "id": "columns",
     "components": [
