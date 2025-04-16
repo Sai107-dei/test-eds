@@ -160,22 +160,22 @@
             }
           }
         },
-
         {
-          "title": "Relatedlink-Item",
-          "id": "relatedlink-item",
+          "title": "Relatedlink",
+          "id": "relatedlink",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
-                  "name": "Relatedlink-Item",
-                  "model": "relatedlink-item"
+                  "name": "Relatedlink",
+                  "model": "relatedlink"
                 }
               }
             }
           }
         },
+     
        
       
         {
