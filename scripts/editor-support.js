@@ -18,7 +18,6 @@ function addMetaTag() {
   console.log('Meta tag added:', meta);
 }
 
-Call the function to add the meta tag
 addMetaTag();
 
 
