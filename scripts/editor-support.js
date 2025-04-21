@@ -115,7 +115,6 @@ function attachEventListners(main) {
     if (eventType === 'aue:content-add') {
       alert('No operation should happen');
       event.preventDefault(); // Prevents the default action
-      event.stopPropagation(); // Stops the event from propagating
       event.remove();
       return; // Stops further execution of the function
   }
