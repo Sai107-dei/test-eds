@@ -113,7 +113,7 @@ function attachEventListners(main) {
     'aue:content-copy',
   ].forEach((eventType) => main?.addEventListener(eventType, async (event) => {
     if (eventType === 'aue:content-add') {
-      alert('No operation should happen');
+      alert('12345');
       event.preventDefault(); // Prevents the default action
     return;
       
