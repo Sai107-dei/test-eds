@@ -115,7 +115,7 @@ function attachEventListners(main) {
     if (eventType === 'aue:content-add') {
       alert('No operation should happen');
       alert('event.detail?.resourcePath' + event.detail?.resourcePath);
-      event.stopImmediatePropagation();
+      // event.stopImmediatePropagation();
       alert('ccc'+event.detail);
       return;
     }
