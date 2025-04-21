@@ -114,7 +114,10 @@ function attachEventListners(main) {
   ].forEach((eventType) => main?.addEventListener(eventType, async (event) => {
     if (eventType === 'aue:content-add') {
       alert('No operation should happen');
-      return 0;
+      event.preventDefault(); // Prevents the default action
+    event.stopPropagation(); 
+    return;
+      
     }
 
     alert('yess');
