@@ -21,17 +21,6 @@ function addMetaTag() {
 // Call the function to add the meta tag
 addMetaTag();
 
-function disablePublishButton() {
-  const button = document.querySelector('button[aria-label="Publish"]');
-  if (button) {
-    button.disabled = true;
-    console.log('Publish button disabled:', button);
-  } else {
-    console.log('Publish button not found');
-  }
-}
-
-disablePublishButton();
 
 async function applyChanges(event) {
   // redecorate default content and blocks on patches (in the properties rail)
