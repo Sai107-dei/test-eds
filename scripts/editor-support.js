@@ -114,10 +114,9 @@ function attachEventListners(main) {
   ].forEach((eventType) => main?.addEventListener(eventType, async (event) => {
     if (eventType === 'aue:content-add') {
       alert('No operation should happen');
-      event.preventDefault(); // Prevents the default action
-     
-      return; // Stops further execution of the function
-  }
+      event.stopPropagation();
+      return;
+    }
 
     alert('yess');
     event.stopPropagation();
@@ -127,6 +126,7 @@ function attachEventListners(main) {
 }
 
 // Attach event listeners to the main element
+attachEventListners(document.querySelector('main'));
 
 
 attachEventListners(document.querySelector('main'));
