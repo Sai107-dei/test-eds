@@ -112,11 +112,11 @@ function attachEventListners(main) {
     'aue:content-remove',
     'aue:content-copy',
   ].forEach((eventType) => main?.addEventListener(eventType, async (event) => {
-    // if (eventType === 'aue:content-add') {
-    //   alert('No operation should happen');
-    //   alert('event.detail?.resourcePath' + event.detail?.resourcePath);
-    //   return;
-    // }
+    if (eventType === 'aue:content-add') {
+      alert('No operation should happen');
+      alert('event.detail?.resourcePath' + event.detail?.resourcePath);
+      return;
+    }
 
     event.stopPropagation();
     const applied = await applyChanges(event);
