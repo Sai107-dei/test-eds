@@ -236,5 +236,30 @@
         "valueType": "string"
       }
     ]
+  },
+
+
+  {
+    "id": "gated-sections",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "name",
+        "label": "Name"
+      },
+      {
+        "component": "text",
+        "name": "password",
+        "label": "Password",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "submit",
+        "label": "Submit Label",
+        "valueType": "string"
+      }
+    ]
   }
 ]
