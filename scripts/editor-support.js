@@ -115,6 +115,8 @@ function attachEventListners(main) {
     if (eventType === 'aue:content-add') {
       alert('No operation should happen');
       alert('event.detail?.resourcePath' + event.detail?.resourcePath);
+      event.stopImmediatePropagation();
+      alert('ccc'+event.detail);
       return;
     }
 
@@ -124,8 +126,6 @@ function attachEventListners(main) {
   }));
 }
 
-// Attach event listeners to the main element
-attachEventListners(document.querySelector('main'));
 
 
 attachEventListners(document.querySelector('main'));
