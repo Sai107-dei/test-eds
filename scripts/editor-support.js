@@ -10,6 +10,17 @@ import {
 import { decorateRichtext } from './editor-support-rte.js';
 import { decorateMain } from './scripts.js';
 
+function addMetaTag() {
+  const meta = document.createElement('meta');
+  meta.name = "urn:adobe:aue:config:disable";
+  meta.content = "publish";
+  document.head.appendChild(meta);
+  console.log('Meta tag added:', meta);
+}
+
+// Call the function to add the meta tag
+addMetaTag();
+
 async function applyChanges(event) {
   // redecorate default content and blocks on patches (in the properties rail)
   const { detail } = event;
@@ -97,7 +108,7 @@ function attachEventListners(main) {
     'aue:content-remove',
     'aue:content-copy',
   ].forEach((eventType) => main?.addEventListener(eventType, async (event) => {
-    alert('something');
+   
     event.stopPropagation();
     const applied = await applyChanges(event);
     if (!applied) window.location.reload();
