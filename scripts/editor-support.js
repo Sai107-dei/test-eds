@@ -10,16 +10,16 @@ import {
 import { decorateRichtext } from './editor-support-rte.js';
 import { decorateMain } from './scripts.js';
 
-// function addMetaTag() {
-//   const meta = document.createElement('meta');
-//   meta.name = "urn:adobe:aue:config:disable";
-//   meta.content = "publish-preview";
-//   document.head.appendChild(meta);
-//   console.log('Meta tag added:', meta);
-// }
+function addMetaTag() {
+  const meta = document.createElement('meta');
+  meta.name = "urn:adobe:aue:config:disable";
+  meta.content = "publish";
+  document.head.appendChild(meta);
+  console.log('Meta tag added:', meta);
+}
 
-// Call the function to add the meta tag
-// addMetaTag();
+Call the function to add the meta tag
+addMetaTag();
 
 
 async function applyChanges(event) {
