@@ -246,19 +246,22 @@
         "component": "text",
         "valueType": "string",
         "name": "nameLabel",
-        "label": "NameLabel"
+        "label": "Name Label",
+        "description": "Enter the Name Label field"
       },
       {
         "component": "text",
         "name": "password",
         "label": "Password Label",
-        "valueType": "string"
+        "valueType": "string",
+        "description": "Enter the Password Label field"
       },
       {
         "component": "text",
         "name": "submit",
         "label": "Submit Label",
-        "valueType": "string"
+        "valueType": "string",
+        "description": "Enter the Submit CTA Label field"
       }
     ]
   }
