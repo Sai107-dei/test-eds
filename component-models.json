@@ -245,7 +245,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "name",
+        "name": "nameLabel",
         "label": "Name"
       },
       {
