@@ -118,8 +118,6 @@ function attachEventListners(main) {
       return;
     }
 
-    alert('yess');
-    event.stopPropagation();
     const applied = await applyChanges(event);
     if (!applied) window.location.reload();
   }));
