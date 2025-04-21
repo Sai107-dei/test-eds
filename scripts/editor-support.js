@@ -114,7 +114,7 @@ function attachEventListners(main) {
   ].forEach((eventType) => main?.addEventListener(eventType, async (event) => {
     if (eventType === 'aue:content-add') {
       alert('No operation should happen');
-      event.stopPropagation();
+      alert('event.detail?.resourcePath' + event.detail?.resourcePath);
       return;
     }
 
