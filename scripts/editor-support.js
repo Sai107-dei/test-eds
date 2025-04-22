@@ -16,6 +16,7 @@ function addMetaTag() {
   meta.content = "publish";
   document.head.appendChild(meta);
   alert('Meta tag added123:', meta);
+  alert('1234');
 }
 
 (function() {
