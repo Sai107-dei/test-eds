@@ -46,7 +46,7 @@ function addMetaTag() {
   meta.name = "urn:adobe:aue:config:disable";
   meta.content = "publish";
   document.head.appendChild(meta);
-  alert('Meta tag added:', meta);
+  alert('Meta tag added123:', meta);
 }
 
 addMetaTag();
