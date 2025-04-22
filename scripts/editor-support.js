@@ -13,7 +13,7 @@ import { decorateMain } from './scripts.js';
 function addMetaTag() {
   const meta = document.createElement('meta');
   meta.name = "urn:adobe:aue:config:disable";
-  meta.content = "publish";
+  meta.content = "publish-preview";
   document.head.appendChild(meta);
  
 }
@@ -37,6 +37,7 @@ addMetaTag();
               authorizable.memberOf.some(group => group.id === "Prudential Super Authors")
           );
           if (isMember) {
+            console.log(group.id);
           }
       })
       .catch(error => console.error('Error fetching user information or authorizables data:', error));
