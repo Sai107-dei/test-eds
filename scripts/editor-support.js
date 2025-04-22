@@ -14,11 +14,13 @@ import { decorateMain } from './scripts.js';
 
 (function() {
   var currentUserEndpoint = "/libs/granite/security/currentuser.json";
+
   fetch(currentUserEndpoint)
       .then(response => response.json())
       .then(data => {
-          alert(`Username: ${data.home}`);
-          
+          console.log(`Username: ${data.home}`);
+          console.log(`User ID: ${data.authorizableId}`);
+          console.log(`Groups: ${data.groups.join(', ')}`);
       })
       .catch(error => console.error('Error fetching user information:', error));
 })();
@@ -127,7 +129,7 @@ function attachEventListners(main) {
     'aue:content-copy',
   ].forEach((eventType) => main?.addEventListener(eventType, async (event) => {
     if (eventType === 'aue:content-add')  {
-    
+     
       return;
     }
 
