@@ -19,7 +19,7 @@ import { decorateMain } from './scripts.js';
       .then(response => response.json())
       .then(data => {
           var userName = data.userName;
-          console.log(`Username123: ${userName}`);
+          console.log(`UsernameName: ${userName}`);
           var authorizablesEndpoint = `/bin/security/authorizables.json?filter=${encodeURIComponent(userName)}&_charset_=utf-8`;
           return fetch(authorizablesEndpoint);
       })
