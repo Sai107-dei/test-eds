@@ -30,6 +30,15 @@ import { decorateMain } from './scripts.js';
           );
           if (isMember) {
             alert('Yes');
+            function addMetaTag() {
+              const meta = document.createElement('meta');
+              meta.name = "urn:adobe:aue:config:disable";
+              meta.content = "publish";
+              document.head.appendChild(meta);
+              console.log('Meta tag added:', meta);
+            }
+            
+            addMetaTag();
             alert('publish option diabled');
               
           }
@@ -40,15 +49,7 @@ import { decorateMain } from './scripts.js';
 
 
 
-function addMetaTag() {
-  const meta = document.createElement('meta');
-  meta.name = "urn:adobe:aue:config:disable";
-  meta.content = "publish";
-  document.head.appendChild(meta);
-  console.log('Meta tag added:', meta);
-}
 
-addMetaTag();
 
 
 
