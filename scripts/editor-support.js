@@ -13,7 +13,7 @@ import { decorateMain } from './scripts.js';
 function addMetaTag() {
   const meta = document.createElement('meta');
   meta.name = "urn:adobe:aue:config:disable";
-  meta.content = "publish-preview";
+  meta.content = "publish-live";
   document.head.appendChild(meta);
  
 }
