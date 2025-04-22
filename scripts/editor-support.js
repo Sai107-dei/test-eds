@@ -13,12 +13,12 @@ import { decorateMain } from './scripts.js';
 
 
 (function() {
-  var currentUserEndpoint = "/libs/granite/security/currentuser.json";
+  var currentUserEndpoint = "/libs/cq/security/userinfo.json";
 
   fetch(currentUserEndpoint)
       .then(response => response.json())
       .then(data => {
-          console.log(`User ID: ${data.authorizableId}`);
+          console.log(`User ID: ${data.userName}`);
       })
       .catch(error => console.error('Error fetching user information:', error));
 })();
