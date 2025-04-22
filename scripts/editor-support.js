@@ -18,6 +18,9 @@ function addMetaTag() {
   alert('1234');
 }
 
+addMetaTag();
+
+
 (function() {
 
   var currentUserEndpoint = "/libs/cq/security/userinfo.json";
@@ -37,7 +40,6 @@ function addMetaTag() {
           );
           if (isMember) {
             alert('Yes');
-            addMetaTag();
             alert('publish option diabled');
               
           }
