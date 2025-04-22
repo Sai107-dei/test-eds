@@ -18,9 +18,7 @@ import { decorateMain } from './scripts.js';
   fetch(currentUserEndpoint)
       .then(response => response.json())
       .then(data => {
-          console.log(`Username: ${data.home}`);
           console.log(`User ID: ${data.authorizableId}`);
-          console.log(`Groups: ${data.groups.join(', ')}`);
       })
       .catch(error => console.error('Error fetching user information:', error));
 })();
