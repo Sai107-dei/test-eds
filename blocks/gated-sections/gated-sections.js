@@ -1,5 +1,3 @@
-block.innerHTML = `
-   <h1>hie</h1>
-  `;
+block.innerHTML = `<h1>hie</h1>`;
 
  
