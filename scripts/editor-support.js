@@ -15,10 +15,9 @@ function addMetaTag() {
   meta.name = "urn:adobe:aue:config:disable";
   meta.content = "publish";
   document.head.appendChild(meta);
-  alert('1234');
 }
 
-addMetaTag();
+
 
 
 (function() {
@@ -40,6 +39,7 @@ addMetaTag();
           );
           if (isMember) {
             alert('Yes');
+            addMetaTag();
             alert('publish option diabled');
               
           }
