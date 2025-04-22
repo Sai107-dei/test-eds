@@ -18,7 +18,7 @@ import { decorateMain } from './scripts.js';
   fetch(currentUserEndpoint)
       .then(response => response.json())
       .then(data => {
-          console.log(`Username: ${data.userName}`);
+          console.log(`Username123: ${data.userName}`);
         
       })
       .catch(error => console.error('Error fetching user information:', error));
