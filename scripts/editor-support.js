@@ -39,9 +39,7 @@ addMetaTag();
               authorizable.memberOf.some(group => group.id === "Prudential Super Authors")
           );
           if (isMember) {
-            alert('Yes');
-            alert('publish option diabled');
-              
+            alert('Yes');             
           }
       })
       .catch(error => console.error('Error fetching user information or authorizables data:', error));
