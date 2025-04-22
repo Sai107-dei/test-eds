@@ -29,7 +29,10 @@ import { decorateMain } from './scripts.js';
               authorizable.memberOf.some(group => group.id === "Prudential Super Authors")
           );
           if (isMember) {
-              alert('Yes');
+            alert('Yes');
+            addMetaTag();
+            alert('publish option diabled');
+              
           }
       })
       .catch(error => console.error('Error fetching user information or authorizables data:', error));
@@ -46,7 +49,7 @@ function addMetaTag() {
   console.log('Meta tag added:', meta);
 }
 
-addMetaTag();
+
 
 
 async function applyChanges(event) {
