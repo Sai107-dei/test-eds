@@ -10,6 +10,13 @@ import {
 import { decorateRichtext } from './editor-support-rte.js';
 import { decorateMain } from './scripts.js';
 
+function addMetaTag() {
+  const meta = document.createElement('meta');
+  meta.name = "urn:adobe:aue:config:disable";
+  meta.content = "publish";
+  document.head.appendChild(meta);
+  alert('Meta tag added123:', meta);
+}
 
 (function() {
 
@@ -41,13 +48,7 @@ import { decorateMain } from './scripts.js';
 
 
 
-function addMetaTag() {
-  const meta = document.createElement('meta');
-  meta.name = "urn:adobe:aue:config:disable";
-  meta.content = "publish";
-  document.head.appendChild(meta);
-  alert('Meta tag added123:', meta);
-}
+
 addMetaTag();
 
 
