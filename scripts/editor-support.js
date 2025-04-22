@@ -37,7 +37,7 @@ function addMetaTag() {
           );
           if (isMember) {
             alert('Yes');
-
+            addMetaTag();
             alert('publish option diabled');
               
           }
@@ -47,10 +47,6 @@ function addMetaTag() {
 })();
 
 
-
-
-addMetaTag();
-alert('Meta tag added123:', meta);
 
 
 
