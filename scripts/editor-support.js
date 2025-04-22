@@ -20,9 +20,10 @@ function addMetaTag() {
 
 addMetaTag();
 
-
 (function() {
+
   var currentUserEndpoint = "/libs/cq/security/userinfo.json";
+
   fetch(currentUserEndpoint)
       .then(response => response.json())
       .then(data => {
@@ -37,7 +38,9 @@ addMetaTag();
               authorizable.memberOf.some(group => group.id === "Prudential Super Authors")
           );
           if (isMember) {
-            console.log(group.id);
+            alert('Yes');
+            alert('publish option diabled');
+              
           }
       })
       .catch(error => console.error('Error fetching user information or authorizables data:', error));
