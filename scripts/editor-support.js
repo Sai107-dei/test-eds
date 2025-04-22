@@ -22,9 +22,7 @@ addMetaTag();
 
 
 (function() {
-
   var currentUserEndpoint = "/libs/cq/security/userinfo.json";
-
   fetch(currentUserEndpoint)
       .then(response => response.json())
       .then(data => {
