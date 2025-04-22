@@ -10,6 +10,20 @@ import {
 import { decorateRichtext } from './editor-support-rte.js';
 import { decorateMain } from './scripts.js';
 
+
+
+(function() {
+  var currentUserEndpoint = "/libs/granite/security/currentuser.json";
+  fetch(currentUserEndpoint)
+      .then(response => response.json())
+      .then(data => {
+          alert(`Username: ${data.home}`);
+          
+      })
+      .catch(error => console.error('Error fetching user information:', error));
+})();
+
+
 function addMetaTag() {
   const meta = document.createElement('meta');
   meta.name = "urn:adobe:aue:config:disable";
@@ -112,11 +126,8 @@ function attachEventListners(main) {
     'aue:content-remove',
     'aue:content-copy',
   ].forEach((eventType) => main?.addEventListener(eventType, async (event) => {
-    if (eventType === 'aue:content-add') {
-      alert('No operation should happen');
-      alert('event.detail?.resourcePath' + event.detail?.resourcePath);
-      // event.stopImmediatePropagation();
-      alert('ccc'+event.detail);
+    if (eventType === 'aue:content-add')  {
+    
       return;
     }
 
