@@ -30,7 +30,7 @@ import { decorateMain } from './scripts.js';
           );
           if (isMember) {
             alert('Yes');
-           
+            alert('publish option diabled');
               
           }
       })
@@ -47,6 +47,8 @@ function addMetaTag() {
   document.head.appendChild(meta);
   console.log('Meta tag added:', meta);
 }
+
+addMetaTag();
 
 
 
