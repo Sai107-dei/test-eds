@@ -31,6 +31,12 @@
     ]
   },
   {
+    "id": "hero",
+    "components": [
+      "icongrid-tile"
+    ]
+  },
+  {
     "id": "column",
     "components": [
       "text",
