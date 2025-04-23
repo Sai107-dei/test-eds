@@ -295,6 +295,22 @@
         "description": "Enter main heading for the Primary Hero"
       },
       {
+        "component": "text",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA"
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "description": "Enter the URL to navigate when CTA is clicked",
+        "validation": {
+          "rootPath": "/content/lilly-com-eds"
+        }
+      },
+      {
         "component": "select",
         "name": "targetPath",
         "label": "Target Path",
@@ -317,7 +333,7 @@
         "name": "exitInterstitial",
         "valueType": "string",
         "options": [
-          { "name": "exitInterstitial", "value": "true" }
+          { "name": "ExitInterstitial", "value": "true" }
         ]
       },
       {
