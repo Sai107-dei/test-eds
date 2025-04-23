@@ -189,7 +189,7 @@
       }
     ]
   },
-  {
+ {
     "id": "hero",
     "fields": [
       {
@@ -302,23 +302,6 @@
         "description": "Enter description for additional context"
       },
       {
-        "component": "select",
-        "name": "targetPath",
-        "label": "Target Path",
-        "description":"Select the target path for the authored CTA URL",
-        "value": "sameTab",
-        "options": [
-          {
-            "name": "Same Tab",
-            "value": "sameTab"
-          },
-          {
-            "name": "New Tab",
-            "value": "newTab"
-          }
-        ]
-      },
-      {
         "component": "checkbox-group",
         "name": "exitInterstitial",
         "valueType": "string" ,
@@ -329,11 +312,7 @@
         ]
       }
     ]
-  },
-  
-  
-  
-  
+  }, 
     {
     "id": "icongrid-tile",
     "fields": [
