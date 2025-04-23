@@ -25,7 +25,18 @@
     "id": "cards",
     "components": [
       "card"
-    ]
+    ],
+    "rte": {
+      "format": [],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": ["link"],
+      "advanced": ["h2"],
+      "extensions": [],
+       "editor": []
+    }
   },
   {
     "id": "lards",

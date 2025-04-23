@@ -162,11 +162,7 @@
         "name": "text",
         "value": "",
         "label": "Text",
-        "valueType": "string",
-        "rte": {
-      "list": ["bullist"],
-      "insert": ["link"]
-    }
+        "valueType": "string"
       }
     ]
   },
