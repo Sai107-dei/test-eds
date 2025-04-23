@@ -304,6 +304,14 @@
         ]
       },
       {
+        "component": "boolean",
+        "label": "Mute Video Sound",
+        "name": "media_carouselMuteSoundVideo",
+        "description": "Defines if the video will be play on mute. If toggled on, there will be no sound.",
+        "valueType": "boolean",
+        "value": true
+      },
+      {
         "component": "richtext",
         "name": "description",
         "label": "Description",
