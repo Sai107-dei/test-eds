@@ -317,9 +317,7 @@
             "value": "newTab"
           }
         ]
-      }
-    ]
-  },
+      },
       {
         "component": "checkbox-group",
         "name": "exitInterstitial",
