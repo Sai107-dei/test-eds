@@ -26,25 +26,19 @@
   {
     "id": "image",
     "fields": [
-       {
+      {
         "component": "reference",
-        "valueType": "string",
         "name": "image",
         "label": "Image",
-        "required": true,
-        "description": "Upload Image from DAM"
+        "multi": false
       },
       {
         "component": "text",
-        "valueType": "string",
         "name": "imageAlt",
-        "label": "Image Alt text",
-        "description": "Pick alt text from AEM DAM with ability to override it",
-        "required": true
+        "label": "Alt Text"
       }
     ]
   },
- 
   {
     "id": "title",
     "fields": [
@@ -166,27 +160,6 @@
       }
     ]
   },
-
-  {
-    "id": "relatedlink",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-
   {
     "id": "columns",
     "fields": [
@@ -216,147 +189,29 @@
       }
     ]
   },
-  
   {
     "id": "hero",
     "fields": [
       {
-        "component": "select",
-        "name": "PrimarybackgroundType",
-        "label": "Primary Background Type",
-        "description": "Select Background Type Primary Hero",
-        "required": true,
-        "options": [
-          {
-            "name": "Image",
-            "value": "imageSlide"
-          },
-          {
-            "name": "Video",
-            "value": "videoSlide"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "label": "Background Video",
-        "name": "BackgroundVideo",
-        "description": "Upload video for the Primary Hero",
-        "required": true,
-        "condition": {
-          "===": [
-            {
-              "var": "PrimarybackgroundType"
-            },
-            "videoSlide"
-          ]
-        }
-      },
-      {
-        "component": "boolean",
-        "label": "Enable Hero Overlay",
-        "name": "EnableOverlay",
-        "valueType": "boolean",
-        "description": "Select this checkbox to enable overlay",
-        "condition": {
-          "===": [
-            {
-              "var": "PrimarybackgroundType"
-            },
-            "videoSlide"
-          ]
-        }
-      },
-      {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "text-input",
-      "label": "Title",
-      "required": true,
-      "description": "Enter the title for the Blur Overlay",
-      "condition": {
-          "===": [
-            {
-              "var": "EnableOverlay"
-            },
-            true
-          ]
-        }
-      },
-      {
         "component": "reference",
         "valueType": "string",
-        "name": "BackgroundImage",
-        "label": "Background Image",
-        "description": "Upload Image for the Primary Hero",
-        "required": true,
-        "condition": {
-          "===": [
-            {
-              "var": "PrimarybackgroundType"
-            },
-            "imageSlide"
-          ]
-        }
+        "name": "image",
+        "label": "Image",
+        "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "Image Alt",
-        "label": "Image Alt Text",
-        "description": "Add Alt Text for Image Primary Hero",
-        "condition": {
-          "===": [
-            {
-              "var": "PrimarybackgroundType"
-            },
-            "imageSlide"
-          ]
-        }
-      },
-      {
-        "component": "text",
-        "name": "text",
-        "label": "Title",
-        "required": true,
-        "valueType": "string",
-        "description": "Enter main heading for the Primary Hero"
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
       },
       {
         "component": "richtext",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string",
-        "description": "Enter description for additional context"
-      }
-    ]
-  },
-
-
-  {
-    "id": "gated-sections",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "nameLabel",
-        "label": "Name Label",
-        "description": "Enter the Name Label field"
-      },
-      {
-        "component": "text",
-        "name": "password",
-        "label": "Password Label",
-        "valueType": "string",
-        "description": "Enter the Password Label field"
-      },
-      {
-        "component": "text",
-        "name": "submit",
-        "label": "Submit Label",
-        "valueType": "string",
-        "description": "Enter the Submit CTA Label field"
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
       }
     ]
   }

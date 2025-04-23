@@ -14,11 +14,8 @@
       "title",
       "hero",
       "cards",
-      "lards",
       "columns",
-      "fragment",
-      "relatedlinks",
-      "gated-sections"
+      "fragment"
     ]
   },
   {
@@ -27,35 +24,6 @@
       "card"
     ]
   },
-  {
-    "id": "lards",
-    "components": [
-      "lard"
-    ]
-  },
-  {
-    "id": "video-carousel",
-    "components": [],
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": ["link"],
-      "blocks": [],
-      "advanced": [""],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
-  },
-  {
-    "id": "relatedlinks",
-    "components": [
-      "relatedlink"
-    ]
-  },
-
   {
     "id": "columns",
     "components": [
