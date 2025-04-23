@@ -270,5 +270,360 @@
         "description": "Enter the Submit CTA Label field"
       }
     ]
+  },
+  {
+    "id": "video-carousel",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "General",
+        "name": "content_videoCarouselTab1"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "classes",
+        "description": "Defines the classes",
+        "value": "",
+        "hidden": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "content_carouselHeadline",
+        "description": "Defines the headline of the text that will appear in the page.",
+        "value": "",
+        "label": "Headline"
+      },
+      {
+        "component": "select",
+        "label": "Headline Type",
+        "name": "content_carouselHeadlineType",
+        "valueType": "string",
+        "description": "Defines multiple styling options for the Headline",
+        "value": "h2",
+        "hidden": true
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "content_videoCarouselCopyText",
+        "description": "Defines the text that will appear in the page.",
+        "value": "This is a Copy Text.",
+        "label": "Copy Text"
+      },
+      {
+        "component": "tab",
+        "label": "Video",
+        "name": "media_videoCarouselTab2",
+        "description": "Tab that includes properties of the video"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "media_videoCarouselTitle",
+        "value": "",
+        "description": "Defines the title of the video. ",
+        "label": "Video Title",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "media_videoCarouselText",
+        "description": "Defines the description of the video.",
+        "value": "",
+        "label": "Video Description",
+        "required": true
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "valueType": "string",
+        "name": "media_desktopVideoCarouselPath",
+        "label": "Desktop Video Path",
+        "multi": false,
+        "required": true,
+        "description": "Defines the path to a video on the desktop.",
+        "configUrl": "/content/metafox/rs.resource/tools/image-config.json"
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "valueType": "string",
+        "name": "media_mobileVideoCarouselPath",
+        "label": "Mobile Video Path",
+        "multi": false,
+        "description": "Defines the path to a video on the mobile.",
+        "configUrl": "/content/metafox/rs.resource/tools/image-config.json"
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "valueType": "string",
+        "name": "media_videoCarouselPosterDesktop",
+        "description": "Defines the path that will be displaying poster image on desktop while loading the page.",
+        "label": "Desktop Poster Image Path",
+        "multi": false,
+        "required": true,
+        "configUrl": "/content/metafox/rs.resource/tools/image-config.json"
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset-mimetype",
+        "valueType": "string",
+        "name": "media_videoCarouselPosterDesktopMimeType"
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset",
+        "valueType": "string",
+        "name": "media_videoCarouselPosterMobile",
+        "description": "Defines the path that will be displaying poster image on mobile while loading the page.",
+        "label": "Mobile Poster Image Path",
+        "multi": false,
+        "configUrl": "/content/metafox/rs.resource/tools/image-config.json"
+      },
+      {
+        "component": "custom-asset-namespace:custom-asset-mimetype",
+        "valueType": "string",
+        "name": "media_videoCarouselPosterMobileMimeType"
+      },
+      {
+        "component": "text",
+        "label": "Loop Video",
+        "name": "media_carouselLoopVideoType",
+        "valueType": "string",
+        "value": "h3",
+        "hidden": true
+      },
+      {
+        "component": "boolean",
+        "label": "Loop Video",
+        "name": "media_carouselLoopVideo",
+        "description": "Defines if the video will play on loop. If toggled on, the video will loop.",
+        "valueType": "boolean",
+        "value": true
+      },
+      {
+        "component": "text",
+        "label": "Play on mouseover",
+        "name": "media_carouselMouseHoverVideoType",
+        "valueType": "string",
+        "value": "h4",
+        "hidden": true
+      },
+      {
+        "component": "boolean",
+        "label": "Play on mouseover",
+        "name": "media_carouselMouseHoverVideo",
+        "description": "Defines if the video will play on loop. If toggled on, the video will loop.",
+        "valueType": "boolean",
+        "value": true
+      },
+      {
+        "component": "text",
+        "label": "Hide Video Controls",
+        "name": "media_videoControlsVideoType",
+        "valueType": "string",
+        "value": "h5",
+        "hidden": true
+      },
+      {
+        "component": "boolean",
+        "label": "Video Controls",
+        "name": "media_videoControlsVideo",
+        "description": "Defines if the video controls will be displayed. If toggled on, they will appear.",
+        "valueType": "boolean",
+        "value": true
+      },
+      {
+        "component": "text",
+        "label": "Mute Video Sound",
+        "name": "media_carouselMuteSoundVideoType",
+        "valueType": "string",
+        "value": "h6",
+        "hidden": true
+      },
+      {
+        "component": "boolean",
+        "label": "Mute Video Sound",
+        "name": "media_carouselMuteSoundVideo",
+        "description": "Defines if the video will be play on mute. If toggled on, there will be no sound.",
+        "valueType": "boolean",
+        "value": true
+      },
+      {
+        "component": "tab",
+        "label": "Button/Link",
+        "name": "cta_videoCarouselTab3",
+        "description": "Tab that includes button/link properties field."
+      },
+      {
+        "component": "aem-content",
+        "name": "cta_videoCarouselCtaLink",
+        "label": "Link 1",
+        "description": "Defines the page to which the user will be directed to.",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "cta_videoCarouselCtaLinkText",
+        "label": "Link Label 1",
+        "description": "Defines the text to be displayed in the button or as the link. ",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "cta_videoCarouselLinkType",
+        "label": "Button Styling 1",
+        "value": "primary",
+        "valueType": "string",
+        "description": "Defines the styling applied to the button or if the button will displayed as a link. Ghost Dark has a fixed width and Ghost Dark Flex's size varies based on the length of the link label.",
+        "hidden": true,
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
+      },
+      {
+        "component": "aem-content",
+        "name": "cta2_videoCarouselCtaLink",
+        "label": "Link2",
+        "description": "Defines the page to which the user will be directed to.",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "cta2_videoCarouselCtaLinkText",
+        "label": "Link Label 2",
+        "description": "Defines the text to be displayed in the button or as the link. ",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "cta2_videoCarouselLinkType",
+        "label": "Button Styling 2",
+        "value": "primary",
+        "valueType": "string",
+        "description": "Defines the styling applied to the button or if the button will displayed as a link. Ghost Dark has a fixed width and Ghost Dark Flex's size varies based on the length of the link label.",
+        "hidden": true,
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
+      },
+      {
+        "component": "tab",
+        "label": "Analytics",
+        "name": "analytics_tab4"
+      },
+      {
+        "component":"text-input",
+        "name":"analytics_label",
+        "label":"Analytics Label",
+        "valueType": "string",
+        "description": "Defines a brief description of the content for analytics. Please fill out this field in English."
+      },
+      {
+        "component":"select",
+        "name":"analytics_button",
+        "label":"Button/Link Type", 
+        "valueType": "string",
+        "description": "Defines the Button/Link type for event tracking in analytics. Please select Other for a CTA leading to another page on the BMW Serbia website.",
+        "options": [
+          {
+            "name": "Exit",
+            "value": "exit"
+          },
+          {
+            "name": "Download",
+            "value": "download"
+          },
+          {
+            "name": "Other",
+            "value": "other"
+          }          
+        ]    
+      },
+      {
+        "component": "select",
+        "label": "Only if other is selected the following options should appear:",
+        "name": "analytics_others",
+        "valueType": "string",
+        "description": "Defines the category of the Button/Link authored if Other is selected as its Type.",
+        "condition": { "===": [{"var" : "analytics_button"}, "other"] },
+        "options": [
+          {
+            "name": "Learn More",
+            "value": "LearnMore"
+          },
+          {
+            "name": "Configure",
+            "value": "Configure"
+          },
+          {
+            "name": "Technical Data",
+            "value": "Technical Data"
+          },
+          {
+            "name": "Options and Prices",
+            "value": "Options and Prices"
+          },
+          {
+            "name": "Vehicles in Stock",
+            "value": "Vehicles in Stock"
+          },
+          {
+            "name": "Request for Offer",
+            "value": "Request for Offer"
+          },
+          {
+            "name": "Sales and Service Network",
+            "value": "Sales and Service Network"
+          },
+          {
+            "name": "Test Drive",
+            "value": "Test Drive"
+          },
+          {
+            "name": "Newsletter Signup",
+            "value": "Newsletter Signup"
+          },
+          {
+            "name": "Contact",
+            "value": "Contact"
+          },
+          {
+            "name": "Search",
+            "value": "Search"
+          },
+          {
+            "name": "Show More / Show Less",
+            "value": "Show More / Show Less"
+          },
+          {
+            "name": "Other",
+            "value": "Other"
+          }
+    
+        ]
+      }
+    ]
   }
 ]

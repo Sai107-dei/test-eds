@@ -25,18 +25,7 @@
     "id": "cards",
     "components": [
       "card"
-    ],
-    "rte": {
-      "format": [],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": ["link"],
-      "advanced": ["h2"],
-      "extensions": [],
-       "editor": []
-    }
+    ]
   },
   {
     "id": "lards",
@@ -44,7 +33,22 @@
       "lard"
     ]
   },
-
+  {
+    "id": "video-carousel",
+    "components": [],
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": ["link"],
+      "blocks": [],
+      "advanced": [""],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
   {
     "id": "relatedlinks",
     "components": [
