@@ -295,6 +295,20 @@
         "description": "Enter main heading for the Primary Hero"
       },
       {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "description": "Upload the icon image"
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Icon Alt text",
+        "valueType": "string",
+        "description": "Pick alt text from AEM DAM with ability to override it"
+      },
+      {
         "component": "text",
         "name": "ctaText",
         "label": "CTA Text",
