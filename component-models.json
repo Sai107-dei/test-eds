@@ -295,6 +295,23 @@
         "description": "Enter main heading for the Primary Hero"
       },
       {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ]
+      },
+      {
         "component": "checkbox-group",
         "label": "ExitInterstitial",
         "name": "exitInterstitial",
@@ -302,14 +319,6 @@
         "options": [
           { "name": "exitInterstitial", "value": "true" }
         ]
-      },
-      {
-        "component": "boolean",
-        "label": "Mute Video Sound",
-        "name": "media_carouselMuteSoundVideo",
-        "description": "Defines if the video will be play on mute. If toggled on, there will be no sound.",
-        "valueType": "boolean",
-        "value": true
       },
       {
         "component": "richtext",
