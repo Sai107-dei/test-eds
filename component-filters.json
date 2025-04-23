@@ -2,132 +2,36 @@
   {
     "id": "main",
     "components": [
-      "all-models-section",
-      "bmw_main_section",
-      "bmw-video",
-      "flexible-width-section",
-      "footer-section",
-      "header-section",
-      "section",
-      "stock-locator-section",
-      "tabs-section"
+      "section"
     ]
   },
   {
-    "id": "columns",
-    "components": ["column"]
-  },
-  {
-    "id": "column",
+    "id": "section",
     "components": [
-      "button",
-      "copy_text",
-      "eyebrow",
-      "headline",
+      "text",
       "image",
-      "title"
-    ]
-  },
-  {
-    "id": "bmw_main_section",
-    "components": [
-      "section",
-      "text-image",
-      "text-image-v2"
-    ]
-  },
-  {
-    "id": "footer-section",
-    "components": [
-      "copyright",
-      "icon-link-list",
-      "link-list",
-      "speed-dial"
-    ]
-  },
-  {
-    "id": "header-section",
-    "components": [
-      "logo",
-      "menu-flyout",
-      "menu-link",
-      "subnavigation-text"
-    ]
-  },
-  {
-    "id": "menu-flyout",
-    "components": [
-      "link-list",
-      "menu-teaser"
-    ]
-  },
-  {
-    "id": "menu-teaser",
-    "components": [
       "button",
-      "copy_text"
+      "title",
+      "hero",
+      "cards",
+      "lards",
+      "columns",
+      "fragment",
+      "relatedlinks",
+      "gated-sections"
     ]
   },
   {
-    "id": "text-with-media",
+    "id": "cards",
     "components": [
-      "text-with-image",
-      "text-with-video"
+      "card"
     ]
   },
   {
-    "id": "accordion",
+    "id": "lards",
     "components": [
-      "accordion-item"
+      "lard"
     ]
-  },
-  {
-    "id": "accordion-item",
-    "components": [],
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": ["superscript"],
-      "list": ["bullist", "numlist"],
-      "insert": ["link"],
-      "blocks": [],
-      "advanced": [],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
-  },
-  {
-    "id": "text-with-image",
-    "components": [],
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": ["link"],
-      "blocks": [],
-      "advanced": [""],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
-  },
-  {
-    "id": "text-with-video",
-    "components": [],
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": ["link"],
-      "blocks": [],
-      "advanced": [""],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
   },
   {
     "id": "video-carousel",
@@ -146,277 +50,25 @@
     }
   },
   {
-    "id": "image-carousel",
-    "components": [],
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": ["link"],
-      "blocks": [],
-      "advanced": [""],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
-  },
-  {
-    "id": "quote",
-    "components": [],
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": [""],
-      "blocks": [],
-      "advanced": [""],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
-  },
-  {
-    "id": "section",
+    "id": "relatedlinks",
     "components": [
-      "accordion",
-      "background-media",
-      "button",
-      "columns",
-      "content-navigation",
-      "cookiepolicy",
-      "copy_text",
-      "disclaimer",
-      "download",
-      "drivetrain-switch",
-      "eyebrow",
-      "footer-text",
-      "headline",
-      "iframe",
+      "relatedlink"
+    ]
+  },
+
+  {
+    "id": "columns",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
       "image",
-      "link-list",
-      "media-carousel",
-      "model-card",
-      "multicontent-gallery",
-      "precon",
-      "quote",
-      "technical-data",
-      "text-with-media",
-      "title",
-      "video",
-      "video-gallery",
-      "website-search"
-    ]
-  },
-  {
-    "id":"flexible-width-section",
-    "components":[
-      "accordion",
       "button",
-      "columns",
-      "copy_text",
-      "cookiepolicy",
-      "disclaimer",
-      "download"   ,
-      "eyebrow",
-      "headline",
-      "image",
-      "quote",
-      "title",
-      "video"
+      "title"
     ]
-  },
-  {
-    "id": "tabs-section",
-    "components": [
-      "accordion",
-      "background-media",
-      "button",
-      "columns",
-      "content-navigation",
-      "cookiepolicy",
-      "copy_text",
-      "disclaimer",
-      "download",
-      "drivetrain-switch",
-      "eyebrow",
-      "footer-text",
-      "headline",
-      "icon",
-      "icon-link-list",
-      "iframe",
-      "image",
-      "link-list",
-      "media-carousel",
-      "model-card",
-      "multicontent-gallery",
-      "precon",
-      "quote",
-      "technical-data",
-      "text-with-media",
-      "title",
-      "video",
-      "video-gallery"
-    ]
-  },
-  {
-    "id": "all-models-section",
-    "components": [
-      "all-models",
-      "headline",
-      "link-list"
-    ]
-  },
-  {
-    "id": "stock-locator-model-overview",
-    "components": [],
-    "rte": {
-      "format": [],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": [],
-      "blocks": [],
-      "advanced": [""],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
-  },
-  {
-   "id" : "stock-locator-section",
-   "components":[
-    "copy_text",
-    "headline",
-    "stock-locator-model-detail",
-    "stock-locator-model-overview"
-   ]
-  },
-  {
-    "id": "copy_text",
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": ["superscript"],
-      "list": ["bullist", "numlist"],
-      "insert": ["link"],
-      "blocks": [],
-      "advanced": ["h3"],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
-  },
-  {
-    "id": "subnavigation-text",
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": [],
-      "advanced": ["h3"],
-      "extensions": [],
-       "editor": []
-    }
-  },
-  {
-    "id": "cards",
-    "components": ["card"]
-  },
-  {
-    "id": "icon-link-list",
-    "components": ["icon"]
-  },
-  {
-    "id": "link-list",
-    "components": [],
-    "rte": {
-      "format": [],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": ["bullist"],
-      "insert": ["link"],
-      "advanced": [],
-      "extensions": [],
-      "editor": []
-    }
-  },
-  {
-    "id": "multicontent-gallery",
-    "components": [
-      "image-slide",
-      "video-slide"
-    ]
-  },
-  {
-    "id": "video-slide",
-    "components": []
-  },
-  {
-    "id": "image-slide",
-    "components": []
-  },
-  {
-    "id": "media-carousel",
-    "components": [
-      "image-carousel",
-      "video-carousel"
-    ]
-  },
-  {
-    "id": "background-media",
-    "components":[
-      "background-image",
-      "background-video"
-    ]
-  },
-  {
-    "id": "video-gallery",
-    "components": [
-      "video-gallery-slide"
-    ]
-  },
-  {
-    "id": "drivetrain-switch",
-    "components": [
-      "drivetrain-model-card"
-    ]
-  },
-  {
-    "id": "precon",
-    "components": [
-      "precon-vehicle"
-    ]
-  },
-  {
-    "id": "speed-dial",
-    "components":[
-      "speed-dial-item"
-    ]
-  },
-  {
-    "id": "technical-data",
-    "components":[
-      "model-data"
-    ],
-    "rte": {
-      "format": [],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": ["link"],
-      "advanced": ["h2"],
-      "extensions": [],
-       "editor": []
-    }
-  },
-  {
-    "id": "website-search",
-    "components":[]
   }
 ]
