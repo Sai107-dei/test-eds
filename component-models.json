@@ -296,9 +296,9 @@
       },
       {
         "component": "checkbox-group",
-        "label": "Checkbox Group",
-        "name": "checkbox",
-        "valueType": "string[]",
+        "label": "exitInterstitial",
+        "name": "exitInterstitial",
+        "valueType": "string",
         "options": [
           { "name": "Option 1", "value": "option1" }
         ]
