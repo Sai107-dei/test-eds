@@ -39,7 +39,7 @@
         "valueType": "string",
         "name": "imageAlt",
         "label": "Image Alt text",
-        "description": "Pick alt text from AEM DAM with ability to override it123",
+        "description": "Pick alt text from AEM DAM with ability to override it",
         "required": true
       }
     ]
@@ -162,7 +162,18 @@
         "name": "text",
         "value": "",
         "label": "Text",
-        "valueType": "string"
+        "valueType": "string",
+        "rte": {
+      "format": [],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": ["bullist"],
+      "insert": ["link"],
+      "advanced": [],
+      "extensions": [],
+      "editor": []
+    }
       }
     ]
   },
