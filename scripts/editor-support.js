@@ -38,8 +38,7 @@ addMetaTag();
               authorizable.memberOf.some(group => group.id === "Prudential Super Authors")
           );
           if (isMember) {
-            alert('Yes');
-            alert('publish option diabled');
+           
               
           }
       })
@@ -146,7 +145,7 @@ function attachEventListners(main) {
     'aue:content-remove',
     'aue:content-copy',
   ].forEach((eventType) => main?.addEventListener(eventType, async (event) => {
-    if (eventType === 'aue:content-add')  {
+    if ((eventType === 'aue:content-add')  ){
      
       return;
     }
