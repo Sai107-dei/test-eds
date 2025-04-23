@@ -300,17 +300,8 @@
         "label": "Description",
         "valueType": "string",
         "description": "Enter description for additional context"
-      },
-      {
-        "component": "checkbox-group",
-        "name": "exitInterstitial",
-        "valueType": "string" ,
-        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
-        "value"  :false,
-        "options": [
-          { "name": "Exit Interstitial", "value": "true" }
-        ]
       }
+      
     ]
   }, 
     {
