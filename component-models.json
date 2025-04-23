@@ -164,15 +164,8 @@
         "label": "Text",
         "valueType": "string",
         "rte": {
-      "format": [],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
       "list": ["bullist"],
-      "insert": ["link"],
-      "advanced": [],
-      "extensions": [],
-      "editor": []
+      "insert": ["link"]
     }
       }
     ]
