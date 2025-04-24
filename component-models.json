@@ -309,17 +309,34 @@
         "description": "Pick alt text from AEM DAM with ability to override it"
       },
       {
+        "component": "select",
+        "name": "textcolor",
+        "label": "Text Color",
+        "description": "Select the Text Color",
+        "value": "black",
+        "options": [
+          {
+            "name": "Black",
+            "value": "black"
+          },
+          {
+            "name": "White",
+            "value": "white"
+          }
+        ]
+      },
+      {
         "component": "text",
-        "name": "ctaText",
-        "label": "CTA Text",
+        "name": "ctalabel",
+        "label": "CTA Label",
         "valueType": "string",
-        "description": "Enter label to display on the CTA"
+        "description": "Enter label to display on the CTA for each card"
       },
       {
         "component": "aem-content",
         "name": "ctaLink",
         "label": "CTA Link",
-        "description": "Enter the URL to navigate when CTA is clicked",
+        "description": "Enter the URL to navigate when CTA is clicked for each card",
         "validation": {
           "rootPath": "/content/lilly-com-eds"
         }
