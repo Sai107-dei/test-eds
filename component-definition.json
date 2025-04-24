@@ -107,7 +107,11 @@
                 "template": {
                   "name": "Card",
                   "model": "card"
-                }
+                },
+                "classes": [
+                    "sai",
+                    "sai123"
+                  ]
               }
             }
           }
@@ -152,11 +156,7 @@
                 "template": {
                   "name": "Hero",
                   "model": "hero",
-                  "filter": "hero",
-                  "classes": [
-                    "sai123",
-                    "sai123-align"
-                  ]
+                  "filter": "hero"
                 }
               }
             }
