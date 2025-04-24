@@ -15,8 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "relatedlinks"
+      "fragment"
     ]
   },
   {
@@ -25,12 +24,7 @@
       "card"
     ]
   },
-  {
-    "id": "relatedlinks",
-    "components": [
-      "related-link"
-    ]
-  },
+
   {
     "id": "columns",
     "components": [
