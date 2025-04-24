@@ -25,9 +25,16 @@
     ]
   },
   {
+    "id": "relatedlinks",
+    "components": [
+      "related-link"
+    ]
+  },
+  {
     "id": "columns",
     "components": [
-      "column"
+      "column",
+      "related-links"
     ]
   },
   {
