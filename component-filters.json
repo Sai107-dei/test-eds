@@ -16,13 +16,19 @@
       "cards",
       "columns",
       "fragment",
-      "cards1"
+      "relatedlinks"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "relatedlinks",
+    "components": [
+      "relatedlink"
     ]
   },
   {

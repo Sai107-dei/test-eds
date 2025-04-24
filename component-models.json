@@ -161,7 +161,7 @@
     ]
   },
   {
-    "id": "card1",
+    "id": "relatedlink",
     "fields": [
       {
         "component": "reference",
