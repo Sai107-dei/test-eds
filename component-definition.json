@@ -107,11 +107,8 @@
                 "template": {
                   "name": "Card",
                   "model": "card"
-                },
-                "classes": [
-                    "sai",
-                    "sai123"
-                  ]
+                }
+               
               }
             }
           }
@@ -126,7 +123,11 @@
                 "template": {
                   "columns": "2",
                   "rows": "1"
-                }
+                },
+                "classes": [
+                  "sai",
+                  "sai123"
+                ]
               }
             }
           }
