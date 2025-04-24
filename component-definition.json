@@ -123,11 +123,7 @@
                 "template": {
                   "columns": "2",
                   "rows": "1"
-                },
-                "classes": [
-                  "sai",
-                  "sai123"
-                ]
+                }
               }
             }
           }
