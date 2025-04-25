@@ -16,8 +16,13 @@
       "cards",
       "columns",
       "fragment",
-      "relatedlinks"
+      "relatedlinks",
+      "tabs"
     ]
+  },
+  {
+    "id": "tabs",
+    "components": ["tab-item"]
   },
   {
     "id": "cards",
