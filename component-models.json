@@ -449,10 +449,11 @@
   "fields":[
      {
         "component":"select",
-        "name":"alignment",
-        "label":"Alignment",
-        "description":"Select the alignment expected for entire block",
+        "name":"textAlignment",
+        "label":"Text Alignment",
+        "description":"Choose the text alignment within the Promo Banner component",
         "value":"left",
+        "required": true,
         "options":[
            {
               "name":"Left",
@@ -477,22 +478,21 @@
      },
      {
         "component":"select",
-        "name":"alignment",
-        "label":"Alignment",
-        "description":"Select the alignment expected for entire block",
-        "value":"left",
+        "name":"highlightedtextColor",
+        "label":"Highlighted Text Color",
+        "description":"Only applicable to italic font in title",
         "options":[
            {
-              "name":"Left",
-              "value":"left"
+              "name":"Primary",
+              "value":"primary"
            },
            {
-              "name":"Center",
-              "value":"center"
+              "name":"Secondary",
+              "value":"secondary"
            },
            {
-              "name":"Right",
-              "value":"right"
+              "name":"Tertiary",
+              "value":"tertiary"
            }
         ]
      },
@@ -500,18 +500,21 @@
         "component":"richtext",
         "name":"title",
         "label":"Title",
-        "valueType":"string"
+        "valueType":"string",
+        "description": "Enter the title",
+        "required": true
      },
      {
         "component":"richtext",
         "name":"description",
         "label":"Description",
-        "valueType":"string"
+        "valueType":"string",
+        "description": "Enter the description"
      },
      {
         "component":"text",
-        "name":"ctaText",
-        "label":"CTA Text",
+        "name":"ctaLabel",
+        "label":"CTA Label",
         "valueType":"string",
         "description":"Enter label to display on the CTA"
      },
