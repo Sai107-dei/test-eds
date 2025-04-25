@@ -447,27 +447,34 @@
  {
    "id": "sus10",
    "fields": [
-     {
-       "component": "reference",
-       "valueType": "string",
-       "name": "image",
-       "label": "Image",
-       "multi": false
-     },
-     {
-       "component": "text",
-       "valueType": "string",
-       "name": "imageAlt",
-       "label": "Alt",
-       "value": ""
-     },
-     {
-       "component": "richtext",
-       "name": "text",
-       "value": "",
-       "label": "Text",
-       "valueType": "string"
-     }
+    {
+      "component": "select",
+      "name": "alignment",
+      "label": "Alignment",
+      "description": "Select the alignment expected for entire block",
+      "value": "left",
+      "options": [
+        {
+          "name": "Left",
+          "value": "left"
+        },
+        {
+          "name": "Center",
+          "value": "center"
+        },
+        {
+          "name": "Right",
+          "value": "right"
+        }
+      ]
+    },
+    {
+      "component": "text",
+      "name": "eyebrowText",
+      "label": "Eyebrow Text",
+      "valueType": "string",
+      "description": "Enter the Eyebrow text"
+    }
    ]
  },
  {
