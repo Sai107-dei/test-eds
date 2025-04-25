@@ -4,21 +4,7 @@
       "title": "Default Content",
       "id": "default",
       "components": [
-        {
-          "title": "All Models Section",
-          "id": "all-models-section",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/section/v1/section",
-                "template": {
-                  "name": "All Models Section",
-                  "model": "all-models-section"
-                }
-              }
-            }
-          }
-        },
+        
         {
           "title": "Text",
           "id": "text",

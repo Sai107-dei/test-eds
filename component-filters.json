@@ -3,8 +3,7 @@
     "id": "main",
     "components": [
       "section",
-      "tabsections",
-      "all-models-section"
+      "tabsections"
     ]
   },
   {
