@@ -39,6 +39,12 @@
     ]
   },
   {
+    "id": "tab",
+    "components": [
+      "image"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
