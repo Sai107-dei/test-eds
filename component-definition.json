@@ -4,7 +4,6 @@
       "title": "Default Content",
       "id": "default",
       "components": [
-        
         {
           "title": "Text",
           "id": "text",
@@ -96,23 +95,6 @@
       "id": "sections",
       "components": [
         {
-          "title": "All Models Section",
-          "id": "all-models-section",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/section/v1/section",
-                "template": {
-                  "name": "All Models Section",
-                  "model": "all-models-section",
-                  "filter": "all-models-section",
-                  "style": "allmodel-section"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Section",
           "id": "section",
           "plugins": {
@@ -128,7 +110,6 @@
         }
       ]
     },
-   
     {
       "title": "Blocks",
       "id": "blocks",
