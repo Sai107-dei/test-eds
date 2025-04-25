@@ -33,17 +33,18 @@
     ]
   },
   {
+    "id": "tabsections",
+    "components": [
+      "tabs"
+    ]
+  },
+  {
     "id": "tabs",
     "components": [
       "tab"
     ]
   },
-  {
-    "id": "tab",
-    "components": [
-      "image"
-    ]
-  },
+  
   {
     "id": "cards",
     "components": [
