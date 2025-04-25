@@ -34,6 +34,19 @@
     }
   ]
 },
+{
+  "id": "tab",
+  "fields": [
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "Title",
+      "label": "title",
+      "description": "Enter the title",
+      "required": true
+    }
+  ]
+},
  
  {
    "id": "title",
