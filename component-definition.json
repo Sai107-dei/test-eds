@@ -109,16 +109,16 @@
           }
         },
         {
-          "title": "All Models Section",
-          "id": "all-models-section",
+          "title": "Tabs Section",
+          "id": "tabs-section",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
-                  "name": "All Models Section",
-                  "model": "all-models-section",
-                  "filter": "all-models-section"
+                  "name": "Tabs Section",
+                  "model": "tabs-section",
+                  "filter": "tabs-section"
                 }
               }
             }
