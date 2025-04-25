@@ -3,7 +3,14 @@
     "id": "main",
     "components": [
       "section",
-      "tabsections"
+      "tabsections",
+      "all-models-section"
+    ]
+  },
+  {
+    "id": "all-models-section",
+    "components": [
+      "image"
     ]
   },
   {
