@@ -329,15 +329,15 @@
           }
         },
         {
-          "title": "Sus10",
-          "id": "sus10",
+          "title": "Promo banner",
+          "id": "promo-banner",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "Sus10",
-                  "model": "sus10"
+                  "name": "Promo banner",
+                  "model": "promo-banner"
                 }
               }
             }
