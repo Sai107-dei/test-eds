@@ -28,7 +28,14 @@
       "relatedlinks",
       "cards-default",
       "additional-links",
-      "enhanced-related-links"
+      "enhanced-related-links",
+      "tabs"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tab"
     ]
   },
   {
