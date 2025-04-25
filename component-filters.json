@@ -16,13 +16,11 @@
       "cards",
       "columns",
       "fragment",
-      "relatedlinks",
-      "tabs"
+      "text-component",
+      "teaser",
+      "carousel",
+      "tab"
     ]
-  },
-  {
-    "id": "tabs",
-    "components": ["tab-item"]
   },
   {
     "id": "cards",
@@ -31,29 +29,9 @@
     ]
   },
   {
-    "id": "relatedlinks",
-    "components": [
-      "relatedlink"
-    ]
-  },
-  {
-    "id": "cards1",
-    "components": [
-      "card1"
-    ]
-  },
-
-  {
     "id": "columns",
     "components": [
-      "column",
-      "related-links"
-    ]
-  },
-  {
-    "id": "hero",
-    "components": [
-      "icongrid-tile"
+      "column"
     ]
   },
   {

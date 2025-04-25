@@ -1,29 +1,5 @@
 [
   {
-    "id": "page-metadata",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jcr:title",
-        "label": "Title"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jcr:description",
-        "label": "Description"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "keywords",
-        "multi": true,
-        "label": "Keywords"
-      }
-    ]
-  },
-  {
     "id": "image",
     "fields": [
       {
@@ -161,25 +137,6 @@
     ]
   },
   {
-    "id": "relatedlink",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "columns",
     "fields": [
       {
@@ -208,110 +165,127 @@
       }
     ]
   },
- {
+  {
     "id": "hero",
     "fields": [
       {
-        "component": "select",
-        "name": "PrimarybackgroundType",
-        "label": "Primary Background Type",
-        "description": "Selct Background Type Primary Hero",
-        "required": true,
-        "options": [
+        "component": "container",
+        "label": "primary-hero",
+        "name": "hero banner",
+        "valueType": "string",
+        "fields": [
           {
-            "name": "Image",
-            "value": "imageSlide"
+            "component": "select",
+            "valueType": "string",
+            "name": "PrimarybackgroundType",
+            "label": "Primary Background Type",
+            "options": [
+              {
+                "name": "Image",
+                "value": "imageSlide"
+              },
+              {
+                "name": "Video",
+                "value": "videoSlide"
+              }
+            ],
+            "multi": false
           },
           {
-            "name": "Video",
-            "value": "videoSlide"
+            "component": "container",
+            "label": "Image Details111",
+            "name": "HeroImage",
+            "valueType": "string",
+            "condition": {
+              "===": [
+                {
+                  "var": "PrimarybackgroundType"
+                },
+                "imageSlide"
+              ]
+            },
+            "fields": [
+              {
+                "component": "reference",
+                "name": "image",
+                "label": "Image",
+                "required" : true,
+                "multi": false,
+                "allowEmpty": false,
+                "validation": {
+                  "type": "mandatory"
+                }
+              },
+              {
+                "component": "text",
+                "name": "imageAlt",
+                "label": "Alt Text"
+              }
+            ]
+          },
+          {
+            "component": "container",
+            "label": "Video Details",
+            "name": "HeroVideo",
+            "valueType": "string",
+            "condition": {
+              "===": [
+                {
+                  "var": "PrimarybackgroundType"
+                },
+                "videoSlide"
+              ]
+            },
+            "fields": [
+              {
+                "component": "text",
+                "name": "videoId",
+                "label": "Enter Video ID12345",
+                "required": true
+              }
+            ]
           }
         ]
       },
       {
         "component": "text",
-        "valueType": "string",
-        "label": "Background Video",
-        "name": "BackgroundVideo",
-        "description": "Upload video for the Primary Hero",
-        "required": true,
-        "condition": {
-          "===": [
-            {
-              "var": "PrimarybackgroundType"
-            },
-            "videoSlide"
-          ]
-        }
-      },
-      {
-        "component": "boolean",
-        "label": "Enable Overlay?",
-        "name": "EnableOverlay",
-        "valueType": "boolean",
-        "description": "Enable Overlay video for the Primary Hero",
-        "condition": {
-          "===": [
-            {
-              "var": "PrimarybackgroundType"
-            },
-            "videoSlide"
-          ]
-        }
-      },
-      {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "text-input",
-      "label": "Overlay Title",
-      "required": true,
-      "condition": {
-          "===": [
-            {
-              "var": "EnableOverlay"
-            },
-            true
-          ]
-        }
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "BackgroundImage",
-        "label": "Background Image",
-        "description": "Upload Image for the Primary Hero",
-        "required": true,
-        "condition": {
-          "===": [
-            {
-              "var": "PrimarybackgroundType"
-            },
-            "imageSlide"
-          ]
-        }
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "Image Alt",
-        "label": "Image Alt Text",
-        "description": "Add Alt Text for Image Primary Hero",
-        "condition": {
-          "===": [
-            {
-              "var": "PrimarybackgroundType"
-            },
-            "imageSlide"
-          ]
-        }
-      },
-      {
-        "component": "text",
         "name": "text",
-        "label": "Title",
         "required": true,
-        "valueType": "string",
-        "description": "Enter main heading for the Primary Hero"
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "required": true,
+        "label": "Description",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "text-component",
+    "fields": [
+      {
+        "component": "select",
+        "name": "alignment",
+        "label": "Alignment",
+        "description": "Select the alignment expected for entire block",
+        "value": "left",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
       },
       {
         "component": "reference",
@@ -328,36 +302,41 @@
         "description": "Pick alt text from AEM DAM with ability to override it"
       },
       {
-        "component": "select",
-        "name": "textcolor",
-        "label": "Text Color",
-        "description": "Select the Text Color",
-        "value": "black",
-        "options": [
-          {
-            "name": "Black",
-            "value": "black"
-          },
-          {
-            "name": "White",
-            "value": "white"
-          }
-        ]
+        "component": "text",
+        "name": "eyebrowText",
+        "label": "Eyebrow Text",
+        "valueType": "string",
+        "description": "Enter the Eyebrow text"
+      },
+      {
+        "component": "richtext",
+        "name": "eyebrowRte",
+        "label": "Title",
+        "valueType": "string",
+        "description": "Enter the Title"
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Description",
+        "valueType": "string",
+        "required": true,
+        "description": "Enter description for additional context which can have styling such as Bold, italics and  ability to add text links."
       },
       {
         "component": "text",
-        "name": "ctalabel",
+        "name": "ctaLabel",
         "label": "CTA Label",
         "valueType": "string",
-        "description": "Enter label to display on the CTA for each card"
+        "description": "Enter label to display on the CTA"
       },
       {
         "component": "aem-content",
-        "name": "ctaLink",
+        "name": "CTA Link",
         "label": "CTA Link",
-        "description": "Enter the URL to navigate when CTA is clicked for each card",
+        "description": "Enter the URL to navigate when CTA is clicked",
         "validation": {
-          "rootPath": "/content/lilly-com-eds"
+          "rootPath": "/content/aem-eds-practice-site"
         }
       },
       {
@@ -379,57 +358,154 @@
       },
       {
         "component": "checkbox-group",
-        "label": "ExitInterstitial",
         "name": "exitInterstitial",
-        "valueType": "string",
+        "valueType": "boolean",
+        "label": "Exit Interstitial",
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
         "options": [
-          { "name": "ExitInterstitial", "value": "true" }
+          { "name": "Exit Interstitial", "value": true }
         ]
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string",
-        "description": "Enter description for additional context"
       }
       
     ]
-  }, 
- 
+  },
+  {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "select",
+        "name": "imagePlacement",
+        "label": "Image Placement",
+        "description": "Select the alignment expected for entire block",
+        "value": "left",
+        "required": true,
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
+      "component": "reference",
+      "valueType": "string",
+      "name": "image",
+      "label": "Image",
+      "required": true,
+      "description": "Upload image for the teaser"
+    },
     {
-    "id": "icongrid-tile",
+      "component": "text",
+      "valueType": "string",
+      "name": "imageAlt",
+      "label": "Image Alt text",
+      "description": "Add Image Alternate Text"
+    },
+    {
+      "component": "reference",
+      "valueType": "string",
+      "name": "icon",
+      "label": "Icon",
+      "description": "Upload icon for the teaser"
+    },
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "iconAlt",
+      "label": "Icon Alt text",
+      "description": "Pick alt text from AEM DAM with ability to override it"
+    },
+    {
+      "component": "text",
+      "name": "text",
+      "label": "Title",
+      "required": true,
+      "valueType": "string",
+      "description": "Enter the title"
+    },
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Description",
+      "valueType": "string",
+      "description": "Enter the description"
+    },
+    {
+      "component": "text",
+      "name": "ctaText",
+      "label": "CTA Text",
+      "valueType": "string",
+      "description": "Enter label to display on the CTA"
+    },
+    {
+      "component": "aem-content",
+      "name": "ctaLink",
+      "label": "CTA Link",
+      "description": "Enter the URL to navigate when CTA is clicked",
+      "validation": {
+        "rootPath": "/content/aem-eds-practice-site"
+      }
+    },
+    {
+      "component": "select",
+      "name": "targetPath",
+      "label": "Target Path",
+      "description": "Select the target path for the authored CTA URL",
+      "value": "sameTab",
+      "options": [
+        {
+          "name": "Same Tab",
+          "value": "sameTab"
+        },
+        {
+          "name": "New Tab",
+          "value": "newTab"
+        }
+      ]
+    },
+    {
+      "component": "checkbox-group",
+      "label": "Checkbox Group",
+      "name": "checkbox",
+      "valueType": "string",
+      "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+      "options": [
+        { "name": "Exit Interstitial", "value": "true" }
+      ]
+    }
+  ]
+  },
+  {
+    "id": "carousel",
     "fields": [
       {
         "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Icon/Logo",
-        "required": true,
-        "description": "Upload icon for the Icon Grid"
+        "name": "images",
+        "label": "Images",
+        "description": "Add multiple images for the carousel",
+        "multi": true
       },
       {
         "component": "text",
-        "valueType": "string",
+        "name": "autoplay",
+        "label": "Autoplay",
+        "description": "Enable or disable autoplay (true/false)"
+      },
+      {
+        "component": "text",
+        "name": "interval",
+        "label": "Interval",
+        "description": "Set the interval time for autoplay in milliseconds"
+      },
+      {
+        "component": "text",
         "name": "imageAlt",
         "label": "Alt Text",
-        "description": "Add Image Alternate Text"
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "label": "Icon Title",
-        "valueType": "string",
-        "description": "Enter title for the Icon Grid",
-        "required": true
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Icon Description",
-        "valueType": "string",
-        "description": "Enter Description for the Icon Grid",
-        "required": true
+        "description": "Provide alternate text for the images"
       }
     ]
   },
@@ -437,40 +513,20 @@
     "id": "tabs",
     "fields": [
       {
-        "component": "select",
-        "name": "type",
-        "value": "",
-        "label": "Tabs Layout",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Horizontal Layout",
-            "value": "horizontal"
-          },
-          {
-            "name": "Vertical Layout",
-            "value": "vertical"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "tab-item",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "tab-title",
-        "label": "Tab Title",
-        "value": ""
+        "component": "text",
+        "name": "numberOfTabs",
+        "label": "Number of Tabs",
+        "description": "Enter the number of tabs to display",
+        "valueType": "number",
+        "required": true
       },
       {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "body-text",
-        "label": "Tab Text",
-        "value": ""
+        "component": "multiselect",
+        "name": "tabTitles",
+        "label": "Tab Titles",
+        "description": "Enter the titles for each tab",
+        "multi": true,
+        "required": true
       }
     ]
   }
