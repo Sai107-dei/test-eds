@@ -445,7 +445,7 @@
  },
 
  {
-  "id": "promo_banner",
+  "id": "promo-banner",
   "fields": [
     {
       "component": "container",
