@@ -453,7 +453,7 @@
       "label": "Promo Entries1",
       "fields": [
         {
-          "component": "reference",
+          "component": "text",
           "name": "title",
           "label": "Title",
           "valueType": "string",
