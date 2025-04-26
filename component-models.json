@@ -448,6 +448,43 @@
   "id": "promo-banner",
   "fields": [
     {
+      "component": "container",
+      "label": "Card 2 contents",
+      "name": "card2",
+      "valueType": "string",
+      "collapsible": true,
+      "validation": {
+            "maxSize": 2
+        },
+      "fields": [
+        {
+          "component": "reference",
+          "name": "cardImage2",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "name": "CardImageAlt2",
+          "label": "Alt Text"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "eyebrow2",
+          "label": "Eyebrow",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "name": "description2",
+          "value": "",
+          "label": "Description",
+          "valueType": "string"
+        }
+      ]
+    },
+    {
       "component": "text",
       "name": "title",
       "label": "Title",
