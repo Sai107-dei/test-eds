@@ -447,55 +447,7 @@
  {
   "id":"promo-banner",
   "fields":[
-     {
-        "component":"select",
-        "name":"textAlignment",
-        "label":"Text Alignment",
-        "description":"Choose the text alignment within the Promo Banner component",
-        "value":"left",
-        "required": true,
-        "options":[
-           {
-              "name":"Left",
-              "value":"left"
-           },
-           {
-              "name":"Center",
-              "value":"center"
-           },
-           {
-              "name":"Right",
-              "value":"right"
-           }
-        ]
-     },
-     {
-        "component":"text",
-        "name":"eyebrowText",
-        "label":"Eyebrow Text",
-        "valueType":"string",
-        "description":"Enter the Eyebrow text"
-     },
-     {
-        "component":"select",
-        "name":"highlightedtextColor",
-        "label":"Highlighted Text Color",
-        "description":"Only applicable to italic font in title",
-        "options":[
-           {
-              "name":"Primary",
-              "value":"primary"
-           },
-           {
-              "name":"Secondary",
-              "value":"secondary"
-           },
-           {
-              "name":"Tertiary",
-              "value":"tertiary"
-           }
-        ]
-     },
+   
      {
         "component":"richtext",
         "name":"title",
@@ -503,59 +455,6 @@
         "valueType":"string",
         "description": "Enter the title",
         "required": true
-     },
-     {
-        "component":"richtext",
-        "name":"description",
-        "label":"Description",
-        "valueType":"string",
-        "description": "Enter the description"
-     },
-     {
-        "component":"text",
-        "name":"ctaLabel",
-        "label":"CTA Label",
-        "valueType":"string",
-        "description":"Enter label to display on the CTA"
-     },
-     {
-        "component":"aem-content",
-        "name":"ctaLink",
-        "label":"CTA Link",
-        "description":"Enter the URL to navigate when CTA is clicked",
-        "validation":{
-           "rootPath":"/content/lilly-com-eds"
-        }
-     },
-     {
-        "component":"select",
-        "name":"targetPath",
-        "label":"Target Path",
-        "description":"Select the target path for the authored CTA URL",
-        "value":"sameTab",
-        "options":[
-           {
-              "name":"Same Tab",
-              "value":"sameTab"
-           },
-           {
-              "name":"New Tab",
-              "value":"newTab"
-           }
-        ]
-     },
-     {
-        "component":"checkbox-group",
-        "label":"Checkbox Group",
-        "name":"checkbox",
-        "valueType":"string",
-        "description":"Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
-        "options":[
-           {
-              "name":"Exit Interstitial",
-              "value":"true"
-           }
-        ]
      }
   ]
 },
