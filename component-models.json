@@ -453,9 +453,10 @@
         "name":"title",
         "label":"Title",
         "valueType":"string",
-        "description": "Enter the title",
         "required": true,
-        "multi":true
+        "multi":true,
+        "description": "ⓘ Heading (H1) and Description",
+        "maxSize": 2
      }
   ]
 },
