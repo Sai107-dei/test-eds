@@ -445,28 +445,27 @@
  },
 
  {
-  "id":"promo-banner",
-  "fields":[
-   
-     {
-        "component":"container",
-        "name":"title",
-        "label":"Title",
-        "valueType":"string",
-        "required": true,
-        "multi":true,
-        "description": "ⓘ Heading (H1) and Descriptionsai",
-        "maxItems": 2,
-       "fields": {
-          "component": "reference",
+  "id": "promo_banner",
+  "fields": [
+    {
+      "component": "container",
+      "multi": true,
+      "maxItems": 2,
+      "name": "promoEntries",
+      "label": "Promo Entries",
+      "fields": [
+        {
+          "component": "rte:richtext",
+          "name": "title",
+          "label": "Title",
           "valueType": "string",
-          "name": "image",
-          "label": "Image",
-          "multi": false
+          "required": true,
+          "description": "Heading (H1) and Descriptions"
         }
-     }
+      ]
+    }
   ]
-},
+ },
  {
    "id": "infobanner",
    "fields": []
