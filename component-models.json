@@ -454,7 +454,7 @@
       "valueType": "string",
       "required": true,
       "multi": true,
-      "description": "Heading (H1) and Descriptions",
+      "description": "Heading (H1) and Description1s",
       "maxItem": 2
     }
   ]
