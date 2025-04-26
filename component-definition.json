@@ -141,7 +141,7 @@
                   "name": "Cards",
                   "filter": "cards",
                   "validation": {
-            "limit": 1
+            "maxItem": 1
         }
                 }
               }
