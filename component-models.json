@@ -450,7 +450,7 @@
     {
       "component": "container",
       "name": "promoEntries",
-      "label": "Promo Entries",
+      "label": "Promo Entries1",
       "fields": [
         {
           "component": "reference",
