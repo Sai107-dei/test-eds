@@ -54,7 +54,7 @@
   
   {
     "id": "cards",
-    "limit":1,
+    "maxSize":1,
     "components": [
       "card"
     ]
