@@ -455,7 +455,7 @@
       "label": "Promo Entries",
       "fields": [
         {
-          "component": "rte:richtext",
+          "component": "rte",
           "name": "title",
           "label": "Title",
           "valueType": "string",
