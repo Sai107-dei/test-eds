@@ -448,21 +448,14 @@
   "id": "promo-banner",
   "fields": [
     {
-      "component": "container",
-      "name": "promoEntries",
-      "label": "Promo Entries1",
-      "fields": [
-        {
-          "component": "text",
-          "name": "title",
-          "label": "Title",
-          "valueType": "string",
-          "multi": true,
-          "maxItems": 2,
-          "required": true,
-          "description": "Heading (H1) and Descriptions"
-        }
-      ]
+      "component": "rte",
+      "name": "title",
+      "label": "Title",
+      "valueType": "string",
+      "required": true,
+      "multi": true,
+      "description": "Heading (H1) and Descriptions",
+      "maxSize": 2
     }
   ]
  },
