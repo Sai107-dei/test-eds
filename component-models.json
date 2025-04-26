@@ -524,36 +524,43 @@
  },
  {
    "id": "accordion",
-   "fields": [
-     {
-       "component": "text",
-       "name": "accordiontitle",
-       "label": "Accordion Title",
-       "description": "Enter title for the entire Accordion Block"
-     },
-     {
-       "component": "select",
-       "name": "style",
-       "label": "Accordion Expansion",
-       "description": "Select the relevant Accordion Expansion option",
-       "value": "none",
-       "required": true,
-       "options": [
-         {
-           "name": "None",
-           "value": "none"
-         },
-         {
-           "name": "First",
-           "value": "first"
-         },
-         {
-           "name": "All",
-           "value": "all"
-         }
-       ]
-     }
-   ]
+   {
+    "component": "container",
+    "label": "Card 2 contents",
+    "name": "card2",
+    "valueType": "string",
+    "fields": [
+      {
+        "component": "text",
+        "name": "accordiontitle",
+        "label": "Accordion Title",
+        "description": "Enter title for the entire Accordion Block"
+      },
+      {
+        "component": "select",
+        "name": "style",
+        "label": "Accordion Expansion",
+        "description": "Select the relevant Accordion Expansion option",
+        "value": "none",
+        "required": true,
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "First",
+            "value": "first"
+          },
+          {
+            "name": "All",
+            "value": "all"
+          }
+        ]
+      }
+    ]
+  
+  
  },
  {
    "id": "accordion-item",
