@@ -449,23 +449,53 @@
   "fields": [
     {
       "component": "container",
-      "label": "Column 3",
-      "name": "column3",
+      "label": "Card 2 contents",
+      "name": "card2",
       "valueType": "string",
+      "collapsible": true,
+      "validation": {
+            "maxItems": 2
+        },
       "fields": [
         {
-          "component": "text",
-          "name": "title",
-          "label": "Title",
-          "value": ""
+          "component": "reference",
+          "name": "cardImage2",
+          "label": "Image",
+          "multi": false
         },
         {
           "component": "text",
-          "name": "link",
-          "label": "Link",
+          "name": "CardImageAlt2",
+          "label": "Alt Text"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "eyebrow2",
+          "label": "Eyebrow",
           "value": ""
+        },
+        {
+          "component": "richtext",
+          "name": "description2",
+          "value": "",
+          "label": "Description",
+          "valueType": "string"
         }
       ]
+    },
+    {
+      "component": "text",
+      "name": "title",
+      "label": "Title",
+      "valueType": "string",
+      "required": true,
+      "multi": true,
+      "description": "Heading (H1) and Description",
+      "validation": {
+            "maxItem": 2
+        }
+      
     }
   ]
  },
@@ -494,36 +524,27 @@
  },
  {
    "id": "accordion",
-   
    "fields": [
-     {
-       "component": "text",
-       "name": "accordiontitle",
-       "label": "Accordion Title",
-       "description": "Enter title for the entire Accordion Block"
-     },
-     {
-       "component": "select",
-       "name": "style",
-       "label": "Accordion Expansion",
-       "description": "Select the relevant Accordion Expansion option",
-       "value": "none",
-       "required": true,
-       "options": [
-         {
-           "name": "None",
-           "value": "none"
-         },
-         {
-           "name": "First",
-           "value": "first"
-         },
-         {
-           "name": "All",
-           "value": "all"
-         }
-       ]
-     }
+    {
+      "component": "container",
+      "label": "Column 3",
+      "name": "column3",
+      "valueType": "string",
+      "fields": [
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Title",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "name": "link",
+          "label": "Link",
+          "value": ""
+        }
+      ]
+    }
    ]
  },
  {
