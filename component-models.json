@@ -456,7 +456,7 @@
       "multi": true,
       "description": "Heading (H1) and Description1s",
       "validation": {
-            "maxItem": 2
+            "maxItems": 2
         }
       
     }
