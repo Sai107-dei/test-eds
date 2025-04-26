@@ -455,8 +455,8 @@
         "valueType":"string",
         "required": true,
         "multi":true,
-        "description": "ⓘ Heading (H1) and Description12",
-        "maxItem": 2
+        "description": "ⓘ Heading (H1) and Description",
+        "maxSize": 1
      }
   ]
 },
