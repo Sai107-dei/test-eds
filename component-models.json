@@ -160,7 +160,9 @@
  },
  {
    "id": "card",
+   "limit": 1,
    "fields": [
+    
      {
        "component": "reference",
        "valueType": "string",
