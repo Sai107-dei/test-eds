@@ -55,7 +55,7 @@
   {
     "id": "cards",
     "validation": {
-      "maxSize": 2
+      "limit": 2
   },
     "components": [
       "card"
