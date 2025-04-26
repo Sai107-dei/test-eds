@@ -448,7 +448,7 @@
   "id": "promo-banner",
   "fields": [
     {
-      "component": "rte",
+      "component": "text",
       "name": "title",
       "label": "Title",
       "valueType": "string",
