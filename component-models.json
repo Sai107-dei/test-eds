@@ -455,7 +455,10 @@
       "required": true,
       "multi": true,
       "description": "Heading (H1) and Description1s",
-      "maxItem": 2
+      "validation": {
+            "maxItem": 2
+        }
+      
     }
   ]
  },
