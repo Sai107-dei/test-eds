@@ -449,14 +449,21 @@
   "fields":[
    
      {
-        "component":"richtext",
+        "component":"container",
         "name":"title",
         "label":"Title",
         "valueType":"string",
         "required": true,
         "multi":true,
         "description": "ⓘ Heading (H1) and Descriptionsai",
-        "maxSize": 2
+        "maxItems": 2,
+       "fields": {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image",
+          "multi": false
+        },
      }
   ]
 },
