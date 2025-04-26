@@ -140,7 +140,9 @@
                 "template": {
                   "name": "Cards",
                   "filter": "cards",
-                  "maxSize": 1
+                  "validation": {
+            "maxSize": 1
+        }
                 }
               }
             }
