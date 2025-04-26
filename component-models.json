@@ -454,7 +454,7 @@
       "valueType": "string",
       "collapsible": true,
       "validation": {
-            "maxItem": 2
+            "maxItems": 2
         },
       "fields": [
         {
