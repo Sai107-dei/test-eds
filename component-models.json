@@ -456,7 +456,7 @@
         "required": true,
         "multi":true,
         "description": "ⓘ Heading (H1) and Description",
-        "maxSize": 2
+        "maxItem": 2
      }
   ]
 },
