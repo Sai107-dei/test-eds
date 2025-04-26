@@ -449,8 +449,6 @@
   "fields": [
     {
       "component": "container",
-      "multi": true,
-      "maxItems": 2,
       "name": "promoEntries",
       "label": "Promo Entries",
       "fields": [
@@ -459,6 +457,8 @@
           "name": "title",
           "label": "Title",
           "valueType": "string",
+          "multi": true,
+          "maxItems": 2,
           "required": true,
           "description": "Heading (H1) and Descriptions"
         }
