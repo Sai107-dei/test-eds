@@ -454,7 +454,8 @@
         "label":"Title",
         "valueType":"string",
         "description": "Enter the title",
-        "required": true
+        "required": true,
+        "multi":true
      }
   ]
 },
