@@ -86,7 +86,8 @@
                 "template": {
                   "name": "Tabs Section",
                   "model": "tabs-section",
-                  "filter": "tabs-section"
+                  "filter": "tabs-section",
+                  "style": "allmodel-section"
                   
                 }
               }
