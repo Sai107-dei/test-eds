@@ -186,7 +186,8 @@
                 "template": {
                   "name": "text-component",
                   "model": "text-component",
-                  "style": "allmodel-section123"
+                  "style": "allmodel-section123",
+                  "bgImgCta1_CtaClassName": "money-btn money-btn-flex"
                 }
               }
             }
