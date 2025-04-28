@@ -118,6 +118,18 @@
     ]
   },
   {
+    "id": "tabs-section",
+    "fields": [
+      {
+        "component": "number",
+        "name": "numberOfTabs",
+        "label": "Number of Tabs",
+        "value": 1,
+        "description": "The label shown for this section in the Content Tree"
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {

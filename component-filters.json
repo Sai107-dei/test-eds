@@ -32,8 +32,7 @@
   {
     "id": "tabs",
     "components": [
-      "text-component",
-      "image"
+      "text-component"
     ]
   },
   {
