@@ -307,6 +307,24 @@
         ]
       },
       {
+        "component": "select",
+        "label": "Button Styling",
+        "name": "bgImgCta1_CtaClassName",
+        "description": "Defines the styling applied to the button or if the button will displayed as a link.",
+        "valueType": "string",
+        "value": "money-btn money-btn-flex",
+        "options": [
+          {
+            "name": "Money Button",
+            "value": "money-btn"
+          },
+          {
+            "name": "Money Button Flex",
+            "value": "money-btn money-btn-flex"
+          }
+        ]
+      },
+      {
         "component": "text",
         "name": "style",
         "value": "allmodel-section123",
