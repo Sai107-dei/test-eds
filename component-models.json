@@ -160,6 +160,14 @@
         "label": "Text",
         "valueType": "string[]",
         "multi": true
+      },
+      {
+        "component": "richtext",
+        "name": "rich",
+        "value": "",
+        "label": "Richtext",
+        "valueType": "string[]",
+        "multi": true
       }
     ]
   },
