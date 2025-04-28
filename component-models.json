@@ -27,9 +27,9 @@
     {
       "component": "text",
       "valueType": "string",
-      "name": "Title",
-      "label": "title",
-      "description": "Enter the title",
+      "name": "tabsTitle",
+      "label": "TabsTitle",
+      "description": "Enter the TabsTitle",
       "required": true
     }
   ]
