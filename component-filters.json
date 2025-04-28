@@ -48,7 +48,10 @@
   {
     "id": "tabs",
     "components": [
-      "tab"
+     "text",
+      "image",
+      "button",
+      "title"
     ]
   },
   
