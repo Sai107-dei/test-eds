@@ -238,7 +238,6 @@
                   "name": "Tabs",
                   "model": "tabs",
                   "filter": "tabs",
-                  "style": "allmodel-section",
                   "classes": [
                       "text-component-wrapper"
                     ]
