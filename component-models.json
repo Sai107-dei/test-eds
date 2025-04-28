@@ -118,7 +118,7 @@
     ]
   },
   {
-    "id": "large-full-width-media",
+    "id": "largefullwidthmedia",
     "fields": [
       {
         "component": "select",
