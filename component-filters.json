@@ -9,7 +9,7 @@
   {
     "id": "tabs-section",
     "components": [
-      "image"
+      "tabs"
     ]
   },
   {
@@ -48,10 +48,7 @@
   {
     "id": "tabs",
     "components": [
-     "text",
-      "image",
-      "button",
-      "title"
+      "tab"
     ]
   },
   
