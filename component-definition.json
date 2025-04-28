@@ -232,11 +232,11 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
+                "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
                   "name": "Tabs",
                   "model": "tabs",
-                  "filter": "tabs",
+                  "filter": "section",
                   "classes": [
                       "text-component-wrapper"
                     ]
