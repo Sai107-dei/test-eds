@@ -122,10 +122,11 @@
     "fields": [
       {
         "component": "select",
-        "name": "alignment",
-        "label": "Alignment",
-        "description": "Select the alignment expected for entire block",
-        "value": "left",
+        "name": "textAlignment",
+        "label": "Text Alignment",
+        "description": "Choose the text alignment within the Media Banner component",
+        "required": true,
+        "value": "center",
         "options": [
           {
             "name": "Left",
@@ -144,35 +145,37 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "icon",
-        "label": "Icon",
-        "description": "Upload the icon image"
+        "name": "image",
+        "label": "Image",
+        "required": true,
+        "description": "Upload background image for the Media Banner "
       },
       {
         "component": "text",
         "name": "imageAlt",
-        "label": "Icon Alt text",
+        "label": "Image Alt text",
         "valueType": "string",
-        "description": "Pick alt text from AEM DAM with ability to override it"
+        "description": "Pick alt text for background image from AEM DAM with ability to override it"
       },
       {
         "component": "text",
         "name": "text",
         "required": true,
         "label": "Title",
+        "description": "Enter the title",
         "valueType": "string"
       },
       {
         "component": "richtext",
         "name": "description",
-        "required": true,
         "label": "Description",
-        "valueType": "string"
+        "valueType": "string",
+        "description": "Enter the description"
       },
       {
         "component": "text",
-        "name": "ctaText",
-        "label": "CTA Text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
         "valueType": "string",
         "description": "Enter label to display on the CTA"
       },
@@ -210,6 +213,48 @@
         "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
         "options": [
           { "name": "Exit Interstitial", "value": "true" }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "backgroundVerticalPosition",
+        "label": "Background Vertical Position",
+        "description": "This will alter the “background-position” CSS property of the media",
+        "value": "center",
+        "options": [
+          {
+            "name": "Top",
+            "value": "top"
+          },
+          {
+            "name": "Buttom",
+            "value": "buttom"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "backroundhorizontalPosition",
+        "label": "Background Horizontal Position",
+        "description": "This will alter the “background-position” CSS property of the media",
+        "value": "center",
+        "options": [
+          {
+            "name": "Top",
+            "value": "top"
+          },
+          {
+            "name": "Buttom",
+            "value": "buttom"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          }
         ]
       }
     ]
