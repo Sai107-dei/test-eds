@@ -527,9 +527,9 @@
     "fields": [
       {
         "component": "text",
-        "name": "numberOfTabs",
-        "label": "Number of Tabs",
-        "description": "Enter the number of tabs to display",
+        "name": "tabLabel",
+        "label": "Tab Label",
+        "description": "Enter the Tab/pill name",
         "valueType": "number",
         "required": true
       }
