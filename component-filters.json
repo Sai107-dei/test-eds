@@ -13,6 +13,15 @@
     ]
   },
   {
+    "id": "tabs",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
     "id": "section",
     "components": [
       "text",
@@ -35,24 +44,11 @@
       "relatedlinks",
       "cards-default",
       "additional-links",
-      "enhanced-related-links",
-      "tabs"
+      "enhanced-related-links"
     ]
-  },
- 
-  {
-    "id": "tabs",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
-    ]
-  },
-  
+  }, 
   {
     "id": "cards",
-    
     "components": [
       "card"
     ]
