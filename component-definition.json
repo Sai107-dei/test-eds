@@ -238,7 +238,11 @@
                   "name": "Tabs",
                   "model": "tabs",
                   "filter": "tabs",
-                  "style": "allmodel-section"
+                  "style": "allmodel-section",
+                  "classes": [
+                      "left",
+                      "top-vertical-align"
+                    ]
                 }
               }
             }
