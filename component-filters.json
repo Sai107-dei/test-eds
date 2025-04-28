@@ -33,7 +33,8 @@
   {
     "id": "tabs",
     "components": [
-      "text-component"
+      "text-component",
+        "teaser"
     ]
   },
   {
