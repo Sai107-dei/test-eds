@@ -2,23 +2,7 @@
   {
     "id": "main",
     "components": [
-      "section",
-      "tabs-section"
-    ]
-  },
-  {
-    "id": "tabs-section",
-    "components": [
-      "tabs"
-    ]
-  },
-  {
-    "id": "tabs",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
+      "section"
     ]
   },
   {
@@ -30,39 +14,18 @@
       "title",
       "hero",
       "cards",
-      "accordion",
       "columns",
       "fragment",
-      "promo-banner",
-      "infobanner",
-      "carousel",
-      "primary-header",
-      "kalthuravideo",
       "text-component",
-      "two-column-with-image",
-      "gatedhero",
-      "relatedlinks",
-      "cards-default",
-      "additional-links",
-      "enhanced-related-links"
+      "teaser",
+      "carousel",
+      "tab"
     ]
-  }, 
+  },
   {
     "id": "cards",
     "components": [
       "card"
-    ]
-  },
-  {
-    "id": "cards-default",
-    "components": [
-      "card-default"
-    ]
-  },
-  {
-    "id": "accordion",
-    "components": [
-      "accordion-item"
     ]
   },
   {
@@ -77,53 +40,7 @@
       "text",
       "image",
       "button",
-      "title",
-      "columns"
-    ]
-  },
-  {
-    "id": "infobanner",
-    "components": [
-      "infoitem"
-    ]
-  },
-  {
-    "id": "carousel",
-    "components": [
-      "text",
-      "image",
-      "button",
       "title"
-    ]
-  },
-  {
-    "id": "kalthuravideo",
-    "components": [
-      "text"
-    ]
-  },
-  {
-    "id": "text-component",
-    "components": [
-      "text"
-    ]
-  },
-  {
-    "id": "relatedlinks",
-    "components": [
-      "relatedlink"
-    ]
-  },
-  {
-    "id": "enhanced-related-links",
-    "components": [
-      "enhanced-related-link"
-    ]
-  },
-  {
-    "id": "additional-links",
-    "components": [
-      "additional-link"
     ]
   }
 ]
