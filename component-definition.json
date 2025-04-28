@@ -186,7 +186,7 @@
                 "template": {
                   "name": "text-component",
                   "model": "text-component",
-                  "style": "allmodel-section123",
+                  "style": "allmodel-section",
                   "bgImgCta1_CtaClassName": "money-btn money-btn-flex",
                   "classes": [
                     "left",
