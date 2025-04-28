@@ -34,7 +34,8 @@
     "id": "tabs",
     "components": [
       "text-component",
-        "teaser"
+        "teaser",
+        "hero"
     ]
   },
   {
