@@ -86,7 +86,8 @@
                 "template": {
                   "name": "Tabs Section",
                   "model": "tabs-section",
-                  "filter": "tabs-section"
+                  "filter": "tabs-section",
+                  "style": "allmodel-section"
                 }
               }
             }
@@ -185,7 +186,7 @@
                 "template": {
                   "name": "text-component",
                   "model": "text-component",
-                  "style": "text-component123"
+                  "style": "allmodel-section"
                 }
               }
             }
