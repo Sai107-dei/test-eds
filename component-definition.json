@@ -187,7 +187,11 @@
                   "name": "text-component",
                   "model": "text-component",
                   "style": "allmodel-section123",
-                  "bgImgCta1_CtaClassName": "money-btn money-btn-flex"
+                  "bgImgCta1_CtaClassName": "money-btn money-btn-flex",
+                  "classes": [
+                    "left",
+                    "top-vertical-align"
+                  ]
                 }
               }
             }
