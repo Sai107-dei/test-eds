@@ -187,7 +187,6 @@
                 "template": {
                   "name": "text-component",
                   "model": "text-component",
-                  "style": "allmodel-section",
                   "bgImgCta1_CtaClassName": "money-btn money-btn-flex",
                   "classes": [
                     "left",
@@ -238,7 +237,8 @@
                 "template": {
                   "name": "Tabs",
                   "model": "tabs",
-                  "filter": "tabs"
+                  "filter": "tabs",
+                  "style": "allmodel-section"
                 }
               }
             }

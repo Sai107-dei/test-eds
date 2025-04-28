@@ -622,7 +622,13 @@
         "description": "Enter the Tab/pill name",
         "valueType": "number",
         "required": true
-      }
+      },
+      {
+        "component": "text",
+        "name": "style",
+        "value": "allmodel-section",
+        "hidden":true
+      },
     ]
   }
 ]
