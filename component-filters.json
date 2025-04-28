@@ -24,7 +24,7 @@
     ]
   },
   {
-    "id": "all-models-section",
+    "id": "tabs",
     "components": [
       "image"
     ]
