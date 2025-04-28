@@ -3,7 +3,7 @@
     "id": "main",
     "components": [
       "section",
-      "all-models-section"
+      "tabs-section"
     ]
   },
   {
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "id": "all-models-section",
+    "id": "tabs-section",
     "components": [
       "image"
     ]
