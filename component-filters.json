@@ -24,6 +24,12 @@
     ]
   },
   {
+    "id": "all-models-section",
+    "components": [
+      "image"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
