@@ -77,17 +77,16 @@
           }
         },
         {
-          "title": "Tabs Section",
-          "id": "tabs",
+          "title": "Tabs Models Section",
+          "id": "tabs-section",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
-                  "name": "Tabs Section",
-                  "model": "tabs",
-                  "filter": "tabs",
-                  "style": "tabs"
+                  "name": "Tabs Models Section",
+                  "model": "tabs-section",
+                  "filter": "tabs-section"
                 }
               }
             }
