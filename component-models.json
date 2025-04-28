@@ -129,19 +129,7 @@
       }
     ]
   },
-  {
-    "id": "tabs",
-    "fields": [
-      {
-        "component": "title",
-        "name": "tabLabel",
-        "label": "Tab Label",
-        "value": 1,
-        "description": "Enter the Tab/pill name",
-        "required" : true
-      }
-    ]
-  },
+
   {
     "id": "card",
     "fields": [
@@ -531,6 +519,19 @@
         "name": "imageAlt",
         "label": "Alt Text",
         "description": "Provide alternate text for the images"
+      }
+    ]
+  },
+  {
+    "id": "tabs",
+    "fields": [
+      {
+        "component": "text",
+        "name": "numberOfTabs",
+        "label": "Number of Tabs",
+        "description": "Enter the number of tabs to display",
+        "valueType": "number",
+        "required": true
       }
     ]
   }
