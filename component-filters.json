@@ -26,7 +26,12 @@
   {
     "id": "tabs-section",
     "components": [
-      "cards",
+      "tabs"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
       "text-component"
     ]
   },
