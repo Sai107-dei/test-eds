@@ -33,7 +33,7 @@
     "id": "cards",
     "components": [
       "card",
-      "image"
+      "text-component"
     ]
   },
   {
