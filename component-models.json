@@ -314,83 +314,6 @@
         ]
       },
       {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Alignment",
-        "valueType": "string",
-        "description": "Defines the alignment of the elements added to the Columns and if an additional margin in between the columns on mobile is enabled",
-        "maxSize": 3,      
-        "options": [
-          {
-            "name": "Horizontal Alignment",
-            "children": [
-              {
-                "name": "Center",
-                "value": "center"
-              },
-              {
-                "name": "Left",
-                "value": "left"
-              },
-              {
-                "name": "Right",
-                "value": "right"
-              }
-            ]
-          },
-          {
-            "name": "Vertical Alignment",
-            "children": [
-              {
-                "name": "Top",
-                "value": "top-vertical-align"
-              },
-              {
-                "name": "Middle",
-                "value": "middle-vertical-align"
-              },
-              {
-                "name": "Bottom",
-                "value": "bottom-vertical-align"
-              }
-            ]
-          },
-          {
-            "name": "Mobile Margin",
-            "children": [
-              {
-                "name": "Enable Mobile Margin",
-                "value": "mobile-margin"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "label": "Button Styling",
-        "name": "bgImgCta1_CtaClassName",
-        "description": "Defines the styling applied to the button or if the button will displayed as a link.",
-        "valueType": "string",
-        "value": "money-btn money-btn-flex",
-        "options": [
-          {
-            "name": "Money Button",
-            "value": "money-btn"
-          },
-          {
-            "name": "Money Button Flex",
-            "value": "money-btn money-btn-flex"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "name": "style",
-        "value": "allmodel-section123",
-        "hidden":true
-      },
-      {
         "component": "reference",
         "valueType": "string",
         "name": "icon",
@@ -471,7 +394,7 @@
       }
       
     ]
-  },
+  },,
   {
     "id": "teaser",
     "fields": [
