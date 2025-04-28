@@ -533,26 +533,5 @@
         "description": "Provide alternate text for the images"
       }
     ]
-  },
-  {
-    "id": "tabs",
-    "fields": [
-      {
-        "component": "text",
-        "name": "numberOfTabs",
-        "label": "Number of Tabs",
-        "description": "Enter the number of tabs to display",
-        "valueType": "number",
-        "required": true
-      },
-      {
-        "component": "multiselect",
-        "name": "tabTitles",
-        "label": "Tab Titles",
-        "description": "Enter the titles for each tab",
-        "multi": true,
-        "required": true
-      }
-    ]
   }
 ]
