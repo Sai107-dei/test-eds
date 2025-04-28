@@ -240,8 +240,7 @@
                   "filter": "tabs",
                   "style": "allmodel-section",
                   "classes": [
-                      "left",
-                      "top-vertical-align"
+                      "text-component-wrapper"
                     ]
                 }
               }
