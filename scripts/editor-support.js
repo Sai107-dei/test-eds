@@ -64,7 +64,7 @@ async function applyChanges(event) {
   if (!resource) return false;
   const updates = detail?.response?.updates;
   if (!updates.length) return false;
-  const { content } = updates[0];
+  const { content } = updates[1];
   if (!content) return false;
 
   const parsedUpdate = new DOMParser().parseFromString(content, 'text/html');
