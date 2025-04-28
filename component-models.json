@@ -131,13 +131,8 @@
         "numberMax": 8,
         "customErrorMsg": "You also need 1.21 gigawatts."
         } 
-      },
-      {
-        "component": "text",
-        "name": "style",
-        "value": "allmodel-section123",
-        "hidden":true
       }
+      
     ]
   },
 
@@ -310,6 +305,12 @@
             "value": "right"
           }
         ]
+      },
+      {
+        "component": "text",
+        "name": "style",
+        "value": "allmodel-section123",
+        "hidden":true
       },
       {
         "component": "reference",
