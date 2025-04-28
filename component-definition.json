@@ -236,7 +236,7 @@
                 "template": {
                   "name": "Tabs",
                   "model": "tabs",
-                  "filter": "tabs-section",
+                  "filter": "section",
                   "classes": [
                       "text-component-wrapper"
                     ]
