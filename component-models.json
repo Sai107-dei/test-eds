@@ -130,6 +130,19 @@
     ]
   },
   {
+    "id": "tabs",
+    "fields": [
+      {
+        "component": "title",
+        "name": "tabLabel",
+        "label": "Tab Label",
+        "value": 1,
+        "description": "Enter the Tab/pill name",
+        "required" : true
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
