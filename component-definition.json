@@ -185,7 +185,7 @@
                 "template": {
                   "name": "text-component",
                   "model": "text-component",
-                  "Style": "text-component123"
+                  "style": "text-component123"
                 }
               }
             }
