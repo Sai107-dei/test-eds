@@ -120,6 +120,13 @@
   {
     "id": "tabs-section",
     "fields": [
+      
+      {
+        "component": "text",
+        "name": "style",
+        "value": "allmodel-section",
+        "hidden":true
+      },
       {
         "component": "number",
         "name": "numberOfTabs",
@@ -130,14 +137,9 @@
         "numberMin": 2,
         "numberMax": 8,
         "customErrorMsg": "You also need 1.21 gigawatts."
-        } 
-      },
-      {
-        "component": "text",
-        "name": "style",
-        "value": "allmodel-section",
-        "hidden":true
+        }
       }
+      
     ]
   },
 
@@ -381,6 +383,12 @@
             "value": "money-btn money-btn-flex"
           }
         ]
+      },
+      {
+        "component": "text",
+        "name": "style",
+        "value": "allmodel-section123",
+        "hidden":true
       },
       {
         "component": "reference",
