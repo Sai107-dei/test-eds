@@ -26,7 +26,7 @@
   {
     "id": "tabs-section",
     "components": [
-      "image"
+      "cards"
     ]
   },
   {
