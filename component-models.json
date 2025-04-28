@@ -531,7 +531,11 @@
         "label": "Tab Label",
         "description": "Enter the Tab/pill name",
         "valueType": "number",
-        "required": true
+        "required": true,
+        "validation": {
+        "numberMax": 1,
+        "customErrorMsg": "You also need 1.21 gigawatts."
+      }
       }
     ]
   }
