@@ -1,0 +1,348 @@
+.text-component-wrapper{
+    max-width: unset !important;
+}
+.text-component-wrapper p,
+.text-component-wrapper h1,
+.text-component-wrapper h2,
+.text-component-wrapper h3,
+.text-component-wrapper h4,
+.text-component-wrapper h5,
+.text-component-wrapper h6{
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 24px !important;
+}
+.text-component-wrapper .eyebrow-text{
+    color:  #191919;
+    font-family: var(--Typography-Font-Family-Ringside, Ringside) !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 48px !important;
+}
+.text-component-wrapper .icon-img{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 48px;
+}
+
+.text-component-wrapper .title{
+    margin-bottom: 48px;
+    color:  #191919;
+}
+/* font values for ITC Garamond Std font family for the title field text */
+.text-component-wrapper .title h1{
+     font-family: var(
+        --Typography-Font-Family-ITC-Garamond-Std,
+        "ITC Garamond Std"
+    ) !important;
+    font-size:  60px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 66px !important; 
+    letter-spacing: -0.6px !important;
+}
+.text-component-wrapper .title h2{
+     font-family: var(
+        --Typography-Font-Family-ITC-Garamond-Std,
+        "ITC Garamond Std"
+    ) !important;
+    font-size:  48px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height:  52px !important; 
+    letter-spacing: -0.48px !important;
+}
+.text-component-wrapper .title h3{
+     font-family: var(
+        --Typography-Font-Family-ITC-Garamond-Std,
+        "ITC Garamond Std"
+    ) !important;
+    font-size:  36px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height:  44px !important; 
+    letter-spacing: -0.36px !important;
+    
+}
+.text-component-wrapper .title h4{
+     font-family: var(
+        --Typography-Font-Family-ITC-Garamond-Std,
+        "ITC Garamond Std"
+    ) !important;
+    font-size:  32px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height:  38px !important; 
+}
+.text-component-wrapper .title h5{
+     font-family: var(
+        --Typography-Font-Family-ITC-Garamond-Std,
+        "ITC Garamond Std"
+    ) !important;
+    font-size:  28px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 36px !important;
+}
+.text-component-wrapper .title h6{
+     font-family: var(
+        --Typography-Font-Family-ITC-Garamond-Std,
+        "ITC Garamond Std"
+    ) !important;
+    font-size: 24px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 32px !important;
+}
+.text-component-wrapper .title p{
+    font-family: var(
+        --Typography-Font-Family-ITC-Garamond-Std,
+        "ITC Garamond Std"
+    ) !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:  30px;
+}
+
+
+.text-component-wrapper .description{
+    color:  #191919;
+    margin-bottom: 48px !important;
+}
+/* font values for ringside font family for the description field text */
+.text-component-wrapper .description h1{
+    font-family: var(--Typography-Font-Family-Ringside, Ringside) !important;
+    font-size:  60px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 66px !important; 
+    letter-spacing: -1.5px !important;
+}
+.text-component-wrapper .description h2{
+    font-family: var(--Typography-Font-Family-Ringside, Ringside) !important;
+    font-size:  48px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height:  58px !important; 
+    letter-spacing: -0.96px !important;
+}
+.text-component-wrapper .description h3{
+    font-family: var(--Typography-Font-Family-Ringside, Ringside) !important;
+    font-size:  36px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height:  44px !important; 
+    letter-spacing: -0.72px !important;
+    
+}
+.text-component-wrapper .description h4{
+    font-family: var(--Typography-Font-Family-Ringside, Ringside) !important;
+    font-size:  32px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height:  38px !important; 
+    letter-spacing: -0.64px !important;
+}
+.text-component-wrapper .description h5{
+    font-family: var(--Typography-Font-Family-Ringside, Ringside) !important;
+    font-size:  28px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 36px !important;
+}
+.text-component-wrapper .description h6{
+    font-family: var(--Typography-Font-Family-Ringside, Ringside) !important;
+    font-size: 24px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 32px !important;
+}
+.text-component-wrapper .description p{
+    font-family: var(--Typography-Font-Family-Ringside, Ringside) !important;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 30px !important;
+}
+
+.text-component-wrapper strong{
+    font-weight: 900 !important;
+}
+.text-component-wrapper .description a,.text-component-wrapper .description a.button:any-link{
+    color:  #D31710 !important;
+    text-decoration-line: underline !important;
+    text-decoration-style: solid !important;
+    text-decoration-skip-ink: none !important;
+    text-decoration-thickness: 4% !important;
+    text-underline-offset: 24% !important;
+    text-underline-position: from-font !important;
+    background: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    display: inline !important;
+}
+.text-component-wrapper .description a:focus, .text-component-wrapper .description a.button:any-link:focus{
+    outline: 2px solid var(--border-border-primary, #191919) !important;
+}
+.text-component-wrapper .cta-button{
+    display: flex;
+}
+.text-component-wrapper .cta-button a.button:any-link, .text-component-wrapper .cta-button a:any-link{
+    background-color: #D31710 !important;
+    padding: 12px 24px !important;
+    border-radius: 100px !important;
+    color: var(--Color-LillyBrand-White, #FFF);
+    font-family: var(--Typography-Font-Family-Ringside, Ringside) !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: fit-content !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+.text-component-wrapper .cta-button a.button:any-link:hover, .text-component-wrapper .cta-button a:any-link:hover{
+    background: linear-gradient(0deg, var(--Deprecated-Overlay, rgba(255, 255, 255, 0.00)) 0%, var(--Deprecated-Overlay, rgba(255, 255, 255, 0.00)) 100%), var(--surface-surface-brand-hover, #9F180F) !important;
+}
+.text-component-wrapper .cta-button a.button:any-link:active, .text-component-wrapper .cta-button a:any-link:active{
+    background: linear-gradient(0deg, var(--Deprecated-Overlay, rgba(255, 255, 255, 0.00)) 0%, var(--Deprecated-Overlay, rgba(255, 255, 255, 0.00)) 100%), var(--surface-surface-brand-active, #6E1911) !important;
+}
+.text-component-wrapper .cta-button a.button:any-link:focus-within, .text-component-wrapper .cta-button a:any-link:focus-within{
+    background: linear-gradient(0deg, var(--Deprecated-Overlay, rgba(255, 255, 255, 0.00)) 0%, var(--Deprecated-Overlay, rgba(255, 255, 255, 0.00)) 100%), var(--surface-surface-brand-hover, #9F180F) !important;
+    outline: 2px solid var(--border-border-primary, #191919) !important;
+    outline-offset:  2px !important;
+}
+.text-component-wrapper .cta-arrow-icon{
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 950px) {
+    .text-component-wrapper{
+        margin-left: 16px !important;
+        margin-right: 16px !important;
+        padding: 0 !important;
+    }
+    .text-component-wrapper .eyebrow-text{
+        margin-bottom: 24px !important;
+    }
+    .text-component-wrapper .icon-img{
+        margin-bottom: 24px !important;
+    }
+    .text-component-wrapper .title{
+        margin-bottom: 24px !important;
+    }
+    /* font values for ITC Garamond Std font family for the title field text */
+    .text-component-wrapper .title h1{
+        font-size:  40px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: 42px !important; 
+        letter-spacing: -0.4px !important;
+    }
+    .text-component-wrapper .title h2{
+        font-size: 36px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height:  40px !important; 
+        letter-spacing: -0.36px !important;
+    }
+    .text-component-wrapper .title h3{
+        font-size:  32px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height:  28px !important; 
+        letter-spacing: -0.32px !important;
+    }
+    .text-component-wrapper .title h4{
+        font-size:  28px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height:  34px !important; 
+    }
+    .text-component-wrapper .title h5{
+        font-size:  24px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: 32px !important;
+    }
+    .text-component-wrapper .title h6{
+        font-size: 20px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height:  26px !important;
+    }
+    .text-component-wrapper .title p{
+        font-size:  18px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height:  28px !important; 
+    }
+    .text-component-wrapper .description{
+        margin-bottom: 24px !important;
+    }
+    /* font values for ringside font family for the description field text */
+    .text-component-wrapper .description h1{
+        font-size:  40px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: 44px !important; 
+        letter-spacing: -1px !important;
+    }
+    .text-component-wrapper .description h2{
+        font-size: 36px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height:  44px !important; 
+        letter-spacing: -0.72px !important;
+    }
+    .text-component-wrapper .description h3{
+        font-size:  32px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height:  38px !important; 
+        letter-spacing: -0.64px !important;
+    }
+    .text-component-wrapper .description h4{
+        font-size:  28px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height:  34px !important; 
+    }
+    .text-component-wrapper .description h5{
+        font-size:  24px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: 32px !important;
+    }
+    .text-component-wrapper .description h6{
+        font-size: 20px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height:  26px !important;
+    }
+    .text-component-wrapper .description p{
+        font-size:  18px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height:  28px !important; 
+    }
+
+    .text-component-wrapper strong{
+        font-weight: 900 !important;
+    }
+    .text-component-wrapper .cta-button a.button:any-link{
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+}
