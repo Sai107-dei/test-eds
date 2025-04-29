@@ -5735,5 +5735,31 @@
         ]
       }
     ]
+  },
+  {
+    "id": "tabs",
+    "fields": [
+      {
+        "component": "text",
+        "name": "text",
+        "required": true,
+        "label": "Tabs Title",
+        "valueType": "string",
+        "multi": true
+      },
+      {
+        "component": "number",
+        "name": "numberOfTabs",
+        "label": "Number of Tabs",
+        "value": 1,
+        "description": "The label shown for this section in the Content Tree",
+        "validation": {
+        "numberMin": 2,
+        "numberMax": 8,
+        "customErrorMsg": "Max fields reached."
+        }
+        
+      }
+    ]
   }
 ]

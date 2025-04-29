@@ -2,7 +2,8 @@
   {
     "id": "main",
     "components": [
-      "section"
+      "section",
+      "tabs-section"
     ]
   },
   {
@@ -15,7 +16,23 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "text-component",
+      "teaser",
+      "carousel",
+      "tab"
+    ]
+  },
+  {
+    "id": "tabs-section",
+    "components": [
+      "tabs"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "text-component"
     ]
   },
   {
