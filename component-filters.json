@@ -2,8 +2,7 @@
   {
     "id": "main",
     "components": [
-      "section",
-      "tabs-section"
+      "section"
     ]
   },
   {
@@ -16,29 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "text-component",
-      "teaser",
-      "carousel",
-      "tab",
-      "tabs",
-      "largefullwidthmedia"
-    ]
-  },
-  {
-    "id": "tabs-section",
-    "components": [
-      "text-component",
-      "tabs",
-      "teaser"
-    ]
-  },
-  {
-    "id": "tabs",
-    "components": [
-      "text-component",
-        "teaser",
-        "hero"
+      "fragment"
     ]
   },
   {
