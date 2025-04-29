@@ -28,6 +28,7 @@
   {
     "id": "tabs-section",
     "components": [
+      "text-component",
       "tabs",
       "teaser"
     ]
