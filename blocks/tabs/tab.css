@@ -1,166 +1,58 @@
-/* stylelint-disable property-no-vendor-prefix */
-
-.tabs {
-  margin: var(--spacing-medium) 0 0;
+.tabs .tabs-list {
+  display: flex;
+  gap: 0.5ch;
+  max-width: 100%;
+  font-size: var(--body-font-size-xs);
+  overflow-x: auto;
 }
 
-.tabs .tabs-list {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  max-width: 100%;
-  gap: 8px;
+@media (width >= 600px) {
+  .tabs .tabs-list {
+    font-size: var(--body-font-size-s);
+  }
+}
+
+@media (width >= 900px) {
+  .tabs .tabs-list {
+    font-size: var(--body-font-size-m);
+  }
 }
 
 .tabs .tabs-list button {
-  align-items: center;
-  background: linear-gradient(123deg, var(--c-outline-drk) 9.71%, var(--c-link) 86.9%);
-  border: none;
-  border-radius: 4px;
-  color: var(--c-white);
-  cursor: pointer;
-  display: flex;
-  font-family: var(--ff-primary);
-  font-size: var(--base-font-size);
-  font-style: normal;
-  font-weight: var(--fw-med);
-  flex-direction: column;
-  gap: 8px;
-  justify-content: center;
-  line-height: 16px;
-  outline-offset: 2px;
-  padding: 16px 32px;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.tabs h3 {
-  margin-bottom: 24px;
-}
-
-.tabs p {
-  margin-bottom: 0;
-}
-
-.tabs a.button.primary {
+  flex: 0 0 max-content;
   margin: 0;
-  margin-top: 24px;
+  border: 1px solid #dadada;
+  border-radius: 0;
+  padding: 0.5em;
+  background-color: var(--light-color);
+  color: initial;
+  font-weight: bold;
+  line-height: unset;
+  text-align: initial;
+  text-overflow: unset;
+  overflow: unset;
+  white-space: unset;
+  transition: background-color 0.2s;
 }
 
-.tabs button[aria-selected="true"] {
-  background: var(--c-btn-drk);
-}
-
-.tabs  .tab-content-wrapper,
-.tabs .tabs-tab-mobile + div {
-  visibility: hidden;
-  max-height: 0;
-  transition: max-height 0.15s ease;
-}
-
-.tabs .tabs-tab-mobile {
-  border: none;
-  background: none;
-  color: var(--c-copy);
-  display: block;
-  position: relative;
-  font-family: var(--ff-primary);
-  font-size: var(--base-font-size);
-  font-style: normal;
-  font-weight: var(--fw-med);
-  line-height: 24px;
-  text-transform: uppercase;
-  width: 100%;
-  text-align: left;
-  padding: 16px 0;
-}
-
-.tabs .tabs-tab-mobile::after {
-  font-family: var(--ff-pricefx-icons);
-  font-size: 24px;
-  font-weight: var(--fw-regular);
-  list-style: normal;
-  content: var(--icon-plus);
-  position: absolute;
-  right: 0;
-  top: 14px;
-}
-
-.tabs .tabs-tab-mobile[aria-expanded = 'true']::after {
-  content: var(--icon-minus);
-}
-
-.tabs .tabs-tab h1,
-.tabs .tabs-tab h2, 
-.tabs .tabs-tab h3,
-.tabs .tabs-tab h4,
-.tabs .tabs-tab h5,
-.tabs .tabs-tab h6 {
-  background: var(--c-white);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.tabs .tabs-list button p {
   margin: 0;
 }
 
-.tabs .tabs-tab p:not(:last-child) {
-  margin-bottom: 10px;
+
+.tabs .tabs-list button[aria-selected='true'] {
+  border-bottom: 1px solid var(--background-color);
+  background-color: var(--background-color);
+  cursor: initial;
 }
 
-/* Vertical Tabs Styles */
-.tabs.vertical .tabs-tab {
-  padding: 10px 20px;
-  margin: 0;
+.tabs .tabs-panel {
+  margin-top: -1px;
+  padding: 24px;
+  border: 1px solid #dadada;
+  overflow: auto;
 }
 
-@media (width >= 768px) {
-  .tabs {
-    margin: 0;
-  }
-
-  .tabs.vertical {
-    display: flex;
-  }
-
-  .tabs .tabs-list {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 16px;
-    margin: 54px 0 64px;
-  }
-
-  .tabs.vertical .tabs-list {
-    flex-direction: column;
-    justify-content: normal;
-  }
-
-  .tabs.vertical .tabs-panel {
-    margin: 64px 0 0 50px;
-  }
-
-  .tabs .tabs-panel[aria-hidden="true"] {
-    display: none;
-  }
-
-  .tabs.vertical .tabs-tab {
-    padding: 20px 50px;
-  }
-
-  .tabs.vertical .tabs-list button[aria-selected="true"]::after,
-  .tabs.vertical .tabs-list button:hover::after {
-    left: calc(100% - 6px);
-    top: calc(50% - 6px);
-  }
-
-  .tabs .tabs-tab-mobile {
-    display: none;
-  }
-
-  .tabs  .tab-content-wrapper,
-  .tabs .tabs-tab-mobile + div {
-    visibility: visible;
-    max-height: unset;
-  }
+.tabs .tabs-panel[aria-hidden='true'] {
+  display: none;
 }
