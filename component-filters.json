@@ -8,29 +8,17 @@
   {
     "id": "section",
     "components": [
-      "accordion",
-      "button",
-      "cards",
-      "carousel",
-      "columns",
-      "embed",
-      "fragment",
-      "form",
-      "hero",
-      "image",
-      "quote",
-      "search",
-      "tabs",
-      "table",
       "text",
+      "image",
+      "button",
       "title",
-      "video"
-    ]
-  },
-  {
-    "id": "accordion",
-    "components": [
-      "accordion-item"
+      "hero",
+      "testing",
+      "cards",
+      "cards-default",
+      "additional-links",
+      "columns",
+      "fragment"
     ]
   },
   {
@@ -40,11 +28,57 @@
     ]
   },
   {
-    "id": "carousel",
+    "id": "cards-default",
     "components": [
-      "carousel-item"
+      "card-default"
     ]
   },
+{
+    "id": "additional-links",
+    "components": [
+      "additional-link"
+    ]
+  },
+  {
+    "id": "card",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "columns"
+    ]
+  },
+  {
+    "id": "hero",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "columns"
+    ]
+  },
+  {
+    "id": "testing",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "columns"
+    ]
+  },
+  {
+    "id": "fragment",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+
   {
     "id": "columns",
     "components": [
@@ -57,41 +91,11 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "columns",
+      "additional-link",
+      "cards",
+      "hero"
     ]
-  },
-  {
-    "id": "table",
-    "components": [
-      "table-row"
-    ]
-  },
-  {
-    "id": "table-2-columns",
-    "components": [
-      "table-col-2"
-    ]
-  },
-  {
-    "id": "table-3-columns",
-    "components": [
-      "table-col-3"
-    ]
-  },
-  {
-    "id": "table-4-columns",
-    "components": [
-      "table-col-4"
-    ]
-  },
-  {
-    "id": "tabs",
-    "components": [
-      "tabs-item"
-    ]
-  },
-  {
-    "id": "video",
-    "components": []
   }
 ]

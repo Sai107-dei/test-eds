@@ -118,27 +118,32 @@
     ]
   },
   {
-    "id": "accordion-item",
+    "id": "card",
     "fields": [
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "summary",
+        "component": "richtext",
+        "name": "title",
         "value": "",
-        "label": "Summary"
+        "label": "Title",
+        "valueType": "string",
+        "required": true
       },
       {
         "component": "richtext",
         "name": "text",
         "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "card",
-    "fields": [
+        "label": "Description",
+        "valueType": "string",
+        "required": true
+      },
+      {
+        "component": "text",
+        "name": "subtitle",
+        "value": "",
+        "label": "Subtitle",
+        "valueType": "string",
+        "required": false
+      },
       {
         "component": "reference",
         "valueType": "string",
@@ -147,42 +152,222 @@
         "multi": false
       },
       {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text"
       }
     ]
   },
   {
-    "id": "carousel-item",
+    "id": "cards",
+    "fields": [
+      {
+        "component": "text",
+        "name": "accordiontitle",
+        "label": "Accordion Title",
+        "description": "Enter title for the entire Accordion Block"
+      },
+      {
+        "component": "select",
+        "name": "style",
+        "label": "Accordion Expansion",
+        "description": "Select the relevant Accordion Expansion option",
+        "value": "none",
+        "required": true,
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "First",
+            "value": "first"
+          },
+          {
+            "name": "All",
+            "value": "all"
+          }   
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "cards-default",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cards-default",
+        "label": "Cards Title",
+        "description": "Enter the title for the entire Card block",
+        "multi": false
+      },
+      {
+        "component": "number",
+        "valueType": "number",
+        "value": 2,
+        "name": "numberOfCards",
+        "label": "Number of Cards",
+        "description": "Choose the number of cards to be displayed in the component",
+        "required": true,
+        "multi": false,
+        "validation": {
+          "numberMin": 2
+        }
+      }
+    ]
+  },
+
+  {
+    "id": "card-default",
     "fields": [
       {
         "component": "reference",
         "valueType": "string",
-        "name": "media_image",
-        "label": "Background Image",
-        "multi": false
+        "name": "image",
+        "label": "Image Thumbnail",
+        "required": true,
+        "description": "Upload images for the card"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "media_imageAlt",
-        "value": "",
-        "label": "Bacgkround Alt"
+        "name": "imageAlt",
+        "label": "Image Alt Text ",
+        "description": "Add Image Alternate Text"
+      },
+      {
+        "component": "text",
+        "name": "text",
+        "label": "Title",
+        "valueType": "string",
+        "description": "Enter title for each card",
+        "required": true
       },
       {
         "component": "richtext",
-        "name": "content_text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter description for each card",
+        "required": false
+      },
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA for each card"
+      },  
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when CTA is clicked for each card",
+        "validation": {
+              "rootPath": "content/lilly-com-eds"
+          }
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ]
       }
     ]
   },
+  
+  {
+    "id": "additional-links",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cards-default",
+        "label": "Cards Title",
+        "description": "Enter the title for the entire Card block",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Description",
+        "valueType": "string",
+        "required": true
+      }
+    ]
+  },
+
+  {
+    "id": "additional-link",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkHeadline",
+        "label": "Link Headline",
+        "required": true,
+        "description": "Enter display text for the quick link"
+      },
+      {
+        "component": "aem-content",
+        "name": "linkURL",
+        "label": "Link URL",
+        "valueType": "string",
+        "required": true,
+        "description": "Enter the URL to navigate when Quick Link is clicked",
+        "validation": {
+              "rootPath": "content/lilly-com-eds"
+          }
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ]
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Exit Interstitial",
+        "name": "checkbox",
+        "valueType": "string",
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+        "options": [
+          { "name": "Exit Interstitial", "value": "true" }
+        ]
+      }
+    ]
+  },
+
   {
     "id": "columns",
+    "isContainer": true,
+    "allowedChildren": ["hero", "card", "additional-links"],
     "fields": [
       {
         "component": "text",
@@ -201,47 +386,6 @@
     ]
   },
   {
-    "id": "embed",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "embed_placeholder",
-        "label": "Placeholder Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "embed_placeholderAlt",
-        "value": "",
-        "label": "Placeholder Image Alt Text"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "embed_uri",
-        "label": "URI"
-      }
-    ]
-  },
-  {
-    "id": "form",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Form"
-      },
-      {
-        "component": "text",
-        "name": "action",
-        "label": "Action URL",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "fragment",
     "fields": [
       {
@@ -254,13 +398,6 @@
   {
     "id": "hero",
     "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
       {
         "component": "text",
         "valueType": "string",
@@ -278,272 +415,14 @@
     ]
   },
   {
-    "id": "modal",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "name": "linkText",
-        "label": "Text"
-      }
-    ]
-  },
-  {
-    "id": "quote",
+    "id": "testing",
     "fields": [
       {
         "component": "richtext",
-        "valueType": "string",
-        "name": "quotation",
+        "name": "text",
         "value": "",
-        "label": "Quotation"
-      },
-      {
-        "component": "richtext",
-        "name": "attribution",
-        "value": "",
-        "label": "Attribution",
+        "label": "Text",
         "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "search",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "index",
-        "label": "Index"
-      },
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "value": "",
-        "label": "Options",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Search Type",
-            "children": [
-              {
-                "name": "Minimal",
-                "value": "minimal"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "table",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "value": "",
-        "label": "Options",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Border",
-            "children": [
-              {
-                "name": "Striped",
-                "value": "striped"
-              },
-              {
-                "name": "Bordered",
-                "value": "bordered"
-              }
-            ]
-          },
-          {
-            "name": "Header",
-            "children": [
-              {
-                "name": "No Header",
-                "value": "no-header"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "filter",
-        "label": "Columns",
-        "valueType": "string",
-        "value": "table",
-        "options": [
-          {
-            "name": "1 Column",
-            "value": "table"
-          },
-          {
-            "name": "2 Columns",
-            "value": "table-2-columns"
-          },
-          {
-            "name": "3 Columns",
-            "value": "table-3-columns"
-          },
-          {
-            "name": "4 Columns",
-            "value": "table-4-columns"
-          },
-          {
-            "name": "5 Columns",
-            "value": "table-5-columns"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "table-row",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column1text",
-        "label": "Column1"
-      }
-    ]
-  },
-  {
-    "id": "table-col-2",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column1text",
-        "label": "Column1"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column2text",
-        "label": "Column2"
-      }
-    ]
-  },
-  {
-    "id": "table-col-3",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column1text",
-        "label": "Column1"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column2text",
-        "label": "Column2"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column3text",
-        "label": "Column3"
-      }
-    ]
-  },
-  {
-    "id": "table-col-4",
-    "fields": [
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column1text",
-        "label": "Column1"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column2text",
-        "label": "Column2"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column3text",
-        "label": "Column3"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column4text",
-        "label": "Column4"
-      }
-    ]
-  },
-  {
-    "id": "tabs-item",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "tabName",
-        "value": "",
-        "label": "Tab Name"
-      },
-      {
-        "component": "richtext",
-        "name": "content",
-        "value": "",
-        "label": "Content",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "video",
-    "fields": [
-      {
-        "component": "aem-content",
-        "valueType": "string",
-        "name": "uri",
-        "label": "Video"
-      },
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "value": "",
-        "label": "Options",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Auto Play",
-            "children": [
-              {
-                "name": "AutoPlay",
-                "value": "autoplay"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "placeholder_image",
-        "label": "Placeholder Image",
-        "multi": true
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "placeholder_imageAlt",
-        "value": "",
-        "label": "Placeholder Image Alt Text"
       }
     ]
   }
