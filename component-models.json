@@ -274,7 +274,8 @@
         "name": "text",
         "required": true,
         "label": "Tabs Title",
-        "valueType": "string"
+        "valueType": "string",
+        "multi": true
       },
       {
         "component": "number",
