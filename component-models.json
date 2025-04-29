@@ -1,41 +1,22 @@
 [
   {
-    "id": "page-metadata",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jcr:title",
-        "label": "Title"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jcr:description",
-        "label": "Description"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "keywords",
-        "multi": true,
-        "label": "Keywords"
-      }
-    ]
-  },
-  {
     "id": "image",
     "fields": [
-      {
+       {
         "component": "reference",
+        "valueType": "string",
         "name": "image",
         "label": "Image",
-        "multi": false
+        "required": true,
+        "description": "Upload Image from DAM"
       },
       {
         "component": "text",
+        "valueType": "string",
         "name": "imageAlt",
-        "label": "Alt Text"
+        "label": "Image Alt text",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "required": true
       }
     ]
   },
@@ -136,6 +117,14 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Content-section",
+            "value": "content-section"
+          },
+          {
+            "name": "Video-container",
+            "value": "video-container"
           }
         ]
       }
@@ -148,15 +137,32 @@
         "component": "reference",
         "valueType": "string",
         "name": "image",
-        "label": "Image",
-        "multi": false
+        "label": "Icon/Logo",
+        "required": true,
+        "description": "Upload icon for the Icon Grid"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "description": "Add Image Alternate Text"
       },
       {
         "component": "richtext",
         "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "label": "Icon Title",
+        "valueType": "string",
+        "description": "Enter title for the Icon Grid",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Icon Description",
+        "valueType": "string",
+        "description": "Enter Description for the Icon Grid",
+        "required": true
       }
     ]
   },
@@ -191,6 +197,215 @@
   },
   {
     "id": "hero",
+    "fields": [
+      {
+        "component": "select",
+        "name": "PrimarybackgroundType",
+        "label": "Primary Background Type",
+        "description": "Selct Background Type Primary Hero",
+        "required": true,
+        "options": [
+          {
+            "name": "Image",
+            "value": "imageSlide"
+          },
+          {
+            "name": "Video",
+            "value": "videoSlide"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "label": "Background Video",
+        "name": "BackgroundVideo",
+        "description": "Upload video for the Primary Hero",
+        "required": true,
+        "condition": {
+          "===": [
+            { "var": "PrimarybackgroundType" },
+            "videoSlide"
+          ]
+        }
+      },
+      {
+        "component": "boolean",
+        "label": "Enable Overlay?",
+        "name": "EnableOverlay",
+        "valueType": "boolean",
+        "description": "Enable Overlay video for the Primary Hero"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "text-input",
+        "label": "Overlay Title",
+        "required": true,
+        "condition": {
+          "===": [
+            { "var": "EnableOverlay" },
+            true
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "BackgroundImage",
+        "label": "Background Image",
+        "description": "Upload Image for the Primary Hero",
+        "required": true,
+        "condition": {
+          "===": [
+            { "var": "PrimarybackgroundType" },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "Image Alt",
+        "label": "Image Alt Text",
+        "description": "Add Alt Text for Image Primary Hero",
+        "condition": {
+          "===": [
+            { "var": "PrimarybackgroundType" },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "description": "Upload the icon image",
+        "condition": {
+          "===": [
+            { "var": "PrimarybackgroundType" },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Icon Alt text",
+        "valueType": "string",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "condition": {
+          "===": [
+            { "var": "PrimarybackgroundType" },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "select",
+        "name": "textcolor",
+        "label": "Text Color",
+        "description": "Select the Text Color",
+        "value": "white",
+        "options": [
+          { "name": "Black", "value": "black" },
+          { "name": "White", "value": "white" }
+        ],
+        "condition": {
+          "===": [
+            { "var": "PrimarybackgroundType" },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "ctalabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA for each card",
+        "condition": {
+          "===": [
+            { "var": "PrimarybackgroundType" },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "description": "Enter the URL to navigate when CTA is clicked for each card",
+        "validation": {
+          "rootPath": "/content/lilly-com-eds"
+        },
+        "condition": {
+          "===": [
+            { "var": "PrimarybackgroundType" },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          { "name": "Same Tab", "value": "sameTab" },
+          { "name": "New Tab", "value": "newTab" }
+        ],
+        "condition": {
+          "===": [
+            { "var": "PrimarybackgroundType" },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "checkbox-group",
+        "label": "ExitInterstitial",
+        "name": "exitInterstitial",
+        "valueType": "string",
+        "options": [
+          { "name": "ExitInterstitial", "value": "true" }
+        ],
+        "condition": {
+          "===": [
+            { "var": "PrimarybackgroundType" },
+            "imageSlide"
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "text",
+        "label": "Title",
+        "required": true,
+        "valueType": "string",
+        "description": "Enter main heading for the Primary Hero",
+        "validation": {
+          "minLength": 0,
+          "maxLength": 70,
+          "regExp": "^foo:.*",
+          "customErrorMsg": "Maximum Characters length limit should not be more than 70"
+        }
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter description for additional context"
+      }
+    ]
+  },
+ 
+
+  {
+    "id": "sus10",
     "fields": [
       {
         "component": "reference",
@@ -309,113 +524,6 @@
         "name": "imageAlt",
         "label": "Alt Text",
         "description": "Pick alt text from AEM DAM with ability to override it"
-      }
-    ]
-  },
-  {
-    "id": "cards-default",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "cards-default",
-        "label": "Cards Title",
-        "description": "Enter the title for the entire Card block",
-        "multi": false
-      },
-      {
-        "component": "number",
-        "valueType": "number",
-        "value": 2,
-        "name": "numberOfCards",
-        "label": "Number of Cards",
-        "description": "Choose the number of cards to be displayed in the component",
-        "required": true,
-        "multi": false,
-        "validation": {
-          "numberMin": 2
-        }
-      }
-    ]
-  },
-
-  {
-    "id": "card-default",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image Thumbnail",
-        "required": true,
-        "description": "Upload images for the card"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Image Alt Text ",
-        "description": "Add Image Alternate Text"
-      },
-      {
-        "component": "text",
-        "name": "text",
-        "label": "Title",
-        "valueType": "string",
-        "description": "Enter title for each card",
-        "required": true
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string",
-        "description": "Enter description for each card",
-        "required": false
-      },
-      {
-        "component": "text",
-        "name": "ctaLabel",
-        "label": "CTA Label",
-        "valueType": "string",
-        "description": "Enter label to display on the CTA for each card"
-      },  
-      {
-        "component": "aem-content",
-        "name": "ctaLink",
-        "label": "CTA Link",
-        "valueType": "string",
-        "description": "Enter the URL to navigate when CTA is clicked for each card",
-        "validation": {
-              "rootPath": "content/lilly-com-eds"
-          }
-      },
-      {
-        "component": "select",
-        "name": "targetPath",
-        "label": "Target Path",
-        "description": "Select the target path for the authored CTA URL",
-        "value": "sameTab",
-        "options": [
-          {
-            "name": "Same Tab",
-            "value": "sameTab"
-          },
-          {
-            "name": "New Tab",
-            "value": "newTab"
-          }
-        ]
-      },
-      {
-        "component": "checkbox-group",
-        "label": "Checkbox Group",
-        "name": "checkbox",
-        "valueType": "string",
-        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
-        "options": [
-          { "name": "Exit Interstitial", "value": "true" }
-        ]
       }
     ]
   },
@@ -5377,19 +5485,29 @@
     "id": "text-component",
     "fields": [
       {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Description",
+        "valueType": "string",
+        "required": true,
+        "description": "Enter description for additional context which can have styling such as Bold, italics and  ability to add text links."
+      }
+    ]
+  },
+  {
+    "id": "teaser",
+    "fields": [
+      {
         "component": "select",
-        "name": "alignment",
-        "label": "Alignment",
-        "description": "Select the alignment expected for entire block",
+        "name": "imagePlacement",
+        "label": "Image Placement",
+        "description": "Select the appropriate column for image placement",
+        "required": true,
         "value": "left",
         "options": [
           {
             "name": "Left",
             "value": "left"
-          },
-          {
-            "name": "Center",
-            "value": "center"
           },
           {
             "name": "Right",
@@ -5400,44 +5518,37 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "icon",
-        "label": "Icon",
-        "description": "Upload the icon image"
+        "name": "imagePath",
+        "label": "Image Path",
+        "description": "Upload image for the teaser",
+        "required": true
       },
       {
         "component": "text",
-        "name": "imageAlt",
-        "label": "Icon Alt text",
+        "name": "imageAltTxt",
+        "label": "Image Alt text",
         "valueType": "string",
         "description": "Pick alt text from AEM DAM with ability to override it"
       },
       {
         "component": "text",
-        "name": "eyebrowText",
-        "label": "Eyebrow Text",
-        "valueType": "string",
-        "description": "Enter the Eyebrow text"
-      },
-      {
-        "component": "richtext",
-        "name": "titleRte",
+        "name": "title",
         "label": "Title",
-        "valueType": "string",
-        "description": "Enter the Title"
+        "description": "Enter the title",
+        "required": true
       },
       {
         "component": "richtext",
-        "name": "descriptionRte",
+        "name": "description",
         "label": "Description",
-        "valueType": "string",
-        "description": "Enter description for additional context which can have styling such as Bold, italics and  ability to add text links."
+        "description": "Enter the title",
+        "required": true
       },
       {
         "component": "text",
         "name": "ctaLabel",
         "label": "CTA Label",
-        "valueType": "string",
-        "description": "Enter label to display on the CTA"
+        "description": "Enter the title"
       },
       {
         "component": "aem-content",
@@ -5445,7 +5556,7 @@
         "label": "CTA Link",
         "description": "Enter the URL to navigate when CTA is clicked",
         "validation": {
-          "rootPath": "/content/ewi-lilly-com-block-library"
+          "rootPath": "/content/lilly-com-eds"
         }
       },
       {
@@ -5464,276 +5575,158 @@
             "value": "newTab"
           }
         ]
-      },
-      {
-        "component": "checkbox-group",
-        "name": "exitInterstitial",
-        "valueType": "boolean",
-        "label": "Exit Interstitial",
-        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
-        "options": [
-          { "name": "Exit Interstitial", "value": true }
-        ]
-      }
-      
-    ]
-  },
-  {
-    "id": "two-column-with-image",
-    "fields": [
-      {
-        "component": "select",
-        "name": "imagePlacement",
-        "label": "Image Placement",
-        "description": "Select the alignment expected for entire block",
-        "value": "left",
-        "required": true,
-        "options": [
-          {
-            "name": "Left",
-            "value": "left"
-          },
-          {
-            "name": "Right",
-            "value": "right"
-          }
-        ]
-      },
-      {
-      "component": "reference",
-      "valueType": "string",
-      "name": "image",
-      "label": "Image",
-      "required": true,
-      "description": "Upload image for the teaser"
-    },
-    {
-      "component": "text",
-      "name": "altImage",
-      "label": "Image Alt text",
-      "valueType": "string",
-      "description": "Pick alt text from AEM DAM with ability to override it"
-    },
-    {
-      "component": "reference",
-      "valueType": "string",
-      "name": "icon",
-      "label": "Icon",
-      "description": "Upload icon for the teaser"
-    },
-    {
-      "component": "text",
-      "name": "alt",
-      "label": "Icon Alt text",
-      "valueType": "string",
-      "description": "Pick alt text from AEM DAM with ability to override it"
-    },
-    {
-      "component": "text",
-      "name": "text",
-      "label": "Title",
-      "required": true,
-      "valueType": "string",
-      "description": "Enter the title"
-    },
-    {
-      "component": "richtext",
-      "name": "rte",
-      "label": "Description",
-      "valueType": "string",
-      "description": "Enter the description"
-    },
-    {
-      "component": "text",
-      "name": "ctaText",
-      "label": "CTA Text",
-      "valueType": "string",
-      "description": "Enter label to display on the CTA"
-    },
-    {
-      "component": "aem-content",
-      "name": "ctaLink",
-      "label": "CTA Link",
-      "description": "Enter the URL to navigate when CTA is clicked",
-      "validation": {
-        "rootPath": "/content/lilly-com-eds"
-      }
-    },
-    {
-      "component": "select",
-      "name": "targetPath",
-      "label": "Target Path",
-      "description": "Select the target path for the authored CTA URL",
-      "value": "sameTab",
-      "options": [
-        {
-          "name": "Same Tab",
-          "value": "sameTab"
-        },
-        {
-          "name": "New Tab",
-          "value": "newTab"
-        }
-      ]
-    },
-    {
-      "component": "checkbox-group",
-      "label": "Checkbox Group",
-      "name": "checkbox",
-      "valueType": "string",
-      "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
-      "options": [
-        { "name": "Exit Interstitial", "value": "true" }
-      ]
-    }
-  ]
-  },
-  {
-    "id": "relatedlink",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "label": "Link Headline",
-        "name": "linkHeadline",
-        "description": "Enter display text for the quick link",
-        "required": true
-      },
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "description": "Enter the URL to navigate when Quick Link is clicked",
-        "label": "Link URL",
-        "valueType": "string",
-        "required": true,
-        "validation": {
-              "rootPath": "/content/lilly-com-eds"
-          }
-      },
-      {
-        "component": "select",
-        "name": "targetPath",
-        "label": "Target Path",
-        "description": "Select the target path for the authored CTA URL",
-        "value": "sameTab",
-        "options": [
-          {
-            "name": "Same Tab",
-            "value": "sameTab"
-          },
-          {
-            "name": "New Tab",
-            "value": "newTab"
-          }
-        ]
-      },
-      {
-        "component": "checkbox-group",
-        "label": "Exit Interstitial",
-        "name": "checkbox",
-        "valueType": "string",
-        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
-        "options": [
-          { "name": "Exit Interstitial", "value": "true" }
-        ]
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "label": "Sub-text Headline",
-        "name": "subTextHeadline",
-        "description": "Enter display text for the  quick link sub-text",
-        "required": true
-      },
-      {
-        "component": "aem-content",
-        "description": "Enter the URL to navigate when Quick Link sub-text is clicked",
-        "label": "Sub-text Link URL",
-        "valueType": "string",
-        "name": "sub-text",
-        "required": true,
-        "validation": {
-              "rootPath": "/content/lilly-com-eds"
-          }
-      },
-      {
-        "component": "select",
-        "name": "targetPath1",
-        "label": "Target Path",
-        "description": "Select the target path for the authored CTA sub-text URL",
-        "value": "sameTab",
-        "options": [
-          {
-            "name": "Same Tab",
-            "value": "sameTab"
-          },
-          {
-            "name": "New Tab",
-            "value": "newTab"
-          }
-        ]
-      },
-      {
-        "component": "checkbox-group",
-        "label": "Exit Interstitial",
-        "name": "checkboxSubText",
-        "valueType": "string",
-        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
-        "options": [
-          { "name": "Exit Interstitial", "value": "true" }
-        ]
       }
     ]
   },
   {
-    "id": "enhanced-related-link",
+    "id": "icongrid-tile",
     "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Icon/Logo",
+        "required": true,
+        "description": "Upload icon for the Icon Grid"
+      },
       {
         "component": "text",
         "valueType": "string",
-        "name": "linkHeadline",
-        "label": "Link Headline",
-        "required": true,
-        "description": "Enter display text for the quick link"
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "description": "Add Image Alternate Text"
       },
       {
-        "component": "aem-content",
-        "name": "linkURL",
-        "label": "Link URL",
+        "component": "richtext",
+        "name": "text",
+        "label": "Icon Title",
         "valueType": "string",
-        "required": true,
-        "description": "Enter the URL to navigate when Quick Link is clicked",
-        "validation": {
-              "rootPath": "content/lilly-com-eds"
-          }
+        "description": "Enter title for the Icon Grid",
+        "required": true
       },
       {
-        "component": "select",
-        "name": "targetPath",
-        "label": "Target Path",
-        "description": "Select the target path for the authored CTA URL",
-        "value": "sameTab",
-        "options": [
-          {
-            "name": "Same Tab",
-            "value": "sameTab"
-          },
-          {
-            "name": "New Tab",
-            "value": "newTab"
-          }
-        ]
-      },
-      {
-        "component": "checkbox-group",
-        "label": "Exit Interstitial",
-        "name": "checkbox",
+        "component": "richtext",
+        "name": "description",
+        "label": "Icon Description",
         "valueType": "string",
-        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
-        "options": [
-          { "name": "Exit Interstitial", "value": "true" }
-        ]
+        "description": "Enter Description for the Icon Grid",
+        "required": true
       }
+    ]
+  },
+  {
+    "id":"promo-banner",
+    "fields":[
+       {
+          "component":"select",
+          "name":"textAlignment",
+          "label":"Text Alignment",
+          "description":"Choose the text alignment within the Promo Banner component",
+          "value":"left",
+          "required": true,
+          "options":[
+             {
+                "name":"Left",
+                "value":"left"
+             },
+             {
+                "name":"Center",
+                "value":"center"
+             },
+             {
+                "name":"Right",
+                "value":"right"
+             }
+          ]
+       },
+       {
+          "component":"text",
+          "name":"eyebrowText",
+          "label":"Eyebrow Text",
+          "valueType":"string",
+          "description":"Enter the Eyebrow text"
+       },
+       {
+          "component":"select",
+          "name":"highlightedtextColor",
+          "label":"Highlighted Text Color",
+          "description":"Only applicable to italic font in title",
+          "options":[
+             {
+                "name":"Primary",
+                "value":"primary"
+             },
+             {
+                "name":"Secondary",
+                "value":"secondary"
+             },
+             {
+                "name":"Tertiary",
+                "value":"tertiary"
+             }
+          ]
+       },
+       {
+          "component":"richtext",
+          "name":"title",
+          "label":"Title",
+          "valueType":"string",
+          "description": "Enter the title",
+          "required": true
+       },
+       {
+          "component":"richtext",
+          "name":"description",
+          "label":"Description",
+          "valueType":"string",
+          "description": "Enter the description"
+       },
+       {
+          "component":"text",
+          "name":"ctaLabel",
+          "label":"CTA Label",
+          "valueType":"string",
+          "description":"Enter label to display on the CTA"
+       },
+       {
+          "component":"aem-content",
+          "name":"ctaLink",
+          "label":"CTA Link",
+          "description":"Enter the URL to navigate when CTA is clicked",
+          "validation":{
+             "rootPath":"/content/lilly-com-eds"
+          }
+       },
+       {
+          "component":"select",
+          "name":"targetPath",
+          "label":"Target Path",
+          "description":"Select the target path for the authored CTA URL",
+          "value":"sameTab",
+          "options":[
+             {
+                "name":"Same Tab",
+                "value":"sameTab"
+             },
+             {
+                "name":"New Tab",
+                "value":"newTab"
+             }
+          ]
+       },
+       {
+          "component":"checkbox-group",
+          "label":"Checkbox Group",
+          "name":"checkbox",
+          "valueType":"string",
+          "description":"Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+          "options":[
+             {
+                "name":"Exit Interstitial",
+                "value":"true"
+             }
+          ]
+       }
     ]
   }
 ]

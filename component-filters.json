@@ -15,7 +15,9 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "icongrid-tile",
+      "promo-banner"
     ]
   },
   {
@@ -24,6 +26,13 @@
       "card"
     ]
   },
+  {
+    "id": "hero",
+    "components": [
+      "icongrid-tile"
+    ]
+  },
+
   {
     "id": "columns",
     "components": [
