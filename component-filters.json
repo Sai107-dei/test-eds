@@ -302,7 +302,7 @@
       "sr_script": ["subscript", "superscript"],
       "list": ["bullist", "numlist"],
       "insert": ["link", "openlink", "unlink", "media", "anchor", "charmap", "insertdatetime", "linktarget"],
-      "advanced": ["h1", "h2", "h3", "h4", "h5", "h6"],
+      "advanced": ["h1", "h2", "h3", "h4", "h5", "h6", "xyz"],
       "extensions": ["table", "tablecellprops", "tablecopyrow", "tablecutrow", "tabledelete", "tabledeletecol", "tabledeleterow", "tableinsertdialog", "tableinsertcolafter", "tableinsertcolbefore", "tableinsertrowafter", "tableinsertrowbefore", "tablemergecells", "tablepasterowafter", "tablepasterowbefore", "tableprops", "tablerowprops", "tablesplitcells", "tableclass", "tablecellclass", "tablecellvalign", "tablecellborderwidth", "tablecellborderstyle", "tablecaption", "tablecellbackgroundcolor", "tablecellbordercolor", "tablerowheader", "tablecolheader"],
       "editor": ["copy", "cut", "paste", "redo", "undo", "remove", "removeformat", "selectall", "visualaid", "pastetext", "code", "fullscreen", "preview", "searchreplace", "visualblocks", "grammarly"]
     }
