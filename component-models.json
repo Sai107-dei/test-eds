@@ -157,6 +157,24 @@
     "id": "columns",
     "fields": [
       {
+        "component": "select",
+        "name": "sectionbgcolor",
+        "description": "Defines the colour of the background.",
+        "value": "white",
+        "label": "Background Colour",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "White",
+            "value": "white"
+          },
+          {
+            "name": "Grey",
+            "value": "grey"
+          }
+        ]
+      },
+      {
         "component": "number",
         "valueType": "number",
         "name": "columns",

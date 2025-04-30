@@ -295,6 +295,9 @@
                 "template": {
                   "columns": 2,
                   "rows": 1,
+                  "sectionalignment": "center",
+                  "sectionbgcolor": "white",
+                  "sectionwidth": "grid-10",
                   "classes": [
                     "left",
                     "top-vertical-align"
