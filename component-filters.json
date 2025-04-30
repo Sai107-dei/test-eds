@@ -303,7 +303,7 @@
       "list": ["bullist", "numlist"],
       "insert": ["link"],
       "blocks": [],
-      "advanced": ["h3"],
+      "advanced": ["h1,h2,h3,h4,h5,h6,something"],
       "extensions": [],
       "editor": ["removeformat"]
     }
