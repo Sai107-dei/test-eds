@@ -78,7 +78,8 @@
         "name": "copyright",
         "value": "",
         "label": "Text",
-        "required": true
+        "required": true,
+        "description": "ⓘ Default Content in left and image / video on right."
       }
     ]
   },
