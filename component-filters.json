@@ -2,60 +2,407 @@
   {
     "id": "main",
     "components": [
+      "all-models-section",
+      "bmw_main_section",
+      "bmw-video",
+      "flexible-width-section",
+      "footer-section",
+      "header-section",
       "section",
+      "stock-locator-section",
       "tabs-section"
     ]
   },
   {
+    "id": "columns",
+    "components": ["column"]
+  },
+  {
+    "id": "column",
+    "components": [
+      "button",
+      "copy_text",
+      "eyebrow",
+      "headline",
+      "image",
+      "title"
+    ]
+  },
+  {
+    "id": "bmw_main_section",
+    "components": [
+      "section",
+      "text-image",
+      "text-image-v2"
+    ]
+  },
+  {
+    "id": "footer-section",
+    "components": [
+      "copyright",
+      "icon-link-list",
+      "link-list",
+      "speed-dial"
+    ]
+  },
+  {
+    "id": "header-section",
+    "components": [
+      "icon-link-list",
+      "logo",
+      "menu-flyout",
+      "menu-link"
+    ]
+  },
+  {
+    "id": "menu-flyout",
+    "components": [
+      "link-list",
+      "menu-teaser"
+    ]
+  },
+  {
+    "id": "menu-teaser",
+    "components": [
+      "button",
+      "copy_text"
+    ]
+  },
+  {
+    "id": "text-with-media",
+    "components": [
+      "text-with-image",
+      "text-with-video"
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "accordion-item"
+    ]
+  },
+  {
+    "id": "accordion-item",
+    "components": [],
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": ["superscript"],
+      "list": ["bullist", "numlist"],
+      "insert": ["link"],
+      "blocks": [],
+      "advanced": [],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
+  {
+    "id": "text-with-image",
+    "components": [],
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": ["link"],
+      "blocks": [],
+      "advanced": [""],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
+  {
+    "id": "text-with-video",
+    "components": [],
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": ["link"],
+      "blocks": [],
+      "advanced": [""],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
+  {
+    "id": "video-carousel",
+    "components": [],
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": ["link"],
+      "blocks": [],
+      "advanced": [""],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
+  {
+    "id": "image-carousel",
+    "components": [],
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": ["link"],
+      "blocks": [],
+      "advanced": [""],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
+  {
+    "id": "quote",
+    "components": [],
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": [""],
+      "blocks": [],
+      "advanced": [""],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
+  {
     "id": "section",
     "components": [
-      "text",
-      "image",
+      "accordion",
+      "background-media",
       "button",
-      "title",
-      "hero",
-      "cards",
       "columns",
-      "fragment",
-      "text-component",
-      "teaser",
-      "carousel",
-      "tab"
+      "content-navigation",
+      "cookiepolicy",
+      "copy_text",
+      "disclaimer",
+      "download",
+      "drivetrain-switch",
+      "eyebrow",
+      "footer-text",
+      "headline",
+      "iframe",
+      "image",
+      "link-list",
+      "media-carousel",
+      "model-card",
+      "multicontent-gallery",
+      "precon",
+      "quote",
+      "technical-data",
+      "text-with-media",
+      "title",
+      "video",
+      "video-gallery",
+      "website-search"
+    ]
+  },
+  {
+    "id":"flexible-width-section",
+    "components":[
+      "accordion",
+      "button",
+      "columns",
+      "copy_text",
+      "cookiepolicy",
+      "disclaimer",
+      "download"   ,
+      "eyebrow",
+      "headline",
+      "image",
+      "quote",
+      "title",
+      "video"
     ]
   },
   {
     "id": "tabs-section",
     "components": [
-      "tabs"
+      "accordion",
+      "background-media",
+      "button",
+      "columns",
+      "content-navigation",
+      "cookiepolicy",
+      "copy_text",
+      "disclaimer",
+      "download",
+      "drivetrain-switch",
+      "eyebrow",
+      "footer-text",
+      "headline",
+      "icon",
+      "icon-link-list",
+      "iframe",
+      "image",
+      "link-list",
+      "media-carousel",
+      "model-card",
+      "multicontent-gallery",
+      "precon",
+      "quote",
+      "technical-data",
+      "text-with-media",
+      "title",
+      "video",
+      "video-gallery"
     ]
   },
   {
-    "id": "tabs",
+    "id": "all-models-section",
     "components": [
-      "text-component",
-      "teaser",
-      "hero"
+      "all-models",
+      "headline",
+      "link-list"
     ]
+  },
+  {
+    "id": "stock-locator-model-overview",
+    "components": [],
+    "rte": {
+      "format": [],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": [],
+      "blocks": [],
+      "advanced": [""],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
+  },
+  {
+   "id" : "stock-locator-section",
+   "components":[
+    "copy_text",
+    "headline",
+    "stock-locator-model-detail",
+    "stock-locator-model-overview"
+   ]
+  },
+  {
+    "id": "copy_text",
+    "rte": {
+      "format": ["bold"],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": ["superscript"],
+      "list": ["bullist", "numlist"],
+      "insert": ["link"],
+      "blocks": [],
+      "advanced": ["h3"],
+      "extensions": [],
+      "editor": ["removeformat"]
+    }
   },
   {
     "id": "cards",
+    "components": ["card"]
+  },
+  {
+    "id": "icon-link-list",
+    "components": ["icon"]
+  },
+  {
+    "id": "link-list",
+    "components": [],
+    "rte": {
+      "format": [],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": ["bullist"],
+      "insert": ["link"],
+      "advanced": [],
+      "extensions": [],
+      "editor": []
+    }
+  },
+  {
+    "id": "multicontent-gallery",
     "components": [
-      "card"
+      "image-slide",
+      "video-slide"
     ]
   },
   {
-    "id": "columns",
+    "id": "video-slide",
+    "components": []
+  },
+  {
+    "id": "image-slide",
+    "components": []
+  },
+  {
+    "id": "media-carousel",
     "components": [
-      "column"
+      "image-carousel",
+      "video-carousel"
     ]
   },
   {
-    "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
+    "id": "background-media",
+    "components":[
+      "background-image",
+      "background-video"
     ]
+  },
+  {
+    "id": "video-gallery",
+    "components": [
+      "video-gallery-slide"
+    ]
+  },
+  {
+    "id": "drivetrain-switch",
+    "components": [
+      "drivetrain-model-card"
+    ]
+  },
+  {
+    "id": "precon",
+    "components": [
+      "precon-vehicle"
+    ]
+  },
+  {
+    "id": "speed-dial",
+    "components":[
+      "speed-dial-item"
+    ]
+  },
+  {
+    "id": "technical-data",
+    "components":[
+      "model-data"
+    ],
+    "rte": {
+      "format": [],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": ["link"],
+      "advanced": ["h2"],
+      "extensions": [],
+       "editor": []
+    }
+  },
+  {
+    "id": "website-search",
+    "components":[]
   }
 ]
