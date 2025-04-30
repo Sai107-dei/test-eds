@@ -296,17 +296,17 @@
   {
     "id": "copy_text",
     "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": ["superscript"],
+      "format": ["bold", "italic", "strikethrough", "backcolor", "fontselect", "fontsizeselect", "forecolor", "formatselect", "underline", "subscript", "superscript", "styleselect"],
+      "alignment": ["alignleft", "alignright", "aligncenter", "alignjustify", "alignnone"],
+      "indentation": ["indent", "outdent"],
+      "sr_script": ["subscript", "superscript"],
       "list": ["bullist", "numlist"],
-      "insert": ["link"],
-      "blocks": [],
-      "advanced": ["h1,h2,h3,h4,h5,h6,something"],
-      "extensions": [],
-      "editor": ["removeformat"]
+      "insert": ["link", "openlink", "unlink", "media", "anchor", "charmap", "insertdatetime", "linktarget"],
+      "advanced": ["h1", "h2", "h3", "h4", "h5", "h6"],
+      "extensions": ["table", "tablecellprops", "tablecopyrow", "tablecutrow", "tabledelete", "tabledeletecol", "tabledeleterow", "tableinsertdialog", "tableinsertcolafter", "tableinsertcolbefore", "tableinsertrowafter", "tableinsertrowbefore", "tablemergecells", "tablepasterowafter", "tablepasterowbefore", "tableprops", "tablerowprops", "tablesplitcells", "tableclass", "tablecellclass", "tablecellvalign", "tablecellborderwidth", "tablecellborderstyle", "tablecaption", "tablecellbackgroundcolor", "tablecellbordercolor", "tablerowheader", "tablecolheader"],
+      "editor": ["copy", "cut", "paste", "redo", "undo", "remove", "removeformat", "selectall", "visualaid", "pastetext", "code", "fullscreen", "preview", "searchreplace", "visualblocks", "grammarly"]
     }
+    
   },
   {
     "id": "cards",
