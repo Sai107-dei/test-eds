@@ -1,100 +1,111 @@
 [
   {
-      "id": "main",
-      "components": ["section"]
+    "id": "main",
+    "components": [
+      "section"
+    ]
   },
   {
-      "id": "columns",
-      "components": []
+    "id": "columns",
+    "components": []
   },
   {
-      "id": "column",
-      "components": ["button", "image", "text", "title", "video"]
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "image-link"
+    ]
   },
   {
-      "id": "section",
-      "components": [
-          "button",
-          "image",
-          "text",
-          "title",
-          "video",
-          "accordion",
-          "banner",
-          "cards",
-          "carousel",
-          "columns",
-          "commerce-account",
-          "commerce-cart",
-          "commerce-checkout",
-          "commerce-login",
-          "commerce-order-history",
-          "configurator",
-          "cta",
-          "e-catalog",
-          "embed",
-          "form",
-          "fragment",
-          "headline-fourImg",
-          "help-center",
-          "hero",
-          "know-your-fabrics",
-          "content-carousel",
-          "content-search",
-          "mini-swatches",
-          "navbar-menu-item",
-          "product-details",
-          "product-list",
-          "products",
-          "product-carousel",
-          "refer-a-friend",
-          "reviews",
-          "showroomlocator",
-          "teaser",
-          "ugc-gallery",
-          "whats-inside",
-          "blueconic",
-          "usablenet"
-      ]
+    "id": "section",
+    "components": [
+      "breadcrumb",
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "cards",
+      "columns",
+      "header-nav",
+      "carousel",
+      "savingscard-header",
+      "savingscard",
+      "savingscard-footer",
+      "accordion-group",
+      "form",
+      "imagedesc-col2-inline",
+      "imagedesc-col3-inline",
+      "col2-desc-grid",
+      "car-card",
+      "wishlist",
+      "thumbnail-desc",
+      "car-details",
+      "car-features",
+      "embed",
+      "download-app",
+      "nl-calculator",
+      "nl-calculator-extended",
+      "vehicle-comparison",
+      "single-slide-carousel",
+      "takeways",
+      "thumbnail-car",
+      "related-article-card",
+      "takeaways",
+      "filter",
+      "car-help",
+      "image-link",
+      "tablinks",
+      "aem-content-fragment",
+      "search",
+      "rating-widget",
+      "icon-text-widget",
+      "faq",
+      "active-filter",
+      "fragment"
+    ]
   },
   {
-      "id": "cards",
-      "components": ["card"]
+    "id": "cards",
+    "components": [
+      "card"
+    ]
   },
   {
-      "id": "e-catalog",
-      "components": ["text"]
+    "id": "carousel",
+    "components": ["slide"]
   },
   {
-      "id": "teaser",
-      "components": ["teaser"]
+    "id": "accordion",
+    "components": ["accordion"]
   },
   {
-      "id": "navbar-menu-item",
-      "components": ["navbar-submenu-item"]
+    "id": "single-slide-carousel",
+    "components": [
+      "slide"
+    ]
   },
   {
-      "id": "accordion",
-      "components": ["accordion-item"]
+    "id": "filter-search",
+    "components": [
+      "card"
+    ]
   },
   {
-      "id": "hero",
-      "components": ["hero-item"]
+    "id": "active-search",
+    "components":[
+      "card"
+    ]
   },
   {
-      "id": "know-your-fabrics",
-      "components": ["fabrics-item"]
-  },
-  {
-      "id": "banner",
-      "components": ["banner-item"]
-  },
-  {
-      "id": "content-carousel",
-      "components": ["content-carousel-item"]
-  },
-  {
-      "id": "whats-inside",
-      "components": ["whats-inside-item"]
+    "id": "slide",
+    "components":[
+      "columns"
+    ]
+
   }
+
 ]

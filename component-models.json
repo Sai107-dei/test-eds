@@ -1,3221 +1,3401 @@
 [
   {
-      "id": "page-metadata",
-      "fields": [
+    "id": "title",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "jcr:title",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "select",
+        "name": "type",
+        "value": "h1",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
           {
-              "component": "text",
-              "name": "og:type",
-              "label": "OG Type"
+            "name": "h1",
+            "value": "h1"
           },
           {
-              "component": "text",
-              "name": "banner",
-              "label": "Banner"
+            "name": "h2",
+            "value": "h2"
           },
           {
-              "component": "select",
-              "name": "breadcrumbs",
-              "value": "",
-              "label": "Breadcrumbs",
-              "valueType": "string",
-              "options": [
-                  {
-                      "name": "Use Default",
-                      "value": ""
-                  },
-                  {
-                      "name": "Hide",
-                      "value": "false"
-                  },
-                  {
-                      "name": "Show",
-                      "value": "true"
-                  }
-              ]
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
           }
-      ]
+        ]
+      }
+    ]
   },
   {
-      "id": "button",
-      "fields": [
+    "id": "image",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "alt",
+        "value": "Default alt",
+        "label": "Alt Text"
+      }
+    ]
+  },
+  {
+    "id": "button",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "href",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "href",
-              "value": "",
-              "label": "Link"
+            "name": "default",
+            "value": ""
           },
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "text",
-              "value": "",
-              "label": "Text"
+            "name": "primary",
+            "value": "primary"
           },
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "title",
-              "value": "",
-              "label": "Title"
-          },
-          {
-              "component": "select",
-              "name": "type",
-              "value": "",
-              "label": "Type",
-              "valueType": "string",
-              "options": [
-                  {
-                      "name": "default",
-                      "value": ""
-                  },
-                  {
-                      "name": "primary",
-                      "value": "primary"
-                  },
-                  {
-                      "name": "secondary",
-                      "value": "secondary"
-                  }
-              ]
+            "name": "secondary",
+            "value": "secondary"
           }
-      ]
+        ]
+      }
+    ]
   },
   {
-      "id": "image",
-      "fields": [
+    "id": "columns",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "value": "",
+        "label": "Columns"
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "rows",
+        "value": "",
+        "label": "Rows"
+      }
+    ]
+  },
+  {
+    "id": "card",
+    "fields": [
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "cardColor",
+        "value": "",
+        "label": "Card Color",
+        "options": [
           {
-              "component": "reference",
-              "valueType": "string",
-              "name": "fileReference",
-              "label": "Image",
-              "multi": false
+            "name": "default",
+            "value": "default"
           },
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "alt",
-              "value": "Default alt",
-              "label": "Alt Text"
+            "name": "green",
+            "value": "green"
+          },
+          {
+            "name": "aqua",
+            "value": "aqua"
+          },
+          {
+            "name": "blue",
+            "value": "blue"
           }
-      ]
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
   },
   {
-      "id": "title",
-      "fields": [
+    "id": "section",
+    "fields": [
+      {
+        "component": "text",
+        "name": "style",
+        "value": "",
+        "label": "Style",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "hero",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "jcr:title",
-              "value": "",
-              "label": "Text"
+            "name": "Homepage",
+            "value": "homepage"
           },
           {
-              "component": "select",
-              "name": "type",
-              "value": "h1",
-              "label": "Type",
-              "valueType": "string",
-              "options": [
-                  {
-                      "name": "h1",
-                      "value": "h1"
-                  },
-                  {
-                      "name": "h2",
-                      "value": "h2"
-                  },
-                  {
-                      "name": "h3",
-                      "value": "h3"
-                  },
-                  {
-                      "name": "h4",
-                      "value": "h4"
-                  },
-                  {
-                      "name": "h5",
-                      "value": "h5"
-                  },
-                  {
-                      "name": "h6",
-                      "value": "h6"
-                  }
-              ]
+            "name": "Offerpage",
+            "value": "offerpage"
           }
-      ]
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "mobImage",
+        "label": "MobImage",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "mobImageAlt",
+        "label": "mobAlt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "content",
+        "value": "",
+        "label": "Content",
+        "valueType": "string"
+      },
+      {
+        "component": "button",
+        "name": "cta",
+        "value": "",
+        "label": "CTA",
+        "valueType": "string"
+      }
+    ]
   },
   {
-      "id": "video",
-      "fields": [
+    "id": "header-nav",
+    "fields": [
+       {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Heading Type",
+        "options": [
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "href",
-              "value": "",
-              "label": "URL"
+            "name": "H2",
+            "value": "h2"
           },
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "text",
-              "value": "",
-              "label": "Alt"
+            "name": "H3",
+            "value": "h3"
           },
           {
-              "component": "multiselect",
-              "valueType": "string",
-              "name": "title",
-              "value": "",
-              "label": "Options",
-              "options": [
-                  {
-                      "name": "Muted",
-                      "value": "muted"
-                  },
-                  {
-                      "name": "Loop",
-                      "value": "loop"
-                  },
-                  {
-                      "name": "Inline",
-                      "value": "playsinline"
-                  },
-                  {
-                      "name": "Autoplay",
-                      "value": "autoplay"
-                  },
-                  {
-                      "name": "Controls",
-                      "value": "controls"
-                  }
-              ]
+            "name": "H4",
+            "value": "h4"
+          },
+          {
+            "name": "H5",
+            "value": "h5"
+          },
+          {
+            "name": "H6",
+            "value": "h6"
           }
-      ]
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linktitle",
+        "label": "URL",
+        "value": "/"
+      },
+      {
+        "component": "richtext",
+        "name": "content",
+        "value": "",
+        "label": "Content",
+        "valueType": "string"
+      }
+    ]
   },
   {
-      "id": "section",
-      "fields": [
+    "id": "carousel",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
           {
-              "component": "select",
-              "valueType": "string",
-              "name": "type",
-              "value": "",
-              "label": "Type",
-              "options": [
-                  {
-                      "name": "Section",
-                      "value": ""
-                  },
-                  {
-                      "name": "Tab",
-                      "value": "tab"
-                  },
-                  {
-                      "name": "Accordion",
-                      "value": "accordion"
-                  }
-              ]
+            "name": "Carousel-Slide-3",
+            "value": "carousel-slide-3"
           },
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "title",
-              "label": "Title",
-              "condition": {
-                  "in": [
-                      {
-                          "var": "type"
-                      },
-                      ["tab", "accordion"]
-                  ]
-              }
+            "name": "Hero Banner Carousel",
+            "value": "hero-banner-carousel"
           },
           {
-              "component": "select",
-              "valueType": "string",
-              "name": "appearance",
-              "value": "",
-              "label": "Appearance",
-              "options": [
-                  {
-                      "name": "Full Width",
-                      "value": ""
-                  },
-                  {
-                      "name": "Contained",
-                      "value": "contained"
-                  },
-                  {
-                      "name": "Full Bleed",
-                      "value": "full-bleed"
-                  },
-                  {
-                      "name": "Accordion-Subtext",
-                      "value": "accordion-subtext"
-                  }
-              ]
+            "name": "Carousel",
+            "value": "carousel"
           },
           {
-              "component": "select",
-              "valueType": "string",
-              "name": "align",
-              "value": "",
-              "label": "Text Alignment",
-              "options": [
-                  {
-                      "name": "Dynamic",
-                      "value": ""
-                  },
-                  {
-                      "name": "Left",
-                      "value": "left"
-                  },
-                  {
-                      "name": "Center",
-                      "value": "center"
-                  },
-                  {
-                      "name": "Right",
-                      "value": "right"
-                  }
-              ]
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "titleColor",
-              "value": "",
-              "label": "Title Color",
-              "options": [
-                  {
-                      "name": "Inherit",
-                      "value": ""
-                  },
-                  {
-                      "name": "Primary",
-                      "value": "primary"
-                  },
-                  {
-                      "name": "White",
-                      "value": "white"
-                  },
-                  {
-                      "name": "Light",
-                      "value": "light"
-                  },
-                  {
-                      "name": "Dark",
-                      "value": "dark"
-                  },
-                  {
-                      "name": "Black",
-                      "value": "black"
-                  }
-              ]
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "color",
-              "value": "",
-              "label": "Text Color",
-              "options": [
-                  {
-                      "name": "Inherit",
-                      "value": ""
-                  },
-                  {
-                      "name": "Primary",
-                      "value": "primary"
-                  },
-                  {
-                      "name": "White",
-                      "value": "white"
-                  },
-                  {
-                      "name": "Light",
-                      "value": "light"
-                  },
-                  {
-                      "name": "Dark",
-                      "value": "dark"
-                  },
-                  {
-                      "name": "Black",
-                      "value": "black"
-                  }
-              ]
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "background",
-              "value": "",
-              "label": "Background",
-              "options": [
-                  {
-                      "name": "None",
-                      "value": ""
-                  },
-                  {
-                      "name": "Primary",
-                      "value": "primary"
-                  },
-                  {
-                      "name": "Light",
-                      "value": "light"
-                  },
-                  {
-                      "name": "Dark",
-                      "value": "dark"
-                  },
-                  {
-                      "name": "Stealth",
-                      "value": "stealth"
-                  }
-              ]
-          },
-          {
-              "component": "multiselect",
-              "valueType": "string",
-              "name": "padding",
-              "value": "",
-              "label": "Padding",
-              "options": [
-                  {
-                      "name": "Dynamic",
-                      "value": ""
-                  },
-                  {
-                      "name": "None",
-                      "value": "none"
-                  },
-                  {
-                      "name": "Medium",
-                      "value": "medium"
-                  },
-                  {
-                      "name": "Large",
-                      "value": "large"
-                  },
-                  {
-                      "name": "Stealth",
-                      "value": "stealth"
-                  },
-                  {
-                      "name": "Spacer",
-                      "value": "spacer"
-                  },
-                  {
-                      "name": "Dynamic - Large",
-                      "value": "dynamiclarge"
-                  },
-                  {
-                      "name": "Dynamic - Margin",
-                      "value": "dmargin"
-                  },
-                  {
-                      "name": "Desktop - Vertical - XLarge",
-                      "value": "dVXl"
-                  },
-                  {
-                      "name": "Desktop - Vertical - Large",
-                      "value": "dVL"
-                  },
-                  {
-                      "name": "Desktop - Vertical - XXBig",
-                      "value": "dVXXb"
-                  },
-                  {
-                      "name": "Desktop - Vertical - XBig",
-                      "value": "dVXb"
-                  },
-                  {
-                      "name": "Desktop - Vertical - Big",
-                      "value": "dVb"
-                  },
-                  {
-                      "name": "Desktop - Vertical - XMedium",
-                      "value": "dVXm"
-                  },
-                  {
-                      "name": "Desktop - Vertical - Medium",
-                      "value": "dVM"
-                  },
-                  {
-                      "name": "Desktop - Vertical - Small",
-                      "value": "dVS"
-                  },
-                  {
-                      "name": "Desktop - Vertical - XSmall",
-                      "value": "dVXs"
-                  },
-                  {
-                      "name": "Desktop - Vertical - XXSmall",
-                      "value": "dVXXs"
-                  },
-                  {
-                      "name": "Desktop - Horizontal - XLarge",
-                      "value": "dHXl"
-                  },
-                  {
-                      "name": "Desktop - Horizontal - Large",
-                      "value": "dHL"
-                  },
-                  {
-                      "name": "Desktop - Horizontal - XXBig",
-                      "value": "dHXXb"
-                  },
-                  {
-                      "name": "Desktop - Horizontal - XBig",
-                      "value": "dHXb"
-                  },
-                  {
-                      "name": "Desktop - Horizontal - Big",
-                      "value": "dHB"
-                  },
-                  {
-                      "name": "Desktop - Horizontal - XMedium",
-                      "value": "dHXm"
-                  },
-                  {
-                      "name": "Desktop - Horizontal - Medium",
-                      "value": "dHM"
-                  },
-                  {
-                      "name": "Desktop - Horizontal - Small",
-                      "value": "dHS"
-                  },
-                  {
-                      "name": "Desktop - Horizontal - XSmall",
-                      "value": "dHXs"
-                  },
-                  {
-                      "name": "Desktop - Horizontal - XXSmall",
-                      "value": "dHXXs"
-                  },
-                  {
-                      "name": "Mobile - Vertical - XLarge",
-                      "value": "mVXl"
-                  },
-                  {
-                      "name": "Mobile - Vertical - Large",
-                      "value": "mVL"
-                  },
-                  {
-                      "name": "Mobile - Vertical - XXBig",
-                      "value": "mVXXb"
-                  },
-                  {
-                      "name": "Mobile - Vertical - XBig",
-                      "value": "mVXb"
-                  },
-                  {
-                      "name": "Mobile - Vertical - Big",
-                      "value": "mVb"
-                  },
-                  {
-                      "name": "Mobile - Vertical - XMedium",
-                      "value": "mVXm"
-                  },
-                  {
-                      "name": "Mobile - Vertical - Medium",
-                      "value": "mVM"
-                  },
-                  {
-                      "name": "Mobile - Vertical - Small",
-                      "value": "mVS"
-                  },
-                  {
-                      "name": "Mobile - Vertical - XSmall",
-                      "value": "mVXs"
-                  },
-                  {
-                      "name": "Mobile - Vertical - XXSmall",
-                      "value": "mVXXs"
-                  },
-                  {
-                      "name": "Mobile - Horizontal - XLarge",
-                      "value": "mHXl"
-                  },
-                  {
-                      "name": "Mobile - Horizontal - Large",
-                      "value": "mHL"
-                  },
-                  {
-                      "name": "Mobile - Horizontal - XXBig",
-                      "value": "mHXXb"
-                  },
-                  {
-                      "name": "Mobile - Horizontal - XBig",
-                      "value": "mHXb"
-                  },
-                  {
-                      "name": "Mobile - Horizontal - Big",
-                      "value": "mHB"
-                  },
-                  {
-                      "name": "Mobile - Horizontal - XMedium",
-                      "value": "mHXm"
-                  },
-                  {
-                      "name": "Mobile - Horizontal - Medium",
-                      "value": "mHM"
-                  },
-                  {
-                      "name": "Mobile - Horizontal - Small",
-                      "value": "mHS"
-                  },
-                  {
-                      "name": "Mobile - Horizontal - XSmall",
-                      "value": "mHXs"
-                  },
-                  {
-                      "name": "Mobile - Horizontal - XXSmall",
-                      "value": "mHXXs"
-                  }
-              ]
+            "name":"Carousel dynamic column slide",
+            "value":"carousel-dynamic-column-slide"
           }
-      ]
+        ]
+      }
+    ]
   },
   {
-      "id": "accordion-item",
-      "fields": [
+    "id": "slide",
+    "fields": [
+      {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Is EV?",
+        "valueType": "string",
+        "options": [
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "heading",
-              "value": "",
-              "label": "Heading"
+            "name": "default",
+            "value": ""
           },
           {
-              "component": "select",
-              "valueType": "string",
-              "name": "headingType",
-              "value": "h3",
-              "label": "Heading Type",
-              "options": [
-                  {
-                      "name": "P",
-                      "value": "p"
-                  },
-                  {
-                      "name": "H2",
-                      "value": "h2"
-                  },
-                  {
-                      "name": "H3",
-                      "value": "h3"
-                  },
-                  {
-                      "name": "H4",
-                      "value": "h4"
-                  },
-                  {
-                      "name": "H5",
-                      "value": "h5"
-                  },
-                  {
-                      "name": "H6",
-                      "value": "h6"
-                  }
-              ]
+            "name": "Yes",
+            "value": "yes"
           },
           {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "body",
-              "value": "",
-              "label": "Body"
-          },
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "accordion_text",
-              "value": "",
-              "label": "Accordion Image Text"
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "accordion_image",
-              "value": "",
-              "label": "Accordion Image",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "accordion_imageAlt",
-              "value": "",
-              "label": "Accordion Image Alt"
+            "name": "No",
+            "value": "no"
           }
-      ]
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      }
+    ]
   },
   {
-      "id": "accordion",
-      "fields": []
+    "id": "savingscard-header",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "background_Image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "foreground_TitleHeading",
+        "label": "TitleHeading",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "foreground_TitleBrand",
+        "label": "TitleBrand",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "section_Description",
+        "label": "Description",
+        "value": ""
+      }
+    ]
   },
   {
-      "id": "card",
-      "fields": [
+    "id": "savingscard-footer",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Text",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "savingscard",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "no_oly_badge",
+        "label": "NoOlyBadge",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "no_oly_vehicle_image",
+        "label": "NoOlyVehicleImage",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "no_oly_description",
+        "label": "NoOlyDescription",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "no_oly_vehicle_price",
+        "label": "NoOlyVehiclePrice",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "no_oly_vehicle_price_description",
+        "label": "NoOlyVehiclePriceDescription",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "no_oly_figure_title",
+        "label": "NoOlyVehicleFigureTitle",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "no_oly_salary_title",
+        "label": "NoOlyTitleSalary",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "no_oly_salary_value",
+        "label": "NoOlyAnnualSalary",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "no_oly_car_title",
+        "label": "NoOlyCarTitle",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "no_oly_car_value",
+        "label": "NoOlyCarValue",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "no_oly_lease_title",
+        "label": "NoOlyLeaseTitle",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "no_oly_lease_value",
+        "label": "NoOlyLeaseValue",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "with_oly_badge",
+        "label": "WithOlyBadge",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "with_oly_vehicle_image",
+        "label": "OlyVehicleImage",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "with_oly_description",
+        "label": "OlyDescription",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "with_oly_vehicle_price",
+        "label": "OlyVehiclePrice",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "with_oly_vehicle_price_description",
+        "label": "OlyVehiclePriceDescription",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "with_oly_figure_title",
+        "label": "OlyVehicleFigureTitle",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "with_oly_salary_title",
+        "label": "OlyTitleSalary",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "with_oly_salary_value",
+        "label": "OlyAnnualSalary",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "with_oly_car_title",
+        "label": "OlyCarTitle",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "with_oly_car_value",
+        "label": "OlyCarValue",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "with_oly_lease_title",
+        "label": "OlyLeaseTitle",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "with_oly_lease_value",
+        "label": "OlyLeaseValue",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "vehicle-comparison",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "header_titleDescription",
+        "label": "Header Description",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "col1_fuelTypeImage",
+        "label": "Column1 Fuel Type Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col1_fuel",
+        "label": "Column1 Fuel Type",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "col2_fuelTypeImage",
+        "label": "Column2 Fuel Type Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col2_fuel",
+        "label": "Column2 Fuel Type",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col1_vehiclePriceAmount",
+        "label": "Column1 Vehicle Price",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col1_vehicleNameContent",
+        "label": "Column1 Vehicle Name",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col2_vehiclePriceAmount",
+        "label": "Column2 Vehicle PRice",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col2_vehicleNameContent",
+        "label": "Column2 Vehicle Name",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "col1_vehicleImage",
+        "label": "Column1 Vehicle Image",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "col2_vehicleImage",
+        "label": "Column2 Vehicle Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col1_taxSavingsAmountValue",
+        "label": "Column1 Tax Savings Amount",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col2_taxSavingsAmountValue",
+        "label": "Column2 Tax Savings Amount",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col1_taxSavingsDescriptionContent",
+        "label": "Column1 Tax Savings Description",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col2_taxSavingsDescriptionContent",
+        "label": "Column2 Tax Savings Description",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col1_salaryImpactAmountValue",
+        "label": "Column1 Salary Impact Amount",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col2_salaryImpactAmountValue",
+        "label": "Column2 Salary Impact Amount",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col1_salaryImpactDescriptionContent",
+        "label": "Column1 Salary Impact Description",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col2_salaryImpactDescriptionContent",
+        "label": "Column2 Salary Impact Description",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "footer_titleDescription",
+        "label": "Footer Description",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "accordion-group",
+    "fields": []
+  },
+  {
+    "id": "breadcrumb",
+    "fields": []
+  },
+  {
+    "id": "car-card",
+    "fields": []
+  },
+  {
+    "id": "accordion",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "value": "",
+        "label": "Heading"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "headingType",
+        "value": "h3",
+        "label": "Heading Type",
+        "options": [
           {
-              "component": "reference",
-              "valueType": "string",
-              "name": "image",
-              "label": "Image",
-              "multi": false
+            "name": "H2",
+            "value": "h2"
           },
           {
-              "component": "richtext",
-              "name": "text",
-              "value": "",
-              "label": "Text",
-              "valueType": "string"
+            "name": "H3",
+            "value": "h3"
+          },
+          {
+            "name": "H4",
+            "value": "h4"
+          },
+          {
+            "name": "H5",
+            "value": "h5"
+          },
+          {
+            "name": "H6",
+            "value": "h6"
           }
-      ]
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "body",
+        "value": "",
+        "label": "Body"
+      }
+    ]
   },
   {
-      "id": "carousel",
-      "fields": []
+    "id": "imagedesc-col2-inline",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "col_1_image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "col_2_text",
+        "label": "Text",
+        "value": ""
+      }
+    ]
   },
   {
-      "id": "columns",
-      "fields": [
+    "id": "col2-desc-grid",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "col_1_image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "col_2_text",
+        "label": "Text",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "imagedesc-col3-inline",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "col_1_image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "col_2_text",
+        "label": "Text",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "col_3_text",
+        "label": "Text",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "download-app",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "col1_description_above_download",
+        "label": "Description above download buttons",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col1_apple_download_link",
+        "label": "Apple store download link",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "col1_apple_image",
+        "label": "Apple image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col1_android_download_link",
+        "label": "Android store download link",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "col1_android_image",
+        "label": "Android image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "col1_description_below_download",
+        "label": "Description below download buttons",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "col2_image",
+        "label": "Side Image",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "calculator",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "titleWithDescription",
+        "label": "Text",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabel_Make",
+        "label": "Make Label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabel_Model",
+        "label": "Model Label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabelUser_Salary",
+        "label": "Salary label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabelUser_Vehicle_Cost",
+        "label": "Vehicle Cost Label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabelUser_Kms",
+        "label": "Annual Kms label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabelUser_Lease_Term",
+        "label": "Lease Term label",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "calculatorDescription",
+        "label": "Text",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "nl-calculator",
+    "fields": [
+      {
+        "component": "select",
+        "name": "brand",
+        "value": "9",
+        "label": "Brand",
+        "valueType": "string",
+        "options":[
+        {
+            "value": "1",
+            "name": "RemServ"
+        },
+        {
+            "value": "2",
+            "name": "Maxxia"
+        },
+        {
+            "value": "9",
+            "name": "Oly"
+        }
+      ]},
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "hotDealDetails",
+        "label": "Text",
+        "value": "Hot Deals"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "titleWithDescription",
+        "label": "Text",
+        "value": "Calculator Title"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "calculatorImage",
+        "label": "Calculator Side Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabel_Year",
+        "label": "Year Label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabel_Make",
+        "label": "Make Label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabel_Model",
+        "label": "Model Label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabelCar_Variant",
+        "label": "Variant label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabelCar_EstimatedTravel",
+        "label": "Estimated travel label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabelCar_LeaseTerm",
+        "label": "Lease Term label",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "carViewDescription",
+        "label": "Customize Car Disclaimer",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabelYou_Salary",
+        "label": "Salary label",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "aboutViewDescription",
+        "label": "Text",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "resultsViewDescription",
+        "label": "Text",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "resultsViewActionItems",
+        "label": "Result View Actions Items ",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "resultsViewDisclaimer",
+        "label": "Result View Disclaimer",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "termsConditionsDescription",
+        "label": "Terms and conditions",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "contactOlyDescription",
+        "label": "Contact Oly Form Description",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "contactOlyFormLabels",
+        "label": "Contact Oly Form Labels",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "yearListCount",
+        "label": "Year List Count",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "yearLatestValue",
+        "label": "Latest year value",
+        "value": ""
+      },
+      {
+        "component": "select",
+        "name": "isElectricFuelFilter",
+        "value": "No",
+        "label": "Diplay only Electric vehicles",
+        "valueType": "string",
+        "options":[
+        {
+            "value": "Yes",
+            "name": "Yes"
+        },
+        {
+            "value": "No",
+            "name": "No"
+        }
+      ]},
+      {
+        "component": "select",
+        "name": "makeFilter",
+        "value": "ALL",
+        "label": "Filter calculator to this Make",
+        "valueType": "string",
+        "options":[
+        {
+            "value": "ABA",
+            "name": "ABARTH"
+        },
+        {
+            "value": "ACV",
+            "name": "ACE EV"
+        },
+        {
+            "value": "ALF",
+            "name": "ALFA ROMEO"
+        },
+        {
+            "value": "ALP",
+            "name": "ALPINE"
+        },
+        {
+            "value": "AST",
+            "name": "ASTON MARTIN"
+        },
+        {
+            "value": "AUD",
+            "name": "AUDI"
+        },
+        {
+            "value": "BEN",
+            "name": "BENTLEY"
+        },
+        {
+            "value": "BMA",
+            "name": "BMW ALPINA"
+        },
+        {
+            "value": "BMW",
+            "name": "BMW"
+        },
+        {
+            "value": "BYD",
+            "name": "BYD"
+        },
+        {
+            "value": "CAT",
+            "name": "CATERHAM"
+        },
+        {
+            "value": "CHE",
+            "name": "CHEVROLET"
+        },
+        {
+            "value": "CHR",
+            "name": "CHRYSLER"
+        },
+        {
+            "value": "CHY",
+            "name": "CHERY"
+        },
+        {
+            "value": "CIT",
+            "name": "CITROEN"
+        },
+        {
+            "value": "CUP",
+            "name": "CUPRA"
+        },
+        {
+            "value": "DAF",
+            "name": "DAF"
+        },
+        {
+            "value": "FER",
+            "name": "FERRARI"
+        },
+        {
+            "value": "FIA",
+            "name": "FIAT"
+        },
+        {
+            "value": "FOR",
+            "name": "FORD"
+        },
+        {
+            "value": "FOT",
+            "name": "FOTON"
+        },
+        {
+            "value": "FUS",
+            "name": "FUSO"
+        },
+        {
+            "value": "GEN",
+            "name": "GENESIS"
+        },
+        {
+            "value": "GWA",
+            "name": "GWM"
+        },
+        {
+            "value": "HIN",
+            "name": "HINO"
+        },
+        {
+            "value": "HON",
+            "name": "HONDA"
+        },
+        {
+            "value": "HYT",
+            "name": "HYUNDAI TRUCKS"
+        },
+        {
+            "value": "HYU",
+            "name": "HYUNDAI"
+        },
+        {
+            "value": "INE",
+            "name": "INEOS"
+        },
+        {
+            "value": "INT",
+            "name": "INTERNATIONAL"
+        },
+        {
+            "value": "ISU",
+            "name": "ISUZU"
+        },
+        {
+            "value": "IVE",
+            "name": "IVECO"
+        },
+        {
+            "value": "JAC",
+            "name": "JAC"
+        },
+        {
+            "value": "JAG",
+            "name": "JAGUAR"
+        },
+        {
+            "value": "JEE",
+            "name": "JEEP"
+        },
+        {
+            "value": "JOL",
+            "name": "JOYLONG"
+        },
+        {
+            "value": "KIA",
+            "name": "KIA"
+        },
+        {
+            "value": "LAM",
+            "name": "LAMBORGHINI"
+        },
+        {
+            "value": "LDV",
+            "name": "LDV"
+        },
+        {
+            "value": "LEX",
+            "name": "LEXUS"
+        },
+        {
+            "value": "LOT",
+            "name": "LOTUS"
+        },
+        {
+            "value": "LRO",
+            "name": "LAND ROVER"
+        },
+        {
+            "value": "MAH",
+            "name": "MAHINDRA"
+        },
+        {
+            "value": "MAS",
+            "name": "MASERATI"
+        },
+        {
+            "value": "MAZ",
+            "name": "MAZDA"
+        },
+        {
+            "value": "MCL",
+            "name": "McLAREN"
+        },
+        {
+            "value": "MEA",
+            "name": "MERCEDES-AMG"
+        },
+        {
+            "value": "MEM",
+            "name": "MERCEDES-MAYBACH"
+        },
+        {
+            "value": "MER",
+            "name": "MERCEDES-BENZ"
+        },
+        {
+            "value": "MG-",
+            "name": "MG"
+        },
+        {
+            "value": "MIN",
+            "name": "MINI"
+        },
+        {
+            "value": "MIT",
+            "name": "MITSUBISHI"
+        },
+        {
+            "value": "NIS",
+            "name": "NISSAN"
+        },
+        {
+            "value": "PEU",
+            "name": "PEUGEOT"
+        },
+        {
+            "value": "POL",
+            "name": "POLESTAR"
+        },
+        {
+            "value": "POR",
+            "name": "PORSCHE"
+        },
+        {
+            "value": "RAT",
+            "name": "RAM"
+        },
+        {
+            "value": "REN",
+            "name": "RENAULT"
+        },
+        {
+            "value": "ROL",
+            "name": "ROLLS-ROYCE"
+        },
+        {
+            "value": "SKO",
+            "name": "SKODA"
+        },
+        {
+            "value": "SKY",
+            "name": "SKYWELL"
+        },
+        {
+            "value": "SMA",
+            "name": "SMART"
+        },
+        {
+            "value": "SSA",
+            "name": "SSANGYONG"
+        },
+        {
+            "value": "SUB",
+            "name": "SUBARU"
+        },
+        {
+            "value": "SUZ",
+            "name": "SUZUKI"
+        },
+        {
+            "value": "TES",
+            "name": "TESLA"
+        },
+        {
+            "value": "TOY",
+            "name": "TOYOTA"
+        },
+        {
+            "value": "VAU",
+            "name": "VAUXHALL"
+        },
+        {
+            "value": "VOL",
+            "name": "VOLVO"
+        },
+        {
+            "value": "VWN",
+            "name": "VOLKSWAGEN"
+        },
+	      {
+            "value": "ALL",
+            "name": "ALL"
+        }
+    ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "visAPIUrl",
+        "label": "VIS API URL",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "visAPIKey",
+        "label": "VIS API Key",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "maxxiaCalcsAPIUrl",
+        "label": "Calculator API URL",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "maxxiaCalcsAPIKey",
+        "label": "Calculator API Key",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "contactOlyAPIUrl",
+        "label": "Contact Oly Form API URL",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "contactOlyFormDisclaimer",
+        "label": "Contact Oly Form Disclaimer",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "contactOlyFormImage",
+        "label": "Contact Oly Form Image",
+        "multi": false
+      },
+      {
+        "component": "select",
+        "name": "calculatorInitialMake",
+        "value": "BYD",
+        "label": "Calculator initial make to be loaded",
+        "valueType": "string",
+        "options":[
+        {
+            "value": "ABA",
+            "name": "ABARTH"
+        },
+        {
+            "value": "ACV",
+            "name": "ACE EV"
+        },
+        {
+            "value": "ALF",
+            "name": "ALFA ROMEO"
+        },
+        {
+            "value": "ALP",
+            "name": "ALPINE"
+        },
+        {
+            "value": "AST",
+            "name": "ASTON MARTIN"
+        },
+        {
+            "value": "AUD",
+            "name": "AUDI"
+        },
+        {
+            "value": "BEN",
+            "name": "BENTLEY"
+        },
+        {
+            "value": "BMA",
+            "name": "BMW ALPINA"
+        },
+        {
+            "value": "BMW",
+            "name": "BMW"
+        },
+        {
+            "value": "BYD",
+            "name": "BYD"
+        },
+        {
+            "value": "CAT",
+            "name": "CATERHAM"
+        },
+        {
+            "value": "CHE",
+            "name": "CHEVROLET"
+        },
+        {
+            "value": "CHR",
+            "name": "CHRYSLER"
+        },
+        {
+            "value": "CHY",
+            "name": "CHERY"
+        },
+        {
+            "value": "CIT",
+            "name": "CITROEN"
+        },
+        {
+            "value": "CUP",
+            "name": "CUPRA"
+        },
+        {
+            "value": "DAF",
+            "name": "DAF"
+        },
+        {
+            "value": "FER",
+            "name": "FERRARI"
+        },
+        {
+            "value": "FIA",
+            "name": "FIAT"
+        },
+        {
+            "value": "FOR",
+            "name": "FORD"
+        },
+        {
+            "value": "FOT",
+            "name": "FOTON"
+        },
+        {
+            "value": "FUS",
+            "name": "FUSO"
+        },
+        {
+            "value": "GEN",
+            "name": "GENESIS"
+        },
+        {
+            "value": "GWA",
+            "name": "GWM"
+        },
+        {
+            "value": "HIN",
+            "name": "HINO"
+        },
+        {
+            "value": "HON",
+            "name": "HONDA"
+        },
+        {
+            "value": "HYT",
+            "name": "HYUNDAI TRUCKS"
+        },
+        {
+            "value": "HYU",
+            "name": "HYUNDAI"
+        },
+        {
+            "value": "INE",
+            "name": "INEOS"
+        },
+        {
+            "value": "INT",
+            "name": "INTERNATIONAL"
+        },
+        {
+            "value": "ISU",
+            "name": "ISUZU"
+        },
+        {
+            "value": "IVE",
+            "name": "IVECO"
+        },
+        {
+            "value": "JAC",
+            "name": "JAC"
+        },
+        {
+            "value": "JAG",
+            "name": "JAGUAR"
+        },
+        {
+            "value": "JEE",
+            "name": "JEEP"
+        },
+        {
+            "value": "JOL",
+            "name": "JOYLONG"
+        },
+        {
+            "value": "KIA",
+            "name": "KIA"
+        },
+        {
+            "value": "LAM",
+            "name": "LAMBORGHINI"
+        },
+        {
+            "value": "LDV",
+            "name": "LDV"
+        },
+        {
+            "value": "LEX",
+            "name": "LEXUS"
+        },
+        {
+            "value": "LOT",
+            "name": "LOTUS"
+        },
+        {
+            "value": "LRO",
+            "name": "LAND ROVER"
+        },
+        {
+            "value": "MAH",
+            "name": "MAHINDRA"
+        },
+        {
+            "value": "MAS",
+            "name": "MASERATI"
+        },
+        {
+            "value": "MAZ",
+            "name": "MAZDA"
+        },
+        {
+            "value": "MCL",
+            "name": "McLAREN"
+        },
+        {
+            "value": "MEA",
+            "name": "MERCEDES-AMG"
+        },
+        {
+            "value": "MEM",
+            "name": "MERCEDES-MAYBACH"
+        },
+        {
+            "value": "MER",
+            "name": "MERCEDES-BENZ"
+        },
+        {
+            "value": "MG-",
+            "name": "MG"
+        },
+        {
+            "value": "MIN",
+            "name": "MINI"
+        },
+        {
+            "value": "MIT",
+            "name": "MITSUBISHI"
+        },
+        {
+            "value": "NIS",
+            "name": "NISSAN"
+        },
+        {
+            "value": "PEU",
+            "name": "PEUGEOT"
+        },
+        {
+            "value": "POL",
+            "name": "POLESTAR"
+        },
+        {
+            "value": "POR",
+            "name": "PORSCHE"
+        },
+        {
+            "value": "RAT",
+            "name": "RAM"
+        },
+        {
+            "value": "REN",
+            "name": "RENAULT"
+        },
+        {
+            "value": "ROL",
+            "name": "ROLLS-ROYCE"
+        },
+        {
+            "value": "SKO",
+            "name": "SKODA"
+        },
+        {
+            "value": "SKY",
+            "name": "SKYWELL"
+        },
+        {
+            "value": "SMA",
+            "name": "SMART"
+        },
+        {
+            "value": "SSA",
+            "name": "SSANGYONG"
+        },
+        {
+            "value": "SUB",
+            "name": "SUBARU"
+        },
+        {
+            "value": "SUZ",
+            "name": "SUZUKI"
+        },
+        {
+            "value": "TES",
+            "name": "TESLA"
+        },
+        {
+            "value": "TOY",
+            "name": "TOYOTA"
+        },
+        {
+            "value": "VAU",
+            "name": "VAUXHALL"
+        },
+        {
+            "value": "VOL",
+            "name": "VOLVO"
+        },
+        {
+            "value": "VWN",
+            "name": "VOLKSWAGEN"
+        }
+    ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "calculatorInitialModelCode",
+        "label": "Calculator Initial Model Code",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "calculatorTokenAPIUrl",
+        "label": "Calculator Token API URL",
+        "value": ""
+      },
+      {
+        "component": "select",
+        "name": "isComparisonTableEnabled",
+        "value": "no",
+        "label": "Comparison Table Enabled?",
+        "valueType": "string",
+        "options":[
+        {
+            "value": "yes",
+            "name": "Yes"
+        },
+        {
+            "value": "no",
+            "name": "No"
+        }
+      ]}
+    ]
+  },
+  {
+    "id": "nl-calculator-extended",
+    "fields": [
+      {
+        "component": "select",
+        "name": "brand",
+        "value": "9",
+        "label": "Brand",
+        "valueType": "string",
+        "options":[
+        {
+            "value": "1",
+            "name": "RemServ"
+        },
+        {
+            "value": "2",
+            "name": "Maxxia"
+        },
+        {
+            "value": "9",
+            "name": "Oly"
+        }
+      ]},
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "hotDealDetails",
+        "label": "Text",
+        "value": "Hot Deals"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "titleWithDescription",
+        "label": "Text",
+        "value": "Calculator Title"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "calculatorImage",
+        "label": "Calculator Side Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabel_Year",
+        "label": "Year Label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabel_Make",
+        "label": "Make Label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabel_Model",
+        "label": "Model Label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabelCar_Variant",
+        "label": "Variant label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabelCar_EstimatedTravel",
+        "label": "Estimated travel label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabelCar_LeaseTerm",
+        "label": "Lease Term label",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "carViewDescription",
+        "label": "Customize Car Disclaimer",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formLabelYou_Salary",
+        "label": "Salary label",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "aboutViewDescription",
+        "label": "Text",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "resultsViewDescription",
+        "label": "Text",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "resultsViewActionItems",
+        "label": "Result View Actions Items ",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "resultsViewDisclaimer",
+        "label": "Result View Disclaimer",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "termsConditionsDescription",
+        "label": "Terms and conditions",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "contactOlyDescription",
+        "label": "Contact Oly Form Description",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "contactOlyFormLabels",
+        "label": "Contact Oly Form Labels",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "yearListCount",
+        "label": "Year List Count",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "yearLatestValue",
+        "label": "Latest year value",
+        "value": ""
+      },
+      {
+        "component": "select",
+        "name": "isElectricFuelFilter",
+        "value": "No",
+        "label": "Diplay only Electric vehicles",
+        "valueType": "string",
+        "options":[
+        {
+            "value": "Yes",
+            "name": "Yes"
+        },
+        {
+            "value": "No",
+            "name": "No"
+        }
+      ]},
+      {
+        "component": "select",
+        "name": "makeFilter",
+        "value": "ALL",
+        "label": "Filter calculator to this Make",
+        "valueType": "string",
+        "options":[
+        {
+            "value": "ABA",
+            "name": "ABARTH"
+        },
+        {
+            "value": "ACV",
+            "name": "ACE EV"
+        },
+        {
+            "value": "ALF",
+            "name": "ALFA ROMEO"
+        },
+        {
+            "value": "ALP",
+            "name": "ALPINE"
+        },
+        {
+            "value": "AST",
+            "name": "ASTON MARTIN"
+        },
+        {
+            "value": "AUD",
+            "name": "AUDI"
+        },
+        {
+            "value": "BEN",
+            "name": "BENTLEY"
+        },
+        {
+            "value": "BMA",
+            "name": "BMW ALPINA"
+        },
+        {
+            "value": "BMW",
+            "name": "BMW"
+        },
+        {
+            "value": "BYD",
+            "name": "BYD"
+        },
+        {
+            "value": "CAT",
+            "name": "CATERHAM"
+        },
+        {
+            "value": "CHE",
+            "name": "CHEVROLET"
+        },
+        {
+            "value": "CHR",
+            "name": "CHRYSLER"
+        },
+        {
+            "value": "CHY",
+            "name": "CHERY"
+        },
+        {
+            "value": "CIT",
+            "name": "CITROEN"
+        },
+        {
+            "value": "CUP",
+            "name": "CUPRA"
+        },
+        {
+            "value": "DAF",
+            "name": "DAF"
+        },
+        {
+            "value": "FER",
+            "name": "FERRARI"
+        },
+        {
+            "value": "FIA",
+            "name": "FIAT"
+        },
+        {
+            "value": "FOR",
+            "name": "FORD"
+        },
+        {
+            "value": "FOT",
+            "name": "FOTON"
+        },
+        {
+            "value": "FUS",
+            "name": "FUSO"
+        },
+        {
+            "value": "GEN",
+            "name": "GENESIS"
+        },
+        {
+            "value": "GWA",
+            "name": "GWM"
+        },
+        {
+            "value": "HIN",
+            "name": "HINO"
+        },
+        {
+            "value": "HON",
+            "name": "HONDA"
+        },
+        {
+            "value": "HYT",
+            "name": "HYUNDAI TRUCKS"
+        },
+        {
+            "value": "HYU",
+            "name": "HYUNDAI"
+        },
+        {
+            "value": "INE",
+            "name": "INEOS"
+        },
+        {
+            "value": "INT",
+            "name": "INTERNATIONAL"
+        },
+        {
+            "value": "ISU",
+            "name": "ISUZU"
+        },
+        {
+            "value": "IVE",
+            "name": "IVECO"
+        },
+        {
+            "value": "JAC",
+            "name": "JAC"
+        },
+        {
+            "value": "JAG",
+            "name": "JAGUAR"
+        },
+        {
+            "value": "JEE",
+            "name": "JEEP"
+        },
+        {
+            "value": "JOL",
+            "name": "JOYLONG"
+        },
+        {
+            "value": "KIA",
+            "name": "KIA"
+        },
+        {
+            "value": "LAM",
+            "name": "LAMBORGHINI"
+        },
+        {
+            "value": "LDV",
+            "name": "LDV"
+        },
+        {
+            "value": "LEX",
+            "name": "LEXUS"
+        },
+        {
+            "value": "LOT",
+            "name": "LOTUS"
+        },
+        {
+            "value": "LRO",
+            "name": "LAND ROVER"
+        },
+        {
+            "value": "MAH",
+            "name": "MAHINDRA"
+        },
+        {
+            "value": "MAS",
+            "name": "MASERATI"
+        },
+        {
+            "value": "MAZ",
+            "name": "MAZDA"
+        },
+        {
+            "value": "MCL",
+            "name": "McLAREN"
+        },
+        {
+            "value": "MEA",
+            "name": "MERCEDES-AMG"
+        },
+        {
+            "value": "MEM",
+            "name": "MERCEDES-MAYBACH"
+        },
+        {
+            "value": "MER",
+            "name": "MERCEDES-BENZ"
+        },
+        {
+            "value": "MG-",
+            "name": "MG"
+        },
+        {
+            "value": "MIN",
+            "name": "MINI"
+        },
+        {
+            "value": "MIT",
+            "name": "MITSUBISHI"
+        },
+        {
+            "value": "NIS",
+            "name": "NISSAN"
+        },
+        {
+            "value": "PEU",
+            "name": "PEUGEOT"
+        },
+        {
+            "value": "POL",
+            "name": "POLESTAR"
+        },
+        {
+            "value": "POR",
+            "name": "PORSCHE"
+        },
+        {
+            "value": "RAT",
+            "name": "RAM"
+        },
+        {
+            "value": "REN",
+            "name": "RENAULT"
+        },
+        {
+            "value": "ROL",
+            "name": "ROLLS-ROYCE"
+        },
+        {
+            "value": "SKO",
+            "name": "SKODA"
+        },
+        {
+            "value": "SKY",
+            "name": "SKYWELL"
+        },
+        {
+            "value": "SMA",
+            "name": "SMART"
+        },
+        {
+            "value": "SSA",
+            "name": "SSANGYONG"
+        },
+        {
+            "value": "SUB",
+            "name": "SUBARU"
+        },
+        {
+            "value": "SUZ",
+            "name": "SUZUKI"
+        },
+        {
+            "value": "TES",
+            "name": "TESLA"
+        },
+        {
+            "value": "TOY",
+            "name": "TOYOTA"
+        },
+        {
+            "value": "VAU",
+            "name": "VAUXHALL"
+        },
+        {
+            "value": "VOL",
+            "name": "VOLVO"
+        },
+        {
+            "value": "VWN",
+            "name": "VOLKSWAGEN"
+        },
+	      {
+            "value": "ALL",
+            "name": "ALL"
+        }
+    ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "visAPIUrl",
+        "label": "VIS API URL",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "visAPIKey",
+        "label": "VIS API Key",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "maxxiaCalcsAPIUrl",
+        "label": "Calculator API URL",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "maxxiaCalcsAPIKey",
+        "label": "Calculator API Key",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "contactOlyAPIUrl",
+        "label": "Contact Oly Form API URL",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "contactOlyFormDisclaimer",
+        "label": "Contact Oly Form Disclaimer",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "contactOlyFormImage",
+        "label": "Contact Oly Form Image",
+        "multi": false
+      },
+      {
+        "component": "select",
+        "name": "calculatorInitialMake",
+        "value": "BYD",
+        "label": "Calculator initial make to be loaded",
+        "valueType": "string",
+        "options":[
+        {
+            "value": "ABA",
+            "name": "ABARTH"
+        },
+        {
+            "value": "ACV",
+            "name": "ACE EV"
+        },
+        {
+            "value": "ALF",
+            "name": "ALFA ROMEO"
+        },
+        {
+            "value": "ALP",
+            "name": "ALPINE"
+        },
+        {
+            "value": "AST",
+            "name": "ASTON MARTIN"
+        },
+        {
+            "value": "AUD",
+            "name": "AUDI"
+        },
+        {
+            "value": "BEN",
+            "name": "BENTLEY"
+        },
+        {
+            "value": "BMA",
+            "name": "BMW ALPINA"
+        },
+        {
+            "value": "BMW",
+            "name": "BMW"
+        },
+        {
+            "value": "BYD",
+            "name": "BYD"
+        },
+        {
+            "value": "CAT",
+            "name": "CATERHAM"
+        },
+        {
+            "value": "CHE",
+            "name": "CHEVROLET"
+        },
+        {
+            "value": "CHR",
+            "name": "CHRYSLER"
+        },
+        {
+            "value": "CHY",
+            "name": "CHERY"
+        },
+        {
+            "value": "CIT",
+            "name": "CITROEN"
+        },
+        {
+            "value": "CUP",
+            "name": "CUPRA"
+        },
+        {
+            "value": "DAF",
+            "name": "DAF"
+        },
+        {
+            "value": "FER",
+            "name": "FERRARI"
+        },
+        {
+            "value": "FIA",
+            "name": "FIAT"
+        },
+        {
+            "value": "FOR",
+            "name": "FORD"
+        },
+        {
+            "value": "FOT",
+            "name": "FOTON"
+        },
+        {
+            "value": "FUS",
+            "name": "FUSO"
+        },
+        {
+            "value": "GEN",
+            "name": "GENESIS"
+        },
+        {
+            "value": "GWA",
+            "name": "GWM"
+        },
+        {
+            "value": "HIN",
+            "name": "HINO"
+        },
+        {
+            "value": "HON",
+            "name": "HONDA"
+        },
+        {
+            "value": "HYT",
+            "name": "HYUNDAI TRUCKS"
+        },
+        {
+            "value": "HYU",
+            "name": "HYUNDAI"
+        },
+        {
+            "value": "INE",
+            "name": "INEOS"
+        },
+        {
+            "value": "INT",
+            "name": "INTERNATIONAL"
+        },
+        {
+            "value": "ISU",
+            "name": "ISUZU"
+        },
+        {
+            "value": "IVE",
+            "name": "IVECO"
+        },
+        {
+            "value": "JAC",
+            "name": "JAC"
+        },
+        {
+            "value": "JAG",
+            "name": "JAGUAR"
+        },
+        {
+            "value": "JEE",
+            "name": "JEEP"
+        },
+        {
+            "value": "JOL",
+            "name": "JOYLONG"
+        },
+        {
+            "value": "KIA",
+            "name": "KIA"
+        },
+        {
+            "value": "LAM",
+            "name": "LAMBORGHINI"
+        },
+        {
+            "value": "LDV",
+            "name": "LDV"
+        },
+        {
+            "value": "LEX",
+            "name": "LEXUS"
+        },
+        {
+            "value": "LOT",
+            "name": "LOTUS"
+        },
+        {
+            "value": "LRO",
+            "name": "LAND ROVER"
+        },
+        {
+            "value": "MAH",
+            "name": "MAHINDRA"
+        },
+        {
+            "value": "MAS",
+            "name": "MASERATI"
+        },
+        {
+            "value": "MAZ",
+            "name": "MAZDA"
+        },
+        {
+            "value": "MCL",
+            "name": "McLAREN"
+        },
+        {
+            "value": "MEA",
+            "name": "MERCEDES-AMG"
+        },
+        {
+            "value": "MEM",
+            "name": "MERCEDES-MAYBACH"
+        },
+        {
+            "value": "MER",
+            "name": "MERCEDES-BENZ"
+        },
+        {
+            "value": "MG-",
+            "name": "MG"
+        },
+        {
+            "value": "MIN",
+            "name": "MINI"
+        },
+        {
+            "value": "MIT",
+            "name": "MITSUBISHI"
+        },
+        {
+            "value": "NIS",
+            "name": "NISSAN"
+        },
+        {
+            "value": "PEU",
+            "name": "PEUGEOT"
+        },
+        {
+            "value": "POL",
+            "name": "POLESTAR"
+        },
+        {
+            "value": "POR",
+            "name": "PORSCHE"
+        },
+        {
+            "value": "RAT",
+            "name": "RAM"
+        },
+        {
+            "value": "REN",
+            "name": "RENAULT"
+        },
+        {
+            "value": "ROL",
+            "name": "ROLLS-ROYCE"
+        },
+        {
+            "value": "SKO",
+            "name": "SKODA"
+        },
+        {
+            "value": "SKY",
+            "name": "SKYWELL"
+        },
+        {
+            "value": "SMA",
+            "name": "SMART"
+        },
+        {
+            "value": "SSA",
+            "name": "SSANGYONG"
+        },
+        {
+            "value": "SUB",
+            "name": "SUBARU"
+        },
+        {
+            "value": "SUZ",
+            "name": "SUZUKI"
+        },
+        {
+            "value": "TES",
+            "name": "TESLA"
+        },
+        {
+            "value": "TOY",
+            "name": "TOYOTA"
+        },
+        {
+            "value": "VAU",
+            "name": "VAUXHALL"
+        },
+        {
+            "value": "VOL",
+            "name": "VOLVO"
+        },
+        {
+            "value": "VWN",
+            "name": "VOLKSWAGEN"
+        }
+    ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "calculatorInitialModelCode",
+        "label": "Calculator Initial Model Code",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "calculatorTokenAPIUrl",
+        "label": "Calculator Token API URL",
+        "value": ""
+      },
+      {
+        "component": "select",
+        "name": "isComparisonTableEnabled",
+        "value": "no",
+        "label": "Comparison Table Enabled?",
+        "valueType": "string",
+        "options":[
+        {
+            "value": "yes",
+            "name": "Yes"
+        },
+        {
+            "value": "no",
+            "name": "No"
+        }
+      ]}
+    ]
+  },
+  {
+    "id": "thumbnail-desc",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "col_1_image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "col_2_text",
+        "label": "Text",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "car-help",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "car_help_image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "car_help_text",
+        "label": "Text",
+        "value": "Can't find what you're looking for?"
+      }
+    ]
+  },
+  {
+    "id": "image-link",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image_link_image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "image_link_href",
+        "value": "",
+        "label": "Link"
+      }
+    ]
+  },
+  {
+    "id": "related-article-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "col_1_image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "col_2_text",
+        "label": "Text",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "col_3_text",
+        "label": "Text",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "col_4_text",
+        "label": "Text",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "href",
+        "value": "",
+        "label": "Link"
+      }
+    ]
+  },
+  {
+    "id": "form",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "formUrl",
+        "label": "Form location",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "takeways",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "content1",
+        "label": "Text",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "content2",
+        "label": "Text",
+        "value": ""
+      },
+      {
+        "component": "text3",
+        "valueType": "string",
+        "name": "content3",
+        "label": "Text",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "tablinks",
+    "fields": [
+      {
+      "component": "text",
+        "valueType": "string",
+        "name": "link1",
+        "label": "test1",
+        "value": ""
+      },
+      {
+        "component": "text",
+          "valueType": "string",
+          "name": "link2",
+          "label": "test2",
+          "value": ""
+        },
+        {
+          "component": "text",
+            "valueType": "string",
+            "name": "link3",
+            "label": "test3",
+            "value": ""
+        }
+    ]
+  },
+  {
+    "id": "wishlist",
+    "fields": [
+      {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
           {
-              "component": "select",
-              "name": "classes",
-              "value": "",
-              "label": "Variant",
-              "valueType": "string",
-              "options": [
-                  {
-                      "name": "Default",
-                      "value": ""
-                  },
-                  {
-                      "name": "Benefits",
-                      "value": "benefits"
-                  },
-                  {
-                      "name": "OneLine",
-                      "value": "oneline"
-                  },
-                  {
-                      "name": "FiveItem",
-                      "value": "fiveItem"
-                  },
-                  {
-                      "name": "Highlight",
-                      "value": "highlight"
-                  },
-                  {
-                      "name": "Sacs",
-                      "value": "sacs"
-                  },
-                  {
-                      "name": "TwoColText",
-                      "value": "twocoltext"
-                  },
-                  {
-                      "name": "LinkCols",
-                      "value": "linkcols"
-                  },
-                  {
-                      "name": "MobileSlider",
-                      "value": "mobileslider"
-                  },
-                  {
-                      "name": "StealthLinkCols",
-                      "value": "stealthlinkcols"
-                  },
-                  {
-                      "name": "PillowsacCols",
-                      "value": "pillowsaccols"
-                  },
-                  {
-                      "name": "PDFs",
-                      "value": "pdfs"
-                  },
-                  {
-                      "name": "TeasersTwoCol",
-                      "value": "teaserstwocol"
-                  },
-                  {
-                      "name": "DesignForLife",
-                      "value": "designforlife"
-                  },
-                  {
-                      "name": "Dividers",
-                      "value": "dividers"
-                  }
-              ]
+            "name": "recent",
+            "value": "recent"
           },
           {
-              "component": "text",
-              "valueType": "number",
-              "name": "columns",
-              "value": "",
-              "label": "Columns"
-          },
-          {
-              "component": "text",
-              "valueType": "number",
-              "name": "rows",
-              "value": "",
-              "label": "Rows"
+            "name": "full",
+            "value": "full"
           }
-      ]
+        ]
+      }
+    ]
   },
   {
-      "id": "cta",
-      "fields": [
+    "id": "icon-text-widget",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image icon",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Description",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "faq",
+    "fields": [
+      {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Display search?",
+        "valueType": "string",
+        "options": [
           {
-              "component": "select",
-              "valueType": "string",
-              "name": "classes",
-              "value": "",
-              "label": "Variant",
-              "options": [
-                  {
-                      "name": "Lines",
-                      "value": "lines"
-                  },
-                  {
-                      "name": "Background Image",
-                      "value": "bgimage"
-                  },
-                  {
-                      "name": "Background Image - Low Text Centered",
-                      "value": "bgimglowtext"
-                  },
-                  {
-                      "name": "Background Image - Low Text Left",
-                      "value": "bgimglowleft"
-                  },
-                  {
-                      "name": "Background Image - Hight Text Centered",
-                      "value": "bgimghightext"
-                  },
-                  {
-                      "name": "CTA + Media ",
-                      "value": "mediaright"
-                  },
-                  {
-                      "name": "CTA + Media - Swap Mobile",
-                      "value": "mediarightswap"
-                  },
-                  {
-                      "name": "Media + CTA",
-                      "value": "medialeft"
-                  },
-                  {
-                      "name": "Media + CTA - Swap Mobile",
-                      "value": "medialeftswap"
-                  },
-                  {
-                      "name": "CTA + Media - Middle Mobile",
-                      "value": "mediarightmiddle"
-                  },
-                  {
-                      "name": "Media + CTA - Middle Mobile",
-                      "value": "medialeftmiddle"
-                  },
-                  {
-                      "name": "Icon (Left) + CTA (Right)",
-                      "value": "iconleft"
-                  },
-                  {
-                      "name": "Buttons (Inline)",
-                      "value": "buttons"
-                  },
-                  {
-                      "name": "Stealth Two Column",
-                      "value": "twocols"
-                  },
-                  {
-                      "name": "Heroes Banner",
-                      "value": "heroesbanner"
-                  },
-                  {
-                      "name": "Timeline",
-                      "value": "timeline"
-                  },
-                  {
-                      "name": "Book Block",
-                      "value": "bookblock"
-                  }
-              ]
+            "name": "Yes",
+            "value": "yes"
           },
           {
-              "component": "container",
-              "name": "content",
-              "collapsible": true,
-              "label": "Primary Content (Standalone or Top)",
-              "fields": [
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_title",
-                      "value": "",
-                      "label": "Title"
-                  },
-                  {
-                      "component": "select",
-                      "valueType": "string",
-                      "name": "content_titleType",
-                      "value": "",
-                      "label": "Title Type",
-                      "options": [
-                          {
-                              "name": "h2",
-                              "value": "h2"
-                          },
-                          {
-                              "name": "h3",
-                              "value": "h3"
-                          },
-                          {
-                              "name": "h4",
-                              "value": "h4"
-                          }
-                      ]
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_subtitle",
-                      "value": "",
-                      "label": "Subtitle"
-                  },
-                  {
-                      "component": "select",
-                      "valueType": "string",
-                      "name": "content_subtitleType",
-                      "value": "",
-                      "label": "Subtitle Type",
-                      "options": [
-                          {
-                              "name": "h3",
-                              "value": "h3"
-                          },
-                          {
-                              "name": "h4",
-                              "value": "h4"
-                          },
-                          {
-                              "name": "h5",
-                              "value": "h5"
-                          }
-                      ]
-                  },
-                  {
-                      "component": "richtext",
-                      "valueType": "string",
-                      "name": "content_text",
-                      "value": "",
-                      "label": "Text"
-                  }
-              ]
-          },
-          {
-              "component": "container",
-              "name": "contentMedia",
-              "collapsible": true,
-              "label": "Primary Content - Media Block",
-              "fields": [
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "contentMedia_image1",
-                      "value": "",
-                      "label": "Image 1",
-                      "multi": false
-                  },
-                  {
-                      "component": "richtext",
-                      "valueType": "string",
-                      "name": "contentMedia_text1",
-                      "value": "",
-                      "label": "Text for image 1"
-                  },
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "contentMedia_image2",
-                      "value": "",
-                      "label": "Image 2",
-                      "multi": false
-                  },
-                  {
-                      "component": "richtext",
-                      "valueType": "string",
-                      "name": "contentMedia_text2",
-                      "value": "",
-                      "label": "Text for Image 2"
-                  },
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "contentMedia_image3",
-                      "value": "",
-                      "label": "Image 3",
-                      "multi": false
-                  },
-                  {
-                      "component": "richtext",
-                      "valueType": "string",
-                      "name": "contentMedia_text3",
-                      "value": "",
-                      "label": "Text for image 3"
-                  }
-              ]
-          },
-          {
-              "component": "container",
-              "name": "bottomContent",
-              "collapsible": true,
-              "label": "Secondary Content (Bottom)",
-              "fields": [
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "bottomContent_title",
-                      "value": "",
-                      "label": "Title"
-                  },
-                  {
-                      "component": "select",
-                      "valueType": "string",
-                      "name": "bottomContent_titleType",
-                      "value": "",
-                      "label": "Title Type",
-                      "options": [
-                          {
-                              "name": "h2",
-                              "value": "h2"
-                          },
-                          {
-                              "name": "h3",
-                              "value": "h3"
-                          },
-                          {
-                              "name": "h4",
-                              "value": "h4"
-                          }
-                      ]
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "bottomContent_subtitle",
-                      "value": "",
-                      "label": "Subtitle"
-                  },
-                  {
-                      "component": "select",
-                      "valueType": "string",
-                      "name": "bottomContent_subtitleType",
-                      "value": "",
-                      "label": "Subtitle Type",
-                      "options": [
-                          {
-                              "name": "h3",
-                              "value": "h3"
-                          },
-                          {
-                              "name": "h4",
-                              "value": "h4"
-                          },
-                          {
-                              "name": "h5",
-                              "value": "h5"
-                          }
-                      ]
-                  },
-                  {
-                      "component": "richtext",
-                      "valueType": "string",
-                      "name": "bottomContent_text",
-                      "value": "",
-                      "label": "Text"
-                  }
-              ]
-          },
-          {
-              "component": "container",
-              "name": "bottomContentMedia",
-              "collapsible": true,
-              "label": "Secondary Content - Media Block",
-              "fields": [
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "bottomContentMedia_image1",
-                      "value": "",
-                      "label": "Image 1",
-                      "multi": false
-                  },
-                  {
-                      "component": "richtext",
-                      "valueType": "string",
-                      "name": "bottomContentMedia_text1",
-                      "value": "",
-                      "label": "Text for image 1"
-                  },
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "bottomContentMedia_image2",
-                      "value": "",
-                      "label": "Image 2",
-                      "multi": false
-                  },
-                  {
-                      "component": "richtext",
-                      "valueType": "string",
-                      "name": "bottomContentMedia_text2",
-                      "value": "",
-                      "label": "Text for Image 2"
-                  },
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "bottomContentMedia_image3",
-                      "value": "",
-                      "label": "Image 3",
-                      "multi": false
-                  },
-                  {
-                      "component": "richtext",
-                      "valueType": "string",
-                      "name": "bottomContentMedia_text3",
-                      "value": "",
-                      "label": "Text for image 3"
-                  }
-              ]
-          },
-          {
-              "component": "container",
-              "name": "cta",
-              "collapsible": true,
-              "label": "Buttons",
-              "fields": [
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "cta_cta1",
-                      "value": "",
-                      "label": "CTA1 URL"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "cta_cta1Title",
-                      "value": "",
-                      "label": "CTA1 Title"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "cta_cta1Text",
-                      "value": "",
-                      "label": "CTA1 Text"
-                  },
-                  {
-                      "component": "select",
-                      "valueType": "string",
-                      "name": "cta_cta1Type",
-                      "value": "",
-                      "label": "CTA1 Type",
-                      "options": [
-                          {
-                              "name": "default",
-                              "value": ""
-                          },
-                          {
-                              "name": "primary",
-                              "value": "primary"
-                          },
-                          {
-                              "name": "secondary",
-                              "value": "secondary"
-                          }
-                      ]
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "cta_midText",
-                      "value": "",
-                      "label": "CTA MidText"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "cta_cta2",
-                      "value": "",
-                      "label": "CTA2 URL"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "cta_cta2Title",
-                      "value": "",
-                      "label": "CTA2 Title"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "cta_cta2Text",
-                      "value": "",
-                      "label": "CTA2 Text"
-                  },
-                  {
-                      "component": "select",
-                      "valueType": "string",
-                      "name": "cta_cta2Type",
-                      "value": "",
-                      "label": "CTA2 Type",
-                      "options": [
-                          {
-                              "name": "default",
-                              "value": ""
-                          },
-                          {
-                              "name": "primary",
-                              "value": "primary"
-                          },
-                          {
-                              "name": "secondary",
-                              "value": "secondary"
-                          }
-                      ]
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "cta_cta3",
-                      "value": "",
-                      "label": "CTA3 URL"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "cta_cta3Title",
-                      "value": "",
-                      "label": "CTA3 Title"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "cta_cta3Text",
-                      "value": "",
-                      "label": "CTA3 Text"
-                  },
-                  {
-                      "component": "select",
-                      "valueType": "string",
-                      "name": "cta_cta3Type",
-                      "value": "",
-                      "label": "CTA3 Type",
-                      "options": [
-                          {
-                              "name": "default",
-                              "value": ""
-                          },
-                          {
-                              "name": "primary",
-                              "value": "primary"
-                          },
-                          {
-                              "name": "secondary",
-                              "value": "secondary"
-                          }
-                      ]
-                  }
-              ]
-          },
-          {
-              "component": "container",
-              "name": "media",
-              "collapsible": true,
-              "label": "Media",
-              "fields": [
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "media_image",
-                      "value": "",
-                      "label": "Image",
-                      "multi": false
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "media_imageAlt",
-                      "value": "",
-                      "label": "Image Alt"
-                  },
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "media_imageMobile",
-                      "value": "",
-                      "label": "Image (Mobile)",
-                      "multi": false
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "media_video",
-                      "value": "",
-                      "label": "Video URL"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "media_videoText",
-                      "value": "",
-                      "label": "Video Title"
-                  },
-                  {
-                      "component": "multiselect",
-                      "valueType": "string",
-                      "name": "media_videoTitle",
-                      "value": "",
-                      "label": "Video Options",
-                      "options": [
-                          {
-                              "name": "Muted",
-                              "value": "muted"
-                          },
-                          {
-                              "name": "Loop",
-                              "value": "loop"
-                          },
-                          {
-                              "name": "Inline",
-                              "value": "playsinline"
-                          },
-                          {
-                              "name": "Autoplay",
-                              "value": "autoplay"
-                          },
-                          {
-                              "name": "Controls",
-                              "value": "controls"
-                          }
-                      ]
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "media_videoMobile",
-                      "value": "",
-                      "label": "Video (Mobile) URL"
-                  }
-              ]
+            "name": "No",
+            "value": "no"
           }
-      ]
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Explore text",
+        "value": "Explore these categories"
+      }
+    ]
   },
   {
-      "id": "e-catalog",
-      "fields": [
+    "id": "car-details",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "value": "Volvo XC40 details"
+      },
+      {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Is EV?",
+        "valueType": "string",
+        "options": [
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "assetName",
-              "value": "",
-              "label": "Asset Name",
-              "description": "Please provide the name of the catalog asset Ex: LovesacRender/2024 Fall Catalog"
+            "name": "Yes",
+            "value": "yes"
+          },
+          {
+            "name": "No",
+            "value": "no"
           }
-      ]
-  },
-  {
-      "id": "embed",
-      "fields": [
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "carImage",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "select",
+        "name": "showOffer",
+        "value": "",
+        "label": "Show Offer?",
+        "valueType": "string",
+        "options": [
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "videoUrl",
-              "value": "",
-              "label": "Video URL",
-              "description": "Please provide a URL to an MPC video."
+            "name": "Yes",
+            "value": "showOffer"
+          },
+          {
+            "name": "No",
+            "value": "noOffer"
           }
-      ]
-  },
-  {
-      "id": "form",
-      "fields": [
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "offerImage",
+        "label": "Offer Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Price",
+        "value": "$38,606"
+      },
+      {
+        "component": "select",
+        "name": "showContact",
+        "value": "",
+        "label": "Show Contact Text?",
+        "valueType": "string",
+        "options": [
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "path",
-              "value": "",
-              "label": "Path",
-              "description": "Provide path to sheet with json extension or Embedded Wufoo URL."
+            "name": "Yes",
+            "value": "showContactText"
           },
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "pathText",
-              "value": "",
-              "label": "Title",
-              "description": "Please provide the form title."
+            "name": "No",
+            "value": "noContactText"
           }
-      ]
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "contactContent",
+        "label": "Contact Text",
+        "value": "Contact us for more details"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "carMakeCode",
+        "label": "VIS Car Make Code",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "carModelCode",
+        "label": "VIS Car Model Code",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "olyCashback",
+        "label": "Oly Cashback",
+        "value": 0
+      }
+    ]
   },
   {
-      "id": "fragment",
-      "fields": [
+    "id": "car-features",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "feature",
+        "label": "Features",
+        "value": "Key features"
+      }
+    ]
+  },
+  {
+    "id": "embed",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "carImage",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Car Detail page?",
+        "valueType": "string",
+        "options": [
           {
-              "component": "text",
-              "valueType": "string",
-              "name": "path",
-              "value": "",
-              "label": "Path",
-              "description": "Provide path to fragment."
+            "name": "Yes",
+            "value": "yes"
+          },
+          {
+            "name": "No",
+            "value": "no"
           }
-      ]
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "link",
+        "label": "Youtube Link",
+        "value": ""
+      }
+    ]
   },
   {
-      "id": "headline-fourImg",
-      "fields": [
+    "id": "page-metadata",
+    "fields": [
+      {
+        "component": "aem-tag",
+        "valueType": "string",
+        "name": "cq:tags",
+        "label": "Tags",
+        "rootPath": "/content/cq:tags/oly",
+        "description": "Defines the page meta tags"
+      },
+      {
+        "component": "aem-tag",
+        "valueType": "string",
+        "name": "brand",
+        "label": "Vehicle Brand",
+        "rootPath": "/content/cq:tags/oly/vehicle-offers/brands",
+        "description": "Defines the vehicle brand meta tags"
+      },
+      {
+        "component": "aem-tag",
+        "valueType": "string",
+        "name": "fuel-type",
+        "label": "Fuel Type",
+        "rootPath": "/content/cq:tags/oly/vehicle-offers/fuel-type",
+        "description": "Defines the vehicle fuel type meta tags"
+      },
+      {
+        "component": "aem-tag",
+        "valueType": "string",
+        "name": "body-type",
+        "label": "Body Type",
+        "rootPath": "/content/cq:tags/oly/vehicle-offers/body-type",
+        "description": "Defines the vehicle body-type meta tags"
+      },
+      {
+        "component": "aem-tag",
+        "valueType": "string",
+        "name": "price-range",
+        "label": "Price Range",
+        "rootPath": "/content/cq:tags/oly/vehicle-offers/price-range",
+        "description": "Defines the vehicle price range meta tags"
+      },
+      {
+        "component": "aem-tag",
+        "valueType": "string",
+        "name": "pricing",
+        "label": "Pricing",
+        "rootPath": "/content/cq:tags/oly/vehicle-offers/pricing",
+        "description": "Defines the vehicle pricing meta tags"
+      },
+      {
+        "component": "aem-tag",
+        "valueType": "string",
+        "name": "year",
+        "label": "Year",
+        "rootPath": "/content/cq:tags/oly/vehicle-offers/year",
+        "description": "Defines the vehicle year meta tags"
+      },
+      {
+        "component": "aem-tag",
+        "valueType": "string",
+        "name": "deal",
+        "label": "Deal",
+        "rootPath": "/content/cq:tags/oly/vehicle-offers/deal",
+        "description": "Defines the vehicle deal meta tags"
+      },
+      {
+        "component": "aem-tag",
+        "valueType": "string",
+        "name": "car-category",
+        "label": "Car Category",
+        "rootPath": "/content/cq:tags/oly/car-details/car-category"
+      },
+      {
+        "component": "aem-tag",
+        "valueType": "string",
+        "name": "car-brand",
+        "label": "Car Brand",
+        "rootPath": "/content/cq:tags/oly/car-details/car-brand"
+      },
+      {
+        "component": "aem-tag",
+        "valueType": "string",
+        "name": "article-type",
+        "label": "Article Type",
+        "rootPath": "/content/cq:tags/oly/car-details/article-type"
+      },
+      {
+        "component": "aem-tag",
+        "valueType": "string",
+        "name": "car-body-type",
+        "label": "Car Body Type",
+        "rootPath": "/content/cq:tags/oly/car-details/body-type",
+        "description": "Defines the vehicle body-type meta tags"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Detail Page Card Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "car-description",
+        "label": "Detail Page Card Description"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Detail Page Card Image"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "card-publish-date",
+        "label": "Detail Page Card Publish Date"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "search_json_path",
+        "label": "Search API Json Path",
+        "value": "/query-index.json",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "takeways",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "takewaysTitle",
+        "label": "Title",
+        "value": "Key Takeaways"
+      },
+      {
+        "component": "richtext",
+        "name": "takeways",
+        "value": "",
+        "label": "Takeways",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "filter",
+    "fields": [
+     ]
+  },
+  {
+    "id": "thumbnail-car",
+    "fields": [
+      {
+        "component": "text",
+        "name": "thumbnail-car-name",
+        "value": "",
+        "label": "Car Name",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "thumbnail-car-image",
+        "label": "Image",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "aem-content-fragment",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string",
+        "variationName": "contentFragmentVariation"
+      }
+    ]
+  },
+  {
+    "id": "fragment",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      }
+    ]
+  },
+  {
+    "id": "search",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "search_label",
+        "description": "Enter the search label.",
+        "label": "Search Label",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "search_placeholder",
+        "label": "search Placeholder",
+        "description": "Enter the search placeholder text.",
+        "value": "search...",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "no_result",
+        "label": "No Result Label",
+        "description": "Enter the message when no result found.",
+        "value": "No Result Found!",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "search_limit",
+        "label": "Search Results Per Page Limit",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": "rating-widget",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "template-id",
+        "label": "Trustpilot Template Id"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "businessunit-id",
+        "label": "Trustpilot Businessunit Id"
+      }
+    ]
+  },
+  {
+    "id": "faq",
+    "fields": [
+      {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Display search?",
+        "valueType": "string",
+        "options": [
           {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "title",
-              "value": "",
-              "label": "Title",
-              "description": "Headline Text"
+            "name": "Yes",
+            "value": "yes"
           },
           {
-              "component": "reference",
-              "valueType": "string",
-              "name": "fileReference1",
-              "label": "Image",
-              "description": "Image 1",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "link1",
-              "value": "",
-              "label": "Link 1 URL",
-              "description": ""
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "link1Text",
-              "value": "",
-              "label": "Link 1 Text",
-              "description": ""
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "link1Title",
-              "value": "",
-              "label": "Link 1 Title",
-              "description": ""
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "fileReference2",
-              "label": "Image",
-              "description": "Image 2",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "link2",
-              "value": "",
-              "label": "Link 2 URL",
-              "description": ""
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "link2Text",
-              "value": "",
-              "label": "Link 2 Text",
-              "description": ""
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "link2Title",
-              "value": "",
-              "label": "Link 2 Title",
-              "description": ""
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "fileReference3",
-              "label": "Image",
-              "description": "Image 3",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "link3",
-              "value": "",
-              "label": "Link 3 URL",
-              "description": ""
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "link3Text",
-              "value": "",
-              "label": "Link 3 Text",
-              "description": ""
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "link3Title",
-              "value": "",
-              "label": "Link 3 Title",
-              "description": ""
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "fileReference4",
-              "label": "Image",
-              "description": "Image 4",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "link4",
-              "value": "",
-              "label": "Link 4 URL",
-              "description": ""
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "link4Text",
-              "value": "",
-              "label": "Link 4 Text",
-              "description": ""
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "link4Title",
-              "value": "",
-              "label": "Link 4 Title",
-              "description": ""
+            "name": "No",
+            "value": "no"
           }
-      ]
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Explore text",
+        "value": "Explore these categories"
+      }
+    ]
   },
   {
-      "id": "hero",
-      "fields": [
-          {
-              "component": "tab",
-              "label": "General",
-              "name": "general"
-          },
-          {
-              "component": "select",
-              "name": "classes",
-              "value": "",
-              "label": "Variant",
-              "valueType": "string",
-              "options": [
-                  {
-                      "name": "Default",
-                      "value": ""
-                  },
-                  {
-                      "name": "Sticky",
-                      "value": "sticky"
-                  }
-              ]
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "content_title",
-              "value": "",
-              "label": "Title"
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "content_titleType",
-              "value": "",
-              "label": "Title Type",
-              "options": [
-                  {
-                      "name": "h1",
-                      "value": "h1"
-                  },
-                  {
-                      "name": "h2",
-                      "value": "h2"
-                  },
-                  {
-                      "name": "h3",
-                      "value": "h3"
-                  }
-              ]
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "content_subtitle",
-              "value": "",
-              "label": "Subtitle"
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "content_subtitleType",
-              "value": "",
-              "label": "Subtitle Type",
-              "options": [
-                  {
-                      "name": "h4",
-                      "value": "h4"
-                  },
-                  {
-                      "name": "h5",
-                      "value": "h5"
-                  },
-                  {
-                      "name": "h6",
-                      "value": "h6"
-                  }
-              ]
-          },
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "content_text",
-              "value": "",
-              "label": "Text"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "reviews_sku",
-              "value": "",
-              "label": "Reviews SKU"
-          },
-          {
-              "component": "tab",
-              "label": "CTA",
-              "name": "cta"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta1",
-              "value": "",
-              "label": "CTA1 URL"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta1Title",
-              "value": "",
-              "label": "CTA1 Title"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta1Text",
-              "value": "",
-              "label": "CTA1 Text"
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "cta_cta1Type",
-              "value": "",
-              "label": "CTA1 Type",
-              "options": [
-                  {
-                      "name": "default",
-                      "value": ""
-                  },
-                  {
-                      "name": "primary",
-                      "value": "primary"
-                  },
-                  {
-                      "name": "secondary",
-                      "value": "secondary"
-                  }
-              ]
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta2",
-              "value": "",
-              "label": "CTA2 URL"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta2Title",
-              "value": "",
-              "label": "CTA2 Title"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta2Text",
-              "value": "",
-              "label": "CTA2 Text"
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "cta_cta2Type",
-              "value": "",
-              "label": "CTA2 Type",
-              "options": [
-                  {
-                      "name": "default",
-                      "value": ""
-                  },
-                  {
-                      "name": "primary",
-                      "value": "primary"
-                  },
-                  {
-                      "name": "secondary",
-                      "value": "secondary"
-                  }
-              ]
-          },
-          {
-              "component": "tab",
-              "label": "Media",
-              "name": "media"
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "media_image",
-              "value": "",
-              "label": "Icon",
-              "multi": false
-          }
-      ]
-  },
-  {
-      "id": "hero-item",
-      "fields": [
-          {
-              "component": "tab",
-              "label": "Media",
-              "name": "media"
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "media_image",
-              "value": "",
-              "label": "Image",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "media_imageAlt",
-              "value": "",
-              "label": "Image Alt"
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "media_imageMobile",
-              "value": "",
-              "label": "Image (Mobile)",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "media_video",
-              "value": "",
-              "label": "Video URL"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "media_videoText",
-              "value": "",
-              "label": "Video Title"
-          },
-          {
-              "component": "multiselect",
-              "valueType": "string",
-              "name": "media_videoTitle",
-              "value": "",
-              "label": "Video Options",
-              "options": [
-                  {
-                      "name": "Muted",
-                      "value": "muted"
-                  },
-                  {
-                      "name": "Loop",
-                      "value": "loop"
-                  },
-                  {
-                      "name": "Inline",
-                      "value": "playsinline"
-                  },
-                  {
-                      "name": "Autoplay",
-                      "value": "autoplay"
-                  },
-                  {
-                      "name": "Controls",
-                      "value": "controls"
-                  }
-              ]
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "media_videoMobile",
-              "value": "",
-              "label": "Video (Mobile) URL"
-          },
-          {
-              "component": "tab",
-              "label": "Content",
-              "name": "content"
-          },
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "content_text",
-              "value": "",
-              "label": "Caption"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta1",
-              "value": "",
-              "label": "CTA1 URL"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta1Title",
-              "value": "",
-              "label": "CTA1 Title"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta1Text",
-              "value": "",
-              "label": "CTA1 Text"
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "cta_cta1Type",
-              "value": "",
-              "label": "CTA1 Type",
-              "options": [
-                  {
-                      "name": "default",
-                      "value": ""
-                  },
-                  {
-                      "name": "primary",
-                      "value": "primary"
-                  },
-                  {
-                      "name": "secondary",
-                      "value": "secondary"
-                  }
-              ]
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta2",
-              "value": "",
-              "label": "CTA2 URL"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta2Title",
-              "value": "",
-              "label": "CTA2 Title"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta2Text",
-              "value": "",
-              "label": "CTA2 Text"
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "cta_cta2Type",
-              "value": "",
-              "label": "CTA2 Type",
-              "options": [
-                  {
-                      "name": "default",
-                      "value": ""
-                  },
-                  {
-                      "name": "primary",
-                      "value": "primary"
-                  },
-                  {
-                      "name": "secondary",
-                      "value": "secondary"
-                  }
-              ]
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta3",
-              "value": "",
-              "label": "CTA3 URL"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta3Title",
-              "value": "",
-              "label": "CTA3 Title"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta_cta3Text",
-              "value": "",
-              "label": "CTA3 Text"
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "cta_cta3Type",
-              "value": "",
-              "label": "CTA3 Type",
-              "options": [
-                  {
-                      "name": "default",
-                      "value": ""
-                  },
-                  {
-                      "name": "primary",
-                      "value": "primary"
-                  },
-                  {
-                      "name": "secondary",
-                      "value": "secondary"
-                  }
-              ]
-          }
-      ]
-  },
-  {
-      "id": "know-your-fabrics",
-      "fields": [
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "image",
-              "value": "",
-              "label": "Main Image",
-              "multi": false
-          },
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "caption",
-              "value": "",
-              "label": "Image Caption"
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "icons_icon1",
-              "value": "",
-              "label": "Icon 1",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "icons_icon1text",
-              "value": "",
-              "label": "Icon 1 Text"
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "icons_icon2",
-              "value": "",
-              "label": "Icon 2",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "icons_icon2text",
-              "value": "",
-              "label": "Icon 2 Text"
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "icons_icon3",
-              "value": "",
-              "label": "Icon 3",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "icons_icon3text",
-              "value": "",
-              "label": "Icon 3 Text"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "top_title",
-              "value": "",
-              "label": "Title"
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "top_titleType",
-              "value": "",
-              "label": "Title Type",
-              "options": [
-                  {
-                      "name": "h4",
-                      "value": "h4"
-                  },
-                  {
-                      "name": "h5",
-                      "value": "h5"
-                  },
-                  {
-                      "name": "h6",
-                      "value": "h6"
-                  }
-              ]
-          },
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "top_text",
-              "value": "",
-              "label": "Link"
-          },
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "text",
-              "value": "",
-              "label": "Text"
-          }
-      ]
-  },
-  {
-      "id": "fabrics-item",
-      "fields": [
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "fabric_image",
-              "value": "",
-              "label": "Image",
-              "multi": false
-          },
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "fabric_text",
-              "value": "",
-              "label": "Text"
-          }
-      ]
-  },
-  {
-      "id": "teaser",
-      "fields": [
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "fileReference",
-              "label": "Image",
-              "description": "The teaser image, min Xpx x Ypx...",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "title",
-              "value": "",
-              "label": "Heading",
-              "description": "Sets the main title of the teaser."
-          },
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "longDescr",
-              "value": "",
-              "label": "Description",
-              "description": "The description to be shown."
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta1Text",
-              "value": "",
-              "label": "CTA Text",
-              "description": "Text to be shown inside button."
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta1",
-              "value": "",
-              "label": "CTA Link",
-              "description": "What link to open when clicking the button."
-          }
-      ]
-  },
-  {
-      "id": "ugc-gallery",
-      "fields": [
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "widgetId",
-              "value": "",
-              "label": "Widget ID"
-          }
-      ]
-  },
-  {
-      "id": "help-center",
-      "fields": []
-  },
-  {
-      "id": "refer-a-friend",
-      "fields": []
-  },
-  {
-      "id": "banner",
-      "fields": [
-          {
-              "component": "select",
-              "name": "classes",
-              "value": "",
-              "label": "Variant",
-              "valueType": "string",
-              "options": [
-                  {
-                      "name": "Default",
-                      "value": ""
-                  },
-                  {
-                      "name": "Red",
-                      "value": "bgred"
-                  }
-              ]
-          }
-      ]
-  },
-  {
-      "id": "banner-item",
-      "fields": [
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "message",
-              "value": "",
-              "label": "Message"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "modal_title",
-              "value": "",
-              "label": "Modal Title"
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "modal_titleType",
-              "value": "",
-              "label": "Modal Title Type",
-              "options": [
-                  {
-                      "name": "H2",
-                      "value": "h2"
-                  },
-                  {
-                      "name": "H3",
-                      "value": "h3"
-                  }
-              ]
-          },
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "modal_content",
-              "value": "",
-              "label": "Modal Content"
-          }
-      ]
-  },
-  {
-      "id": "mini-swatches",
-      "fields": [
-          {
-              "component": "commerce-picker:picker",
-              "valueType": "string",
-              "name": "urlpath",
-              "value": "",
-              "label": "Url Path",
-              "commerce-picker": {
-                  "selection-mode": "single",
-                  "selection-type": "folder"
-              }
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "description",
-              "value": "",
-              "label": "Description"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta",
-              "value": "",
-              "label": "Order Swatches CTA Label"
-          }
-      ]
-  },
-  {
-      "id": "navbar-menu-item",
-      "fields": [
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "menu",
-              "value": "",
-              "label": "Menu URL",
-              "description": "Please provide URL for menu."
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "menuText",
-              "value": "",
-              "label": "Menu Text",
-              "description": "Please provide menu link text."
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "menuTitle",
-              "value": "",
-              "label": "Menu Title",
-              "description": "Please provide menu link title."
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "menuSubtitleText",
-              "value": "",
-              "label": "Menu Subtitle",
-              "description": "Please provide menu subtitle. (Optional)"
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "menuTagText",
-              "value": "",
-              "label": "Menu Tag Text",
-              "description": "Please provide menu tag text. (Optional)"
-          }
-      ]
-  },
-  {
-      "id": "navbar-submenu-item",
-      "fields": [
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "imageType",
-              "value": "foreground",
-              "label": "Image Type",
-              "options": [
-                  {
-                      "name": "Foreground",
-                      "value": "foreground"
-                  },
-                  {
-                      "name": "Background",
-                      "value": "background"
-                  }
-              ]
-          },
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "heading",
-              "value": "",
-              "label": "Heading",
-              "description": "Please provide heading and description."
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "media_fileReference1",
-              "label": "Image",
-              "description": "Please provide image.",
-              "multi": false
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "media_fileReference1Mobile",
-              "value": "",
-              "label": "Image (Mobile)",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta1",
-              "value": "",
-              "label": "CTA Link",
-              "description": "What link to open when clicking the image or text."
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta1Text",
-              "value": "",
-              "label": "CTA Text",
-              "description": "Sets the text for link."
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta1Title",
-              "value": "",
-              "label": "CTA Title",
-              "description": "Sets the title for link."
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "media2_fileReference2",
-              "label": "Image 2",
-              "description": "Please provide image.",
-              "multi": false
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "media2_fileReference2Mobile",
-              "value": "",
-              "label": "Image 2 (Mobile)",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta2",
-              "value": "",
-              "label": "CTA Link 2",
-              "description": "What link to open when clicking the image or text."
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta2Text",
-              "value": "",
-              "label": "CTA Text 2",
-              "description": "Sets the text for link."
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "cta2Title",
-              "value": "",
-              "label": "CTA Title 2",
-              "description": "Sets the title for link."
-          }
-      ]
-  },
-  {
-      "id": "commerce-account",
-      "fields": []
-  },
-  {
-      "id": "commerce-cart",
-      "fields": []
-  },
-  {
-      "id": "commerce-checkout",
-      "fields": []
-  },
-  {
-      "id": "commerce-login",
-      "fields": []
-  },
-  {
-      "id": "commerce-order-history",
-      "fields": []
-  },
-  {
-      "id": "configurator",
-      "fields": [
-          {
-              "component": "text",
-              "name": "config",
-              "label": "Config",
-              "valueType": "string"
-          }
-      ]
-  },
-  {
-      "id": "product-details",
-      "fields": []
-  },
-  {
-      "id": "product-list",
-      "fields": [
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "classes",
-              "label": "Variant",
-              "value": "",
-              "options": [
-                  {
-                      "name": "Filters",
-                      "value": "filters"
-                  }
-              ]
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "type",
-              "label": "Type",
-              "value": "",
-              "options": [
-                  {
-                      "name": "Category",
-                      "value": "category"
-                  },
-                  {
-                      "name": "Search",
-                      "value": "search"
-                  }
-              ]
-          },
-          {
-              "component": "commerce-picker:picker",
-              "valueType": "string",
-              "name": "urlpath",
-              "value": "",
-              "label": "Url Path",
-              "commerce-picker": {
-                  "selection-mode": "single",
-                  "selection-type": "folder"
-              }
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "filters",
-              "value": "",
-              "label": "Filter Attributes"
-          },
-          {
-              "component": "select",
-              "name": "showSearch",
-              "label": "Show Search Bar",
-              "valueType": "string",
-              "value": "",
-              "options": [
-                  {
-                      "name": "False",
-                      "value": ""
-                  },
-                  {
-                      "name": "True",
-                      "value": "true"
-                  }
-              ]
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "category",
-              "value": "",
-              "label": "Category"
-          }
-      ]
-  },
-  {
-      "id": "products",
-      "fields": [
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "skus",
-              "value": "",
-              "label": "Product SKUs"
-          }
-      ]
-  },
-  {
-      "id": "reviews",
-      "fields": [
-          {
-              "component": "text",
-              "name": "sku",
-              "label": "SKU",
-              "valueType": "string"
-          },
-          {
-              "component": "select",
-              "name": "productFilter",
-              "label": "Show Product Filter",
-              "valueType": "string",
-              "value": "false",
-              "options": [
-                  {
-                      "name": "False",
-                      "value": "false"
-                  },
-                  {
-                      "name": "True",
-                      "value": "true"
-                  }
-              ]
-          },
-          {
-              "component": "select",
-              "name": "excludeFamily",
-              "label": "Hide Family Reviews",
-              "valueType": "string",
-              "value": "false",
-              "options": [
-                  {
-                      "name": "False",
-                      "value": "false"
-                  },
-                  {
-                      "name": "True",
-                      "value": "true"
-                  }
-              ]
-          }
-      ]
-  },
-  {
-      "id": "content-carousel",
-      "fields": [
-          {
-              "component": "select",
-              "name": "classes",
-              "value": "",
-              "label": "Style",
-              "valueType": "string",
-              "options": [
-                  {
-                      "name": "Media",
-                      "value": ""
-                  },
-                  {
-                      "name": "Full Width",
-                      "value": "fullwidth"
-                  },
-                  {
-                      "name": "Side By Side (left)",
-                      "value": "sbs"
-                  },
-                  {
-                      "name": "Side By Side (right)",
-                      "value": "sbs-right"
-                  },
-                  {
-                      "name": "Info",
-                      "value": "info"
-                  },
-                  {
-                      "name": "Info (Stealth)",
-                      "value": "info-stealth"
-                  },
-                  {
-                      "name": "Sactionals",
-                      "value": "sactionals"
-                  },
-                  {
-                      "name": "Primary Carousel",
-                      "value": "primary-carousel"
-                  },
-                  {
-                      "name": "Secondary Carousel",
-                      "value": "secondary-carousel"
-                  }
-              ]
-          },
-          {
-              "component": "container",
-              "name": "content",
-              "collapsible": true,
-              "label": "Content",
-              "fields": [
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_pretitle",
-                      "value": "",
-                      "label": "Pre Title"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_title",
-                      "value": "",
-                      "label": "Title"
-                  },
-                  {
-                      "component": "select",
-                      "valueType": "string",
-                      "name": "content_titleType",
-                      "value": "",
-                      "label": "Title Type",
-                      "options": [
-                          {
-                              "name": "h2",
-                              "value": "h2"
-                          },
-                          {
-                              "name": "h3",
-                              "value": "h3"
-                          },
-                          {
-                              "name": "h4",
-                              "value": "h4"
-                          },
-                          {
-                              "name": "h5",
-                              "value": "h5"
-                          },
-                          {
-                              "name": "h6",
-                              "value": "h6"
-                          }
-                      ]
-                  },
-                  {
-                      "component": "richtext",
-                      "valueType": "string",
-                      "name": "content_description",
-                      "value": "",
-                      "label": "Description"
-                  }
-              ],
-              "condition": {
-                  "in": [
-                      {
-                          "var": "classes"
-                      },
-                      ["sbs", "sbs-right", "info", "info-stealth"]
-                  ]
-              }
-          },
-          {
-              "component": "container",
-              "name": "ctas",
-              "collapsible": true,
-              "label": "CTAs",
-              "fields": [
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_cta1",
-                      "value": "",
-                      "label": "1st CTA"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_cta1Text",
-                      "value": "",
-                      "label": "1st CTA Label"
-                  },
-                  {
-                      "component": "select",
-                      "name": "content_cta1Type",
-                      "value": "",
-                      "label": "1st CTA Type",
-                      "valueType": "string",
-                      "options": [
-                          {
-                              "name": "Default",
-                              "value": ""
-                          },
-                          {
-                              "name": "Primary",
-                              "value": "primary"
-                          },
-                          {
-                              "name": "Secondary",
-                              "value": "secondard"
-                          }
-                      ]
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_cta2",
-                      "value": "",
-                      "label": "2nd CTA"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_cta2Text",
-                      "value": "",
-                      "label": "2nd CTA 2 Label"
-                  },
-                  {
-                      "component": "select",
-                      "name": "content_cta2Type",
-                      "value": "",
-                      "label": "2nd CTA Type",
-                      "valueType": "string",
-                      "options": [
-                          {
-                              "name": "Default",
-                              "value": ""
-                          },
-                          {
-                              "name": "Primary",
-                              "value": "primary"
-                          },
-                          {
-                              "name": "Secondary",
-                              "value": "secondard"
-                          }
-                      ]
-                  }
-              ],
-              "condition": {
-                  "in": [
-                      {
-                          "var": "classes"
-                      },
-                      ["sbs", "sbs-right", "info", "info-stealth"]
-                  ]
-              }
-          }
-      ]
-  },
-  {
-      "id": "content-carousel-item",
-      "fields": [
-          {
-              "component": "container",
-              "name": "media",
-              "collapsible": true,
-              "label": "Media",
-              "fields": [
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "media_image",
-                      "label": "Image",
-                      "multi": false
-                  },
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "media_imageMobile",
-                      "label": "Image (mobile)",
-                      "multi": false
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "media_imageAlt",
-                      "value": "",
-                      "label": "Image Alt"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "media_video",
-                      "value": "",
-                      "label": "Video URL"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "media_videoMobile",
-                      "value": "",
-                      "label": "Video URL (mobile)"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "media_videoText",
-                      "value": "",
-                      "label": "Video Title"
-                  },
-                  {
-                      "component": "multiselect",
-                      "valueType": "string",
-                      "name": "media_videoTitle",
-                      "value": "",
-                      "label": "Video Options",
-                      "options": [
-                          {
-                              "name": "Muted",
-                              "value": "muted"
-                          },
-                          {
-                              "name": "Loop",
-                              "value": "loop"
-                          },
-                          {
-                              "name": "Inline",
-                              "value": "playsinline"
-                          },
-                          {
-                              "name": "Autoplay",
-                              "value": "autoplay"
-                          },
-                          {
-                              "name": "Controls",
-                              "value": "controls"
-                          }
-                      ]
-                  }
-              ]
-          },
-          {
-              "component": "container",
-              "name": "titles",
-              "collapsible": true,
-              "label": "Titles",
-              "fields": [
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "titles_icon",
-                      "label": "Icon",
-                      "multi": false
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "titles_iconAlt",
-                      "value": "",
-                      "label": "Icon Alt"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "titles_pretitle",
-                      "value": "",
-                      "label": "Pre Title"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "titles_title",
-                      "value": "",
-                      "label": "Title"
-                  },
-                  {
-                      "component": "select",
-                      "name": "titles_titleType",
-                      "value": "h3",
-                      "label": "Title Type",
-                      "valueType": "string",
-                      "options": [
-                          {
-                              "name": "h3",
-                              "value": "h3"
-                          },
-                          {
-                              "name": "h4",
-                              "value": "h4"
-                          },
-                          {
-                              "name": "h5",
-                              "value": "h5"
-                          },
-                          {
-                              "name": "h6",
-                              "value": "h6"
-                          }
-                      ]
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "titles_subtitle",
-                      "value": "",
-                      "label": "Sub Title"
-                  },
-                  {
-                      "component": "richtext",
-                      "valueType": "string",
-                      "name": "titles_description",
-                      "value": "",
-                      "label": "Description"
-                  }
-              ]
-          },
-          {
-              "component": "container",
-              "name": "content",
-              "collapsible": true,
-              "label": "Content",
-              "fields": [
-                  {
-                      "component": "richtext",
-                      "valueType": "string",
-                      "name": "content_description",
-                      "value": "",
-                      "label": "Description"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_cta1",
-                      "value": "",
-                      "label": "1st CTA"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_cta1Text",
-                      "value": "",
-                      "label": "1st CTA Label"
-                  },
-                  {
-                      "component": "select",
-                      "name": "content_cta1Type",
-                      "value": "",
-                      "label": "1st CTA Type",
-                      "valueType": "string",
-                      "options": [
-                          {
-                              "name": "Default",
-                              "value": ""
-                          },
-                          {
-                              "name": "Primary",
-                              "value": "primary"
-                          },
-                          {
-                              "name": "Secondary",
-                              "value": "secondard"
-                          }
-                      ]
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_cta2",
-                      "value": "",
-                      "label": "2nd CTA"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_cta2Text",
-                      "value": "",
-                      "label": "2nd CTA 2 Label"
-                  },
-                  {
-                      "component": "select",
-                      "name": "content_cta2Type",
-                      "value": "",
-                      "label": "2nd CTA Type",
-                      "valueType": "string",
-                      "options": [
-                          {
-                              "name": "Default",
-                              "value": ""
-                          },
-                          {
-                              "name": "Primary",
-                              "value": "primary"
-                          },
-                          {
-                              "name": "Secondary",
-                              "value": "secondard"
-                          }
-                      ]
-                  }
-              ]
-          },
-          {
-              "component": "container",
-              "name": "productOptions",
-              "collapsible": true,
-              "label": "Product Options",
-              "fields": [
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "content_bundleOption1Img",
-                      "label": "Option 1 (Image)",
-                      "multi": false
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_bundleOption1ImgAlt",
-                      "value": "",
-                      "label": "Option 1 (Image Alt)"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_bundleOption1Text",
-                      "value": "",
-                      "label": "Option 1 (Text)"
-                  },
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "content_bundleOption2Img",
-                      "label": "Option 2 (Image)",
-                      "multi": false
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_bundleOption2ImgAlt",
-                      "value": "",
-                      "label": "Option 2 (Image Alt)"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_bundleOption2Text",
-                      "value": "",
-                      "label": "Option 2 (Text)"
-                  },
-                  {
-                      "component": "reference",
-                      "valueType": "string",
-                      "name": "content_bundleOption3Img",
-                      "label": "Option 3 (Image)",
-                      "multi": false
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_bundleOption3ImgAlt",
-                      "value": "",
-                      "label": "Option 3 (Image Alt)"
-                  },
-                  {
-                      "component": "text",
-                      "valueType": "string",
-                      "name": "content_bundleOption3Text",
-                      "value": "",
-                      "label": "Option 3 (Text)"
-                  }
-              ]
-          }
-      ]
-  },
-  {
-      "id": "content-search",
-      "fields": []
-  },
-  {
-      "id": "showroomlocator",
-      "fields": [
-          {
-              "component": "select",
-              "name": "classes",
-              "value": "",
-              "label": "Type",
-              "valueType": "string",
-              "options": [
-                  {
-                      "name": "Map",
-                      "value": "map"
-                  },
-                  {
-                      "name": "Location Top",
-                      "value": "top"
-                  },
-                  {
-                      "name": "Location Middle",
-                      "value": "middle"
-                  },
-                  {
-                      "name": "Location Bottom",
-                      "value": "bottom"
-                  },
-                  {
-                      "name": "All Locations",
-                      "value": "locations"
-                  }
-              ]
-          }
-      ]
-  },
-  {
-      "id": "product-carousel",
-      "fields": [
-          {
-              "component": "text",
-              "multi": true,
-              "valueType": "string",
-              "name": "skus",
-              "label": "Product SKUs"
-          }
-      ]
-  },
-  {
-      "id": "whats-inside",
-      "fields": [
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "title",
-              "value": "",
-              "label": "Title"
-          },
-          {
-              "component": "select",
-              "valueType": "string",
-              "name": "titleType",
-              "value": "",
-              "label": "Title Type",
-              "options": [
-                  {
-                      "name": "h2",
-                      "value": "h2"
-                  },
-                  {
-                      "name": "h3",
-                      "value": "h3"
-                  },
-                  {
-                      "name": "h4",
-                      "value": "h4"
-                  }
-              ]
-          },
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "text",
-              "value": "",
-              "label": "Text"
-          }
-      ]
-  },
-  {
-      "id": "whats-inside-item",
-      "fields": [
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "title",
-              "value": "",
-              "label": "Title"
-          },
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "text",
-              "value": "",
-              "label": "Text"
-          },
-          {
-              "component": "reference",
-              "valueType": "string",
-              "name": "image",
-              "value": "",
-              "label": "Image",
-              "multi": false
-          },
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "imageAlt",
-              "value": "",
-              "label": "Image Alt"
-          },
-          {
-              "component": "richtext",
-              "valueType": "string",
-              "name": "spots",
-              "value": "",
-              "label": "Active Spots"
-          }
-      ]
-  },
-  {
-      "id": "blueconic",
-      "fields": [
-          {
-              "component": "text",
-              "valueType": "string",
-              "name": "type",
-              "value": "",
-              "label": "Type",
-              "description": "Provide type."
-          }
-      ]
-  },
-  {
-      "id": "usablenet",
-      "fields": []
+    "id": "active-filter",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "template-id",
+        "label": "Active Filter"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "car-category",
+        "label": "please enter the car-category label"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "car-brand",
+        "label": "please enter the car-brand label"
+      }
+      ,{
+        "component": "text",
+        "valueType": "string",
+        "name": "car-body-type",
+        "label": "please enter the car-body-type label"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "article-type",
+        "label": "please enter the article-type label"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "query-index",
+        "label": "please enter the query-index url"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "search",
+        "label": "please enter the search button label"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "pagination-number",
+        "label": "please enter the pagination number"
+      }
+
+    ]
   }
 ]
