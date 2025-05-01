@@ -1,408 +1,100 @@
 [
   {
-    "id": "main",
-    "components": [
-      "all-models-section",
-      "bmw_main_section",
-      "bmw-video",
-      "flexible-width-section",
-      "footer-section",
-      "header-section",
-      "section",
-      "stock-locator-section",
-      "tabs-section"
-    ]
+      "id": "main",
+      "components": ["section"]
   },
   {
-    "id": "columns",
-    "components": ["column"]
+      "id": "columns",
+      "components": []
   },
   {
-    "id": "column",
-    "components": [
-      "button",
-      "copy_text",
-      "eyebrow",
-      "headline",
-      "image",
-      "title"
-    ]
+      "id": "column",
+      "components": ["button", "image", "text", "title", "video"]
   },
   {
-    "id": "bmw_main_section",
-    "components": [
-      "section",
-      "text-image",
-      "text-image-v2"
-    ]
+      "id": "section",
+      "components": [
+          "button",
+          "image",
+          "text",
+          "title",
+          "video",
+          "accordion",
+          "banner",
+          "cards",
+          "carousel",
+          "columns",
+          "commerce-account",
+          "commerce-cart",
+          "commerce-checkout",
+          "commerce-login",
+          "commerce-order-history",
+          "configurator",
+          "cta",
+          "e-catalog",
+          "embed",
+          "form",
+          "fragment",
+          "headline-fourImg",
+          "help-center",
+          "hero",
+          "know-your-fabrics",
+          "content-carousel",
+          "content-search",
+          "mini-swatches",
+          "navbar-menu-item",
+          "product-details",
+          "product-list",
+          "products",
+          "product-carousel",
+          "refer-a-friend",
+          "reviews",
+          "showroomlocator",
+          "teaser",
+          "ugc-gallery",
+          "whats-inside",
+          "blueconic",
+          "usablenet"
+      ]
   },
   {
-    "id": "footer-section",
-    "components": [
-      "copyright",
-      "icon-link-list",
-      "link-list",
-      "speed-dial"
-    ]
+      "id": "cards",
+      "components": ["card"]
   },
   {
-    "id": "header-section",
-    "components": [
-      "icon-link-list",
-      "logo",
-      "menu-flyout",
-      "menu-link"
-    ]
+      "id": "e-catalog",
+      "components": ["text"]
   },
   {
-    "id": "menu-flyout",
-    "components": [
-      "link-list",
-      "menu-teaser"
-    ]
+      "id": "teaser",
+      "components": ["teaser"]
   },
   {
-    "id": "menu-teaser",
-    "components": [
-      "button",
-      "copy_text"
-    ]
+      "id": "navbar-menu-item",
+      "components": ["navbar-submenu-item"]
   },
   {
-    "id": "text-with-media",
-    "components": [
-      "text-with-image",
-      "text-with-video"
-    ]
+      "id": "accordion",
+      "components": ["accordion-item"]
   },
   {
-    "id": "accordion",
-    "components": [
-      "accordion-item"
-    ]
+      "id": "hero",
+      "components": ["hero-item"]
   },
   {
-    "id": "accordion-item",
-    "components": [],
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": ["superscript"],
-      "list": ["bullist", "numlist"],
-      "insert": ["link"],
-      "blocks": [],
-      "advanced": [],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
+      "id": "know-your-fabrics",
+      "components": ["fabrics-item"]
   },
   {
-    "id": "text-with-image",
-    "components": [],
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": ["link"],
-      "blocks": [],
-      "advanced": [""],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
+      "id": "banner",
+      "components": ["banner-item"]
   },
   {
-    "id": "text-with-video",
-    "components": [],
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": ["link"],
-      "blocks": [],
-      "advanced": [""],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
+      "id": "content-carousel",
+      "components": ["content-carousel-item"]
   },
   {
-    "id": "video-carousel",
-    "components": [],
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": ["link"],
-      "blocks": [],
-      "advanced": [""],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
-  },
-  {
-    "id": "image-carousel",
-    "components": [],
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": ["link"],
-      "blocks": [],
-      "advanced": [""],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
-  },
-  {
-    "id": "quote",
-    "components": [],
-    "rte": {
-      "format": ["bold"],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": [""],
-      "blocks": [],
-      "advanced": [""],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
-  },
-  {
-    "id": "section",
-    "components": [
-      "accordion",
-      "background-media",
-      "button",
-      "columns",
-      "content-navigation",
-      "cookiepolicy",
-      "copy_text",
-      "disclaimer",
-      "download",
-      "drivetrain-switch",
-      "eyebrow",
-      "footer-text",
-      "headline",
-      "iframe",
-      "image",
-      "link-list",
-      "media-carousel",
-      "model-card",
-      "multicontent-gallery",
-      "precon",
-      "quote",
-      "technical-data",
-      "text-with-media",
-      "title",
-      "video",
-      "video-gallery",
-      "website-search"
-    ]
-  },
-  {
-    "id":"flexible-width-section",
-    "components":[
-      "accordion",
-      "button",
-      "columns",
-      "copy_text",
-      "cookiepolicy",
-      "disclaimer",
-      "download"   ,
-      "eyebrow",
-      "headline",
-      "image",
-      "quote",
-      "title",
-      "video"
-    ]
-  },
-  {
-    "id": "tabs-section",
-    "components": [
-      "accordion",
-      "background-media",
-      "button",
-      "columns",
-      "content-navigation",
-      "cookiepolicy",
-      "copy_text",
-      "disclaimer",
-      "download",
-      "drivetrain-switch",
-      "eyebrow",
-      "footer-text",
-      "headline",
-      "icon",
-      "icon-link-list",
-      "iframe",
-      "image",
-      "link-list",
-      "media-carousel",
-      "model-card",
-      "multicontent-gallery",
-      "precon",
-      "quote",
-      "technical-data",
-      "text-with-media",
-      "title",
-      "video",
-      "video-gallery"
-    ]
-  },
-  {
-    "id": "all-models-section",
-    "components": [
-      "all-models",
-      "headline",
-      "link-list"
-    ]
-  },
-  {
-    "id": "stock-locator-model-overview",
-    "components": [],
-    "rte": {
-      "format": [],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": [],
-      "blocks": [],
-      "advanced": [""],
-      "extensions": [],
-      "editor": ["removeformat"]
-    }
-  },
-  {
-   "id" : "stock-locator-section",
-   "components":[
-    "copy_text",
-    "headline",
-    "stock-locator-model-detail",
-    "stock-locator-model-overview"
-   ]
-  },
-  {
-    "id": "copy_text",
-    "rte": {
-      "format": ["bold", "italic", "strikethrough", "backcolor", "fontselect", "fontsizeselect", "forecolor", "formatselect", "underline", "subscript", "superscript", "styleselect"],
-      "alignment": ["alignleft", "alignright", "aligncenter", "alignjustify", "alignnone"],
-      "indentation": ["indent", "outdent"],
-      "sr_script": ["subscript", "superscript"],
-      "list": ["bullist", "numlist"],
-      "insert": ["link", "openlink", "unlink", "media", "anchor", "charmap", "insertdatetime", "linktarget"],
-      "advanced": ["h1", "h2", "h3", "h4", "h5", "h6", "xyz"],
-      "extensions": ["table", "tablecellprops", "tablecopyrow", "tablecutrow", "tabledelete", "tabledeletecol", "tabledeleterow", "tableinsertdialog", "tableinsertcolafter", "tableinsertcolbefore", "tableinsertrowafter", "tableinsertrowbefore", "tablemergecells", "tablepasterowafter", "tablepasterowbefore", "tableprops", "tablerowprops", "tablesplitcells", "tableclass", "tablecellclass", "tablecellvalign", "tablecellborderwidth", "tablecellborderstyle", "tablecaption", "tablecellbackgroundcolor", "tablecellbordercolor", "tablerowheader", "tablecolheader"],
-      "editor": ["copy", "cut", "paste", "redo", "undo", "remove", "removeformat", "selectall", "visualaid", "pastetext", "code", "fullscreen", "preview", "searchreplace", "visualblocks", "grammarly"]
-    }
-    
-  },
-  {
-    "id": "cards",
-    "components": ["card"]
-  },
-  {
-    "id": "icon-link-list",
-    "components": ["icon"]
-  },
-  {
-    "id": "link-list",
-    "components": [],
-    "rte": {
-      "format": [],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": ["bullist"],
-      "insert": ["link"],
-      "advanced": [],
-      "extensions": [],
-      "editor": []
-    }
-  },
-  {
-    "id": "multicontent-gallery",
-    "components": [
-      "image-slide",
-      "video-slide"
-    ]
-  },
-  {
-    "id": "video-slide",
-    "components": []
-  },
-  {
-    "id": "image-slide",
-    "components": []
-  },
-  {
-    "id": "media-carousel",
-    "components": [
-      "image-carousel",
-      "video-carousel"
-    ]
-  },
-  {
-    "id": "background-media",
-    "components":[
-      "background-image",
-      "background-video"
-    ]
-  },
-  {
-    "id": "video-gallery",
-    "components": [
-      "video-gallery-slide"
-    ]
-  },
-  {
-    "id": "drivetrain-switch",
-    "components": [
-      "drivetrain-model-card"
-    ]
-  },
-  {
-    "id": "precon",
-    "components": [
-      "precon-vehicle"
-    ]
-  },
-  {
-    "id": "speed-dial",
-    "components":[
-      "speed-dial-item"
-    ]
-  },
-  {
-    "id": "technical-data",
-    "components":[
-      "model-data"
-    ],
-    "rte": {
-      "format": [],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
-      "insert": ["link"],
-      "advanced": ["h2"],
-      "extensions": [],
-       "editor": []
-    }
-  },
-  {
-    "id": "website-search",
-    "components":[]
+      "id": "whats-inside",
+      "components": ["whats-inside-item"]
   }
 ]
