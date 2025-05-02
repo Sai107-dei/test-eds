@@ -157,7 +157,8 @@
                 "template": {
                   "name": "Hero",
                   "model": "hero",
-                  "filter": "hero"
+                  "filter": "hero",
+                  "classes": ["homepage", "offerpage"]
                 }
               }
             }
