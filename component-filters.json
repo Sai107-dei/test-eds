@@ -6,23 +6,8 @@
     ]
   },
   {
-    "id": "columns",
-    "components": []
-  },
-  {
-    "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "image-link"
-    ]
-  },
-  {
     "id": "section",
     "components": [
-      "breadcrumb",
       "text",
       "image",
       "button",
@@ -30,42 +15,9 @@
       "hero",
       "cards",
       "columns",
-      "header-nav",
-      "carousel",
-      "savingscard-header",
-      "savingscard",
-      "savingscard-footer",
-      "accordion-group",
-      "form",
-      "imagedesc-col2-inline",
-      "imagedesc-col3-inline",
-      "col2-desc-grid",
-      "car-card",
-      "wishlist",
-      "thumbnail-desc",
-      "car-details",
-      "car-features",
-      "embed",
-      "download-app",
-      "nl-calculator",
-      "nl-calculator-extended",
-      "vehicle-comparison",
-      "single-slide-carousel",
-      "takeways",
-      "thumbnail-car",
-      "related-article-card",
-      "takeaways",
-      "filter",
-      "car-help",
-      "image-link",
-      "tablinks",
-      "aem-content-fragment",
-      "search",
-      "rating-widget",
-      "icon-text-widget",
-      "faq",
-      "active-filter",
-      "fragment"
+      "fragment",
+      "icongrid-tile",
+      "promo-banner"
     ]
   },
   {
@@ -75,37 +27,25 @@
     ]
   },
   {
-    "id": "carousel",
-    "components": ["slide"]
-  },
-  {
-    "id": "accordion",
-    "components": ["accordion"]
-  },
-  {
-    "id": "single-slide-carousel",
+    "id": "hero",
     "components": [
-      "slide"
+      "icongrid-tile"
     ]
   },
-  {
-    "id": "filter-search",
-    "components": [
-      "card"
-    ]
-  },
-  {
-    "id": "active-search",
-    "components":[
-      "card"
-    ]
-  },
-  {
-    "id": "slide",
-    "components":[
-      "columns"
-    ]
 
+  {
+    "id": "columns",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
   }
-
 ]
