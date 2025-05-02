@@ -172,7 +172,11 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Icongrid-tile",
-                  "model": "icongrid-tile"
+                  "model": "icongrid-tile",
+                  "classes": [
+                    "left",
+                    "top-vertical-align"
+                  ]
                 }
               }
             }
