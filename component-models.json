@@ -5583,7 +5583,7 @@
   {
     "id": "icongrid-tile",
     "fields": [
-      {
+       {
         "component": "multiselect",
         "name": "classes",
         "label": "Alignment",
